@@ -1,29 +1,16 @@
-# ANSTOSS – IWF League
+# ANSTOSS – IWF League v0.5
 
-## Lokal starten
+Ausgabe 01: Der große Saisoncheck 2026/27.
 
-```bash
-npm install
-npm run dev
-```
+## Enthalten
 
-## Fertige Seite erzeugen
+- vollständiger Saisoncheck mit Redaktionskonferenz
+- Power Ranking und Meisterprognosen
+- alle zehn Manager mit vollständigem Kadercheck
+- erste Gerüchteküche
+- feste Rubrik „Sebastian sagt …“
+- bestehende Navigation und GitHub-Pages-Deployment
 
-```bash
-npm run build
-```
+## Upload
 
-## GitHub Pages
-
-Das Projekt ist für `https://gcoberlin.github.io/iwf-league/` vorbereitet.
-Die Vite-Base lautet `/iwf-league/`.
-
-## Artikelpflege
-
-Im Menü gibt es den Redaktionsmodus. Dort kann ein Artikel vorbereitet und als Datei exportiert werden.
-Schicke diese Datei an ChatGPT; sie wird in die Website eingebaut und als neues Projektupdate zurückgegeben.
-
-## Wichtig
-
-Die Datei `public/images/redaktion.png` ist derzeit ein Platzhalterziel.
-Kopiere dort das Bild der drei Redakteure hinein.
+Den Inhalt dieses Ordners vollständig in das GitHub-Repository kopieren, vorhandene Dateien ersetzen und committen. GitHub Pages wird über den vorhandenen Workflow gebaut.

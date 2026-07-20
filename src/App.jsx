@@ -2,8 +2,7 @@ import { Link, NavLink, Route, Routes, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { articles } from './data/articles'
-
-const managers = ['Sebastian','Jose','Luca','Tomi','Matthias','Greg','Uwe','Wassilios','Jan','Henning']
+import { managers } from './data/managers'
 
 function Layout({children}) {
   return <>
@@ -91,7 +90,19 @@ function ArticleRedirect({slug}){ const a=articles.find(x=>x.slug===slug); retur
 function Manager(){
   return <Layout><section className="page">
     <div className="sectionHeading"><span>Die zehn Manager</span></div>
-    <div className="managerGrid">{managers.map((m,i)=><div className="managerCard" key={m}><b>{String(i+1).padStart(2,'0')}</b><h3>{m}</h3><p>Profil und Saisonanalyse folgen.</p></div>)}</div>
+    <p className="introText">Alle Kader im ANSTOSS-Check: Marktwert, Schlüsselspieler, Stärken, Schwächen und die Prognose der Redaktion. Stand: 20. Juli 2026.</p>
+    <div className="rankingStrip">{managers.map(m=><a href={`#${m.name.toLowerCase()}`} key={m.name}><b>{m.rank}</b>{m.name}</a>)}</div>
+    <div className="managerProfiles">{managers.map(m=><article className="managerProfile" id={m.name.toLowerCase()} key={m.name}>
+      <div className="managerTop">
+        <div><span className="rankLabel">POWER RANKING #{m.rank}</span><h2>{m.name}</h2><p>{m.team}</p></div>
+        <div className="managerFacts"><span><b>{m.value}</b> Kaderwert</span><span><b>Note {m.grade}</b> Redaktion</span><span><b>{m.verdict}</b> Prognose</span></div>
+      </div>
+      <div className="squadLine"><b>Kader:</b> {m.players.join(' · ')}</div>
+      <div className="managerColumns">
+        <div><h3>Schlüsselspieler</h3><p className="keyPlayer">{m.key}</p><h3>Stärke</h3><p>{m.strength}</p><h3>Schwäche</h3><p>{m.weakness}</p></div>
+        <div className="editorVoices"><blockquote><b>Ingo:</b> {m.ingo}</blockquote><blockquote><b>Werner:</b> {m.werner}</blockquote><blockquote className="franz"><b>Franz:</b> {m.franz}</blockquote></div>
+      </div>
+    </article>)}</div>
   </section></Layout>
 }
 
