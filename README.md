@@ -1,18 +1,5 @@
 # ANSTOSS – IWF League
 
-Version 0.2 des Online-Magazins der IWF League.
-
-## Enthalten
-
-- Magazin-Startseite
-- 10 Managerprofile als Grundgerüst
-- Redaktion mit Ingo, Werner und Franz
-- Reisechronik: Lissabon 2025, Rom 2026, Bangkok 2028
-- Countdown zur Rom-Reise
-- IWF-Hymne: Journey – Don't Stop Believin'
-- Platzhalter für Hall of Fame und historische Daten
-- GitHub-Pages-Workflow mit Schutz gegen versehentlich hochgeladenes `node_modules`
-
 ## Lokal starten
 
 ```bash
@@ -20,8 +7,23 @@ npm install
 npm run dev
 ```
 
-## Auf GitHub einspielen
+## Fertige Seite erzeugen
 
-Den Inhalt dieses Ordners in das Repository kopieren und bestehende Dateien ersetzen. `node_modules` und `dist` nicht hochladen.
+```bash
+npm run build
+```
 
-Unter **Settings → Pages** muss als Source **GitHub Actions** ausgewählt sein.
+## GitHub Pages
+
+Das Projekt ist für `https://gcoberlin.github.io/iwf-league/` vorbereitet.
+Die Vite-Base lautet `/iwf-league/`.
+
+## Artikelpflege
+
+Im Menü gibt es den Redaktionsmodus. Dort kann ein Artikel vorbereitet und als Datei exportiert werden.
+Schicke diese Datei an ChatGPT; sie wird in die Website eingebaut und als neues Projektupdate zurückgegeben.
+
+## Wichtig
+
+Die Datei `public/images/redaktion.png` ist derzeit ein Platzhalterziel.
+Kopiere dort das Bild der drei Redakteure hinein.
