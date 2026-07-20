@@ -1,6 +1,17 @@
 # ANSTOSS – IWF League
 
-React/Vite-Website für das Online-Magazin der IWF League.
+Version 0.2 des Online-Magazins der IWF League.
+
+## Enthalten
+
+- Magazin-Startseite
+- 10 Managerprofile als Grundgerüst
+- Redaktion mit Ingo, Werner und Franz
+- Reisechronik: Lissabon 2025, Rom 2026, Bangkok 2028
+- Countdown zur Rom-Reise
+- IWF-Hymne: Journey – Don't Stop Believin'
+- Platzhalter für Hall of Fame und historische Daten
+- GitHub-Pages-Workflow mit Schutz gegen versehentlich hochgeladenes `node_modules`
 
 ## Lokal starten
 
@@ -9,7 +20,8 @@ npm install
 npm run dev
 ```
 
-## Veröffentlichung
+## Auf GitHub einspielen
 
-GitHub Pages muss unter **Settings → Pages → Source** auf **GitHub Actions** gestellt werden.
-Jeder Push auf `main` baut und veröffentlicht die Seite automatisch.
+Den Inhalt dieses Ordners in das Repository kopieren und bestehende Dateien ersetzen. `node_modules` und `dist` nicht hochladen.
+
+Unter **Settings → Pages** muss als Source **GitHub Actions** ausgewählt sein.
