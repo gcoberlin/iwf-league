@@ -1,16 +1,24 @@
-# ANSTOSS – IWF League v0.5
+# ANSTOSS – IWF League v1.0
 
-Ausgabe 01: Der große Saisoncheck 2026/27.
+Digitales Magazin der IWF League mit Ausgabe 01, Saisoncheck, allen zehn Managerprofilen, Prognosen und Redaktionsrubriken.
 
-## Enthalten
+## Lokal testen
 
-- vollständiger Saisoncheck mit Redaktionskonferenz
-- Power Ranking und Meisterprognosen
-- alle zehn Manager mit vollständigem Kadercheck
-- erste Gerüchteküche
-- feste Rubrik „Sebastian sagt …“
-- bestehende Navigation und GitHub-Pages-Deployment
+```bash
+npm ci
+npm run dev
+```
 
-## Upload
+## Produktions-Build testen
 
-Den Inhalt dieses Ordners vollständig in das GitHub-Repository kopieren, vorhandene Dateien ersetzen und committen. GitHub Pages wird über den vorhandenen Workflow gebaut.
+```bash
+npm run build
+```
+
+## Kleine Textänderungen
+
+Siehe [`TEXTE_AENDERN.md`](./TEXTE_AENDERN.md).
+
+## GitHub Pages
+
+Der Workflow unter `.github/workflows/deploy.yml` verwendet `npm ci` und veröffentlicht den erzeugten Ordner `dist` automatisch.

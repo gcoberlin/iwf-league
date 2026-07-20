@@ -1,3 +1,6 @@
+// TEXTE BEARBEITEN: Hier stehen alle Magazinartikel. Nur Texte innerhalb der Anführungszeichen bzw. Backticks ändern.
+// Neue Artikel am besten als Kopie eines bestehenden Objekts anlegen.
+
 export const articles = [
   {
     slug: 'saisoncheck-2026-27',

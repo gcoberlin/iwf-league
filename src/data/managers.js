@@ -1,3 +1,6 @@
+// MANAGER BEARBEITEN: Hier stehen Kader, Noten, Prognosen und Redaktionsstimmen.
+// Texte und Zahlen dürfen direkt geändert werden; Kommas und Anführungszeichen bitte stehen lassen.
+
 export const managers = [
   {
     name:'Henning', team:'Arsene W.', rank:1, value:'24,94 Mio.', grade:'1,6', verdict:'Titelkandidat',
