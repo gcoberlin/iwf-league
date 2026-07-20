@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
-      - run: npm install --no-audit --no-fund --verbose
+      - run: npm install --no-audit --no-fund
       - run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
