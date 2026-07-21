@@ -1,6 +1,6 @@
 export const managers = [
   {
-    name:'Henning', team:'Arsene W.', rank:1, value:'24,94 Mio.', grade:'1,6', verdict:'Titelkandidat',
+    name:'Henning', team:'Arsene W.', profileTitle:'Der Sommerpräsident', profileText:'Henning hat die Sommer-IWF in seinem Garten eingeführt und gehört zu den aktivsten Antreibern der Liga. Er ist nah am Transfermarkt, liefert Gesprächsstoff und scheut auch vor symbolischen Eröffnungstransfers nicht zurück.', runningGag:'Wenn Henning etwas ankündigt, beginnt entweder ein Transferfenster oder eine Grundsatzdebatte.', rank:1, value:'24,94 Mio.', grade:'1,6', verdict:'Titelkandidat',
     players:['Baumann','Klanac','Widmer','Can','Oermann','Soumahoro','F. Nmecha','Prömel','Poku','Larsson','Lenz','Osmani','Ben Seghir','G. Orban','Sani'],
     key:'F. Nmecha', strength:'Das beste Mittelfeld der Liga: Nmecha, Prömel und Poku verbinden Marktwert, nachgewiesene Punkte und Entwicklungspotenzial.',
     weakness:'Der Sturm hängt stark an Ben Seghir. G. Orban und Sani sind eher Wetten als sichere Punktelieferanten.',
@@ -9,7 +9,7 @@ export const managers = [
     franz:'HENNING GREIFT AN! Aus dem ewigen Projektmanager wird plötzlich ein Meisterjäger.'
   },
   {
-    name:'Jose', team:'Jose Mulhinho', rank:2, value:'21,96 Mio.', grade:'1,8', verdict:'Top 3',
+    name:'Jose', team:'Jose Mulhinho', profileTitle:'Der Raumdeuter', profileText:'Spielleiter, einziger Doktor der Runde und überzeugter Fußballromantiker. Jose spielte selbst jahrelang Fußball und war der Raumdeuter seines Teams – dieses Gespür für freie Räume prägt bis heute seinen Kaderbau.', runningGag:'Er erklärt den Fußball gern vollständig. Sebastian nimmt ihm trotzdem regelmäßig die Trophäe ab.', rank:2, value:'21,96 Mio.', grade:'1,8', verdict:'Top 3',
     players:['Schubert','M. Funk','Brown','Deman','Sebulonsen','Jaquez','Suzuki','Banzuzi','Mihoya','Veratschnig','Mbuku','Lisztès','Tietz','Boniface','Vogt'],
     key:'Brown', strength:'Brown ist der wertvollste Verteidiger der Liga und gibt dem Kader eine klare Basis. Suzuki, Mihoya und Tietz sorgen für Balance.',
     weakness:'Boniface und Vogt sind aktuell keine sichere Sturmgarantie. Jose muss noch mindestens einen verlässlichen Angreifer finden.',
@@ -18,7 +18,7 @@ export const managers = [
     franz:'JOSE MAUERT SICH ZUM TITEL! Brown kostet allein mehr als mancher kompletter Sturm.'
   },
   {
-    name:'Uwe', team:'uje', rank:3, value:'27,81 Mio.', grade:'2,0', verdict:'Wildcard',
+    name:'Uwe', team:'uje', profileTitle:'Der X-Faktor', profileText:'Uwe ist der Unberechenbare der IWF. Er kennt den Fußball, kann jede Saison entscheidend prägen und genauso gut wochenlang wirken, als hätte er die App verlegt.', runningGag:'Niemand weiß, ob Uwe schläft, plant oder längst den entscheidenden Coup vorbereitet.', rank:3, value:'27,81 Mio.', grade:'2,0', verdict:'Wildcard',
     players:['Nicolas','Bredlow','W. Orbán','Coulibaly','Rosenfelder','Koudossou','Lee','Jeong','Maloney','R. Wagner','Micheler','Curda','Kofane','Adamu','Futkeu'],
     key:'W. Orbán', strength:'Der höchste Kaderwert der Liga. Orbán, Nicolas, Lee und Kofane sind eine echte Spitzenachse.',
     weakness:'Aktivität. Der Kader kann um den Titel spielen, aber nur wenn Uwe tatsächlich reagiert, verkauft und nachlegt.',
@@ -27,7 +27,7 @@ export const managers = [
     franz:'27,81 MILLIONEN UND TROTZDEM NICHT ERREICHBAR! Uwe besitzt das teuerste Funkloch der Liga.'
   },
   {
-    name:'Tomi', team:'VADDERN 79', rank:4, value:'20,87 Mio.', grade:'2,1', verdict:'Top-5-Kandidat',
+    name:'Tomi', team:'VADDERN 79', profileTitle:'Der Reiseverweigerer', profileText:'Tomi setzt gern auf große Namen und große Ansagen. Bei den jährlichen IWF-Reisen ist er dagegen traditionell mit einer neuen Ausrede beschäftigt.', runningGag:'Für den Transfermarkt reicht die Zeit immer. Für die IWF-Reise leider nie.', rank:4, value:'20,87 Mio.', grade:'2,1', verdict:'Top-5-Kandidat',
     players:['Dahmen','Boss','Bernardo','N. Banks','Boey','Pinckert','Doan','Neuhaus','Kawasaki','Alvero','Weißhaupt','Sakar','Königsdörffer','Bakayoko','Reyna'],
     key:'Doan', strength:'Doan ist ein echter Premiumspieler. Bernardo, Dahmen und Königsdörffer bringen bereits nachgewiesene Punkte.',
     weakness:'Hinter Doan fällt das Mittelfeld deutlich ab. Mehrere Kaderplätze sind derzeit Spekulation statt Stammplatz.',
@@ -36,7 +36,7 @@ export const managers = [
     franz:'DOAN ODER DOWN! Tomis Saison hängt an einem Mann – und der weiß hoffentlich nichts davon.'
   },
   {
-    name:'Luca', team:'Luca Costantini', rank:5, value:'22,11 Mio.', grade:'2,2', verdict:'Geheimfavorit',
+    name:'Luca', team:'Luca Costantini', profileTitle:'Der erste Meister', profileText:'Luca gewann den ersten Titel der IWF-Geschichte und ist damit für immer Teil der Gründungsmythologie. Kreativ, engagiert und mit italienischem Hang zu großen Fußballgeschichten.', runningGag:'Der dritte Platz verfolgt ihn mit einer Treue, die manchem Spieler gut stehen würde.', rank:5, value:'22,11 Mio.', grade:'2,2', verdict:'Geheimfavorit',
     players:['Zetterer','Tangvik','Querfeld','Kübler','Theate','Ogbus','Čović','R. Müller','Schallenberg','Kaltefleiter','Pherai','Nusa','Ache','Silas','Cardozo'],
     key:'Nusa', strength:'Nusa und Ache bilden den vielleicht stärksten Sturm der Liga. Querfeld und Theate geben der Abwehr Qualität.',
     weakness:'Das Mittelfeld ist aktuell die klare Baustelle. Ohne zwei Verstärkungen fehlt die wöchentliche Punktemasse.',
@@ -45,7 +45,7 @@ export const managers = [
     franz:'NUSA-MANIA! Luca hat vorne Champions League und in der Mitte noch Kreisliga-Vorbereitung.'
   },
   {
-    name:'Matthias', team:'mazzephase', rank:6, value:'21,53 Mio.', grade:'2,3', verdict:'Überraschungskandidat',
+    name:'Matthias', team:'mazzephase', profileTitle:'Der Pumper mit Scoutingschein', profileText:'Matze ist Vegetarier, Fitnessstudio-Stammgast und Liebhaber der Außenseiter. Er entdeckt Spieler, die sonst niemand kennt – manchmal sogar die Comunio-App erst danach.', runningGag:'Er kennt das nächste Talent oft früher als die Verkaufsfunktion.', rank:6, value:'21,53 Mio.', grade:'2,3', verdict:'Überraschungskandidat',
     players:['Backhaus','Blaswich','Badé','Rothe','Belocian','Günter','Manzambi','Sambi Lokonga','Conté','Zvonarek','Darvich','Kaba','Dinkçi','Sieb','C. Gomis'],
     key:'Manzambi', strength:'Viele entwicklungsfähige Spieler mit steigenden Marktwerten. Manzambi, Lokonga, Badé und Backhaus passen perfekt zu Matthias’ Ansatz.',
     weakness:'Kaum sichere Topspieler. Wenn die Wetten nicht aufgehen, fehlt ein stabiler Punkteboden.',
@@ -54,7 +54,7 @@ export const managers = [
     franz:'WER SIND DIE ALLE? Matthias kauft schon wieder die Bundesliga von übermorgen.'
   },
   {
-    name:'Jan', team:'Greifbramo', rank:7, value:'22,58 Mio.', grade:'2,5', verdict:'Solides Mittelfeld',
+    name:'Jan', team:'Greifbramo', profileTitle:'Der Entertainer aus Bangkok', profileText:'Jan lebt in Bangkok, liebt Entertainment und optimiert Systeme, Regeln und Transfers mit großer Ausdauer. 2028 wird die IWF-Reise für ihn zum Heimspiel.', runningGag:'Bei Bayern-Spielern und Regel-Lücken endet die thailändische Gelassenheit.', rank:7, value:'22,58 Mio.', grade:'2,5', verdict:'Solides Mittelfeld',
     players:['Flekken','Hein','Baku','Dal','I. Traoré','Keidel','Martel','Chema Andrés','Karazor','Maina','O. Højlund','Maksimović','Burke','Moerstedt','T. Gomis'],
     key:'Baku', strength:'Baku, Chema Andrés und Martel bilden ein ordentliches Gerüst. Jan hat außerdem genügend liquide Kaderplätze für Veränderungen.',
     weakness:'Im Sturm fehlt ein klarer Punktegarant. Burke und Moerstedt sind interessant, aber noch kein Spitzenangriff.',
@@ -63,7 +63,7 @@ export const managers = [
     franz:'BANGKOK-BAYERN-BÖRSE! Jan wartet nur auf den nächsten roten Namen.'
   },
   {
-    name:'Sebastian', team:'DieseHaine', rank:8, value:'20,07 Mio.', grade:'2,7', verdict:'Nie abschreiben',
+    name:'Sebastian', team:'DieseHaine', profileTitle:'Der Laptoptrainer', profileText:'Rekordmeister, Transfergenie und gelegentlicher Wahnsinniger. Sebastian analysiert vom Laptop aus, verbrennt dabei gern Praktikanten und ist seit Bratislava 2019 auch als Rapper Pink Panther bekannt.', runningGag:'„Mir fehlt noch etwas die Motivation …“ – der Satz, nach dem meistens alle anderen nervös werden.', rank:8, value:'20,07 Mio.', grade:'2,7', verdict:'Nie abschreiben',
     players:['Batz','Rieß','Couto','Arthur','Chaves','Stergiou','Nartey','Stöger','Haberer','Poręba','Kujović','Castañeda','Gnabry','Schnellbacher','Sylla'],
     key:'Gnabry', strength:'Gnabry ist ein Unterschiedsspieler. Dazu kommt der beste Transfermanager der Ligageschichte.',
     weakness:'Der Kader ist aktuell stark von Gnabry abhängig. In allen Mannschaftsteilen fehlen noch sichere Top-30-Spieler.',
@@ -72,7 +72,7 @@ export const managers = [
     franz:'MOTIVATION VERMISST! Sebastian startet mit Gnabry, drei Fragezeichen und seinem berühmtesten Satz.'
   },
   {
-    name:'Greg', team:'Griesgram1', rank:9, value:'23,48 Mio.', grade:'3,0', verdict:'Transfercoup nötig',
+    name:'Greg', team:'Griesgram1', profileTitle:'Der Adrenalin-Dino', profileText:'Greg gehört gemeinsam mit Wassilios zu den IWF-Dinosauriern. Er liebt Geschwindigkeit und Höhe, besitzt überschaubares Fußballwissen und landet trotzdem immer wieder unerklärliche Transfercoups.', runningGag:'Je weniger logisch ein Transfer wirkt, desto größer ist Gregs Chance, damit recht zu behalten.', rank:9, value:'23,48 Mio.', grade:'3,0', verdict:'Transfercoup nötig',
     players:['Vandevoordt','Hellstern','Kabak','Friedl','Neuendorff','Engels','Grifo','Beste','Skhiri','João Palhinha','Sticker','Onyeka','Ranos','Ngankam','Quetant'],
     key:'Grifo', strength:'Grifo ist ein verlässlicher Punkteanker. Kabak, Friedl und Beste liefern einen soliden Bundesliga-Kern.',
     weakness:'Der Sturm ist derzeit kaum konkurrenzfähig. Greg braucht mindestens zwei Startelfspieler mit Torpotenzial.',
@@ -81,7 +81,7 @@ export const managers = [
     franz:'GRIFO UND DIE SIEBEN ZWERGE! Greg sucht noch einen Sturm – Hinweise bitte an die Redaktion.'
   },
   {
-    name:'Wassilios', team:'Wasko23', rank:10, value:'17,92 Mio.', grade:'3,4', verdict:'Baustelle',
+    name:'Wassilios', team:'Wasko23', profileTitle:'Der Trainer und Reiseleiter', profileText:'Wassilios ist Fußballtrainer, IWF-Dino und der organisatorische Taktgeber der Reisen. Er kümmert sich um Unterkunft und Programm. Als er in Lissabon angeschlagen war, zeigte sich trotz seiner Anwesenheit schnell: Ohne einen fitten Wassili ist die IWF erstaunlich kopflos.', runningGag:'Auf Reisen unverzichtbar, im Transfermarkt gelegentlich nur schwer erreichbar.', rank:10, value:'17,92 Mio.', grade:'3,4', verdict:'Baustelle',
     players:['Ramaj','Köbbing','Kohr','Reggiani','V. Becker','Gadou','Reitz','Castrop','Geiger','Wätjen','Swider','Condé','Dardari','Kownacki','Albert'],
     key:'Reitz', strength:'Reitz ist ein starker Anker. Gadou besitzt hohen Marktwert und Entwicklungspotenzial.',
     weakness:'Zu viele unsichere Stammplätze und kein etablierter Topstürmer. Der niedrige Kaderwert bedeutet allerdings auch Transferfreiheit.',
