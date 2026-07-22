@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Brown Transfer Blitzmeldung</title>
+  <desc id="desc">Editoriale Transfergrafik in Schwarz und Grün mit der Ablösesumme 8,7 Millionen Euro.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#030503"/>
+      <stop offset="0.62" stop-color="#101b0b"/>
+      <stop offset="1" stop-color="#315f08"/>
+    </linearGradient>
+    <pattern id="lines" width="72" height="72" patternUnits="userSpaceOnUse" patternTransform="skewX(-18)">
+      <rect width="18" height="72" fill="#69c20c" opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#lines)"/>
+  <circle cx="1270" cy="455" r="270" fill="none" stroke="#69c20c" stroke-width="26" opacity=".28"/>
+  <circle cx="1270" cy="455" r="175" fill="none" stroke="#69c20c" stroke-width="3" opacity=".45"/>
+  <path d="M1010 455h500M1270 195v520" stroke="#69c20c" stroke-width="3" opacity=".35"/>
+  <text x="92" y="120" fill="#69c20c" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" letter-spacing="7">BLITZMELDUNG · IWF LEAGUE</text>
+  <text x="90" y="310" fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="150" font-weight="900">BROWN</text>
+  <text x="90" y="455" fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="118" font-weight="900">SPRENGT DEN</text>
+  <text x="90" y="590" fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="150" font-weight="900">MARKT</text>
+  <rect x="92" y="665" width="720" height="112" fill="#69c20c"/>
+  <text x="125" y="742" fill="#071006" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="62" font-weight="900">8,7 MIO. € → TOMI</text>
+  <text x="1110" y="475" fill="#ffffff" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="104" font-weight="900">8,7</text>
+  <text x="1125" y="550" fill="#69c20c" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">MILLIONEN</text>
+</svg>

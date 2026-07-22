@@ -1,5 +1,6 @@
 import { legacyArticles } from './legacy'
 import kimmichTransferArticle from './2026-07-22-kimmich'
+import brownTransferArticle from './2026-07-22-brown'
 
 const legacyWithDates = legacyArticles.map((article, index) => ({
   ...article,
@@ -8,5 +9,10 @@ const legacyWithDates = legacyArticles.map((article, index) => ({
   hero: article.hero?.replace('./images/redaktion.png', './redaktion.png')
 }))
 
-export const articles = [kimmichTransferArticle, ...legacyWithDates]
+const previousArticles = [
+  { ...kimmichTransferArticle, topStory: false },
+  ...legacyWithDates
+]
+
+export const articles = [brownTransferArticle, ...previousArticles]
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
