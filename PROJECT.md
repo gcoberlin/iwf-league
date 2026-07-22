@@ -54,3 +54,11 @@ ANSTOSS ist das digitale Magazin und Archiv der IWF League: aktuelle Saison, his
 - Neue Beiträge können als eigene Datei unter `src/data/articles/` angelegt werden.
 - Der aktuellste Beitrag wird automatisch zur Topstory.
 - Neu: Transfer-Ticker vom 22. Juli 2026 mit Kimmich, den Transfers der letzten 48 Stunden und dem Transfermarkt ab 1 Mio. Euro.
+
+
+## Version 3.0
+- Neues ANSTOSS-IWF-Branding mit IWF League und Seit 2004
+- Wiederverwendbare Editorial-Hero-Komponente
+- Hero-Bereiche für Manager, Hall of Fame, Saisonarchiv, Reisen, Redaktion und IWF
+- Dunkle, kontrastreiche Karten für Archiv und Reisen
+- Verbesserte Lesbarkeit und responsive Darstellung

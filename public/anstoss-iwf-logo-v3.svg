@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" role="img" aria-labelledby="title desc">
+<title id="title">ANSTOSS IWF League</title><desc id="desc">Logo des IWF League Magazins seit 2004</desc>
+<rect width="760" height="190" fill="#030403"/>
+<circle cx="672" cy="68" r="58" fill="none" stroke="#69c20c" stroke-width="5" opacity=".55"/>
+<circle cx="672" cy="68" r="43" fill="none" stroke="#69c20c" stroke-width="2" opacity=".35"/>
+<text x="24" y="104" fill="#fff" font-family="Arial Black,Impact,sans-serif" font-size="92" letter-spacing="-6">ANSTOSS</text>
+<text x="478" y="104" fill="#69c20c" font-family="Arial Black,Impact,sans-serif" font-size="88" font-style="italic">IWF</text>
+<line x1="24" y1="131" x2="734" y2="131" stroke="#34452f"/>
+<text x="24" y="160" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="6">IWF LEAGUE MAGAZIN</text>
+<text x="615" y="160" fill="#69c20c" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">SEIT 2004</text>
+</svg>
