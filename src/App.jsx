@@ -1,4 +1,5 @@
 import { Link, NavLink, Route, Routes, useParams } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { articles } from './data/articles/index.js'
@@ -45,11 +46,33 @@ function PageHero({ eyebrow, title, text, stat, tone = 'green' }) {
 }
 
 function Layout({ children }) {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.classList.toggle('menuOpen', menuOpen)
+    return () => document.body.classList.remove('menuOpen')
+  }, [menuOpen])
+
+  const closeMenu = () => setMenuOpen(false)
+
   return <div className="siteShell">
     <header className="siteHeader v2Header">
       <div className="headerInner">
         <Logo />
-        <nav>{navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({isActive}) => isActive ? 'active' : ''}>{label}</NavLink>)}</nav>
+        <button
+          className={`mobileMenuButton ${menuOpen ? 'isOpen' : ''}`}
+          type="button"
+          aria-label={menuOpen ? 'Menü schließen' : 'Menü öffnen'}
+          aria-expanded={menuOpen}
+          aria-controls="main-navigation"
+          onClick={() => setMenuOpen(open => !open)}
+        >
+          <span /><span /><span />
+        </button>
+        <nav id="main-navigation" className={menuOpen ? 'mobileOpen' : ''}>
+          {navItems.map(([to, label]) => <NavLink onClick={closeMenu} key={to} to={to} end={to === '/'} className={({isActive}) => isActive ? 'active' : ''}>{label}</NavLink>)}
+          <span className="mobileLive">LIVE-CENTER <i /></span>
+        </nav>
         <div className="liveDot">LIVE-CENTER <i /></div>
       </div>
     </header>
