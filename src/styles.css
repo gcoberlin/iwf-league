@@ -140,3 +140,19 @@ body{background:#050705;color:#f4f5f2}.siteShell{min-height:100vh;background:rad
 .hallHero{display:none}.recordGrid article,.titleRanking article,.championTimeline article,.iwfStats article,.aboutGrid article,.editorGrid>div{background:#0c100c!important;color:#fff!important;border-color:#35452f!important}.recordGrid article p,.titleRanking article p,.championTimeline article b,.iwfStats span,.aboutGrid p,.editorGrid p{color:#aeb8aa!important}.historyTable{background:#0c100c!important;color:#fff!important}.historyRow{border-color:#263324!important}
 @media(max-width:900px){.pageHero{padding:32px 28px;min-height:250px}.pageHeroOrb{right:-45px;opacity:.7}.pageHeroStat{display:none}}
 @media(max-width:600px){.iwfLogoV3{width:255px;min-width:255px}.pageHero{padding:28px 20px;min-height:260px}.pageHeroCopy h1{font-size:42px;letter-spacing:-1.8px}.pageHeroCopy p{font-size:15px}.pageHeroOrb{display:none}}
+
+/* v3.1 live polish */
+.breakingBar{height:38px;background:#69c20c;color:#061006;display:flex;align-items:center;gap:24px;padding:0 max(18px,5vw);overflow:hidden;border-bottom:1px solid #182416;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.7px}
+.breakingBar>b{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.breakingBar>b i{width:8px;height:8px;border-radius:50%;background:#d71920;box-shadow:0 0 0 5px rgba(215,25,32,.16);animation:pulseLive 1.4s infinite}
+.breakingBar>div{display:flex;gap:42px;white-space:nowrap;min-width:max-content;animation:breakingScroll 24s linear infinite}
+.breakingBar span:after{content:"•";margin-left:42px;opacity:.55}
+@keyframes pulseLive{50%{transform:scale(.75);opacity:.55}}
+@keyframes breakingScroll{from{transform:translateX(12vw)}to{transform:translateX(-75%)}}
+.portalHero{min-height:585px}
+.portalHero img{object-position:center 42%;filter:saturate(.92) contrast(1.05)}
+.portalHero:after{content:"EDITORIAL ILLUSTRATION";position:absolute;right:15px;top:14px;color:rgba(255,255,255,.6);font-size:9px;letter-spacing:1.7px;z-index:3}
+.heroShade{background:linear-gradient(90deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.62) 45%,rgba(0,0,0,.06) 78%),linear-gradient(0deg,rgba(0,0,0,.68),transparent 55%)}
+.heroCopy{max-width:720px}
+.heroCopy h1{font-size:clamp(48px,6vw,82px);line-height:.94;letter-spacing:-3.3px}
+@media(max-width:720px){.breakingBar{gap:14px}.breakingBar>div{animation-duration:18s}.portalHero{height:540px;min-height:540px}.portalHero img{object-position:62% center}.heroShade{background:linear-gradient(0deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.68) 60%,rgba(0,0,0,.18) 100%)}.heroCopy h1{font-size:42px;letter-spacing:-2px}}

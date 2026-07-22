@@ -9,7 +9,7 @@ const kimmichTransferArticle = {
   readTime: '6 Min.',
   category: 'Transfermarkt',
   topStory: true,
-  hero: './redaktion.png',
+  hero: '/images/kimmich-editorial.svg',
   content: `
 # Transfermarkt explodiert: Kimmich eröffnet das erste Wettrüsten der Saison
 

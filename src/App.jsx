@@ -53,6 +53,10 @@ function Layout({ children }) {
         <div className="liveDot">LIVE-CENTER <i /></div>
       </div>
     </header>
+    <div className="breakingBar" aria-label="Aktuelle Meldungen">
+      <b><i /> BREAKING</b>
+      <div><span>Kimmich für 13,15 Mio. auf dem Markt</span><span>Jose verpflichtet Kobel</span><span>Sebastian erhöht die Schlagzahl</span></div>
+    </div>
     <main>{children}</main>
     <footer>© 2026 ANSTOSS IWF · Zehn Freunde. Eine Liga. Unzählige Geschichten.</footer>
   </div>

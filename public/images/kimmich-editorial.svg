@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Editorial illustration of Joshua Kimmich</title>
+  <desc id="desc">Stylised football magazine illustration of a player seen from behind wearing number 6 and the name Kimmich.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071007"/>
+      <stop offset="0.55" stop-color="#152713"/>
+      <stop offset="1" stop-color="#030503"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#79d313" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#5a9d0d" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#071007" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/>
+      <stop offset=".7" stop-color="#bfc6bd"/>
+      <stop offset="1" stop-color="#8d968b"/>
+    </linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000" flood-opacity=".65"/></filter>
+    <pattern id="stripes" width="54" height="54" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
+      <rect width="16" height="54" fill="#69c20c" opacity=".06"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#stripes)"/>
+  <g opacity=".35" fill="none" stroke="#69c20c">
+    <circle cx="1260" cy="440" r="315" stroke-width="3"/>
+    <circle cx="1260" cy="440" r="230" stroke-width="2"/>
+    <path d="M1040 440h440M1260 220v440" stroke-width="2"/>
+  </g>
+  <g filter="url(#shadow)" transform="translate(875 94)">
+    <ellipse cx="250" cy="120" rx="82" ry="100" fill="#d8b49b"/>
+    <path d="M172 104c12-70 45-107 81-107 46 0 77 40 82 104-39-25-111-28-163 3z" fill="#41352f"/>
+    <path d="M184 185c34 38 98 42 132 0l28 64-95 56-92-57z" fill="#c69d84"/>
+    <path d="M112 244c75-44 205-44 279 0l71 430H38z" fill="url(#shirt)"/>
+    <path d="M112 244c-51 30-89 102-110 207l92 30 59-181zM391 244c51 30 89 102 110 207l-92 30-59-181z" fill="#e8ebe6"/>
+    <path d="M41 664h421l-29 128H71z" fill="#242a24"/>
+    <text x="250" y="338" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="56" letter-spacing="4" fill="#121612">KIMMICH</text>
+    <text x="250" y="590" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="245" fill="#69c20c">6</text>
+    <path d="M72 752h356" stroke="#69c20c" stroke-width="12"/>
+  </g>
+  <g transform="translate(82 92)">
+    <rect x="0" y="0" width="190" height="42" fill="#69c20c"/>
+    <text x="95" y="29" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="20" fill="#061006" letter-spacing="2">TOPSTORY</text>
+    <text x="0" y="190" font-family="Arial Black,Arial,sans-serif" font-size="90" fill="#fff" letter-spacing="-4">DAS ERSTE</text>
+    <text x="0" y="282" font-family="Arial Black,Arial,sans-serif" font-size="90" fill="#fff" letter-spacing="-4">WETTRÜSTEN</text>
+    <rect x="0" y="320" width="440" height="8" fill="#69c20c"/>
+    <text x="0" y="380" font-family="Arial, sans-serif" font-size="28" fill="#cbd4c8">13,15 Mio. Marktwert.</text>
+    <text x="0" y="420" font-family="Arial, sans-serif" font-size="28" fill="#cbd4c8">Eine Liga in Alarmbereitschaft.</text>
+  </g>
+  <text x="82" y="834" font-family="Arial, sans-serif" font-size="18" fill="#7f8b7b" letter-spacing="3">ANSTOSS · EDITORIAL ILLUSTRATION</text>
+</svg>
