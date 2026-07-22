@@ -55,7 +55,16 @@ function Layout({ children }) {
     </header>
     <div className="breakingBar" aria-label="Aktuelle Meldungen">
       <b><i /> BREAKING</b>
-      <div><span>Kimmich für 13,15 Mio. auf dem Markt</span><span>Jose verpflichtet Kobel</span><span>Sebastian erhöht die Schlagzahl</span></div>
+      <div className="breakingViewport">
+        <div className="breakingTrack">
+          <span>Kimmich für 13,15 Mio. auf dem Markt</span>
+          <span>Jose verpflichtet Kobel</span>
+          <span>Sebastian erhöht die Schlagzahl</span>
+          <span aria-hidden="true">Kimmich für 13,15 Mio. auf dem Markt</span>
+          <span aria-hidden="true">Jose verpflichtet Kobel</span>
+          <span aria-hidden="true">Sebastian erhöht die Schlagzahl</span>
+        </div>
+      </div>
     </div>
     <main>{children}</main>
     <footer>© 2026 ANSTOSS IWF · Zehn Freunde. Eine Liga. Unzählige Geschichten.</footer>
@@ -143,25 +152,59 @@ function Saisoncheck() {
 }
 
 function Manager() {
-  return <Layout><section className="page">
+  const initials = name => name.slice(0, 2).toUpperCase()
+  const verdictClass = verdict => verdict.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+  return <Layout><section className="page managerPage">
     <PageHero eyebrow="Die zehn Manager" title="Zehn Charaktere. Ein Titel." text="Kader, Stärken, Schwächen und die Prognosen der ANSTOSS-Redaktion – mit all den Eigenheiten, die diese Liga seit Jahren prägen." stat={{value:"10",label:"Manager"}} />
-    <div className="rankingStrip">{managers.map(m => <a href={`#${m.name.toLowerCase()}`} key={m.name}><b>{m.rank}</b>{m.name}</a>)}</div>
-    <div className="managerProfiles">{managers.map(m => <article className="managerProfile" id={m.name.toLowerCase()} key={m.name}>
-      <div className="managerTop">
-        <div><span className="rankLabel">POWER RANKING #{m.rank}</span><h2>{m.name}</h2><p>{m.team}</p></div>
-        <div className="managerFacts"><span><b>{m.value}</b> Kaderwert</span><span><b>Note {m.grade}</b> Redaktion</span><span><b>{m.verdict}</b> Prognose</span></div>
+
+    <nav className="managerIndex" aria-label="Manager Schnellnavigation">
+      {managers.map(m => <a href={`#${m.name.toLowerCase()}`} key={m.name}><b>{String(m.rank).padStart(2,'0')}</b><span>{m.name}</span></a>)}
+    </nav>
+
+    <div className="managerProfiles">{managers.map(m => <article className="managerProfileV4" id={m.name.toLowerCase()} key={m.name}>
+      <header className="managerCover" data-rank={String(m.rank).padStart(2,'0')}>
+        <div className="managerPortrait" aria-hidden="true"><span>{initials(m.name)}</span><small>ANSTOSS IWF</small></div>
+        <div className="managerCoverCopy">
+          <span className="rankLabel">POWER RANKING #{m.rank}</span>
+          <h2>{m.name}</h2>
+          <p>{m.team}</p>
+          <div className="managerTags"><span>{m.profileTitle}</span><span className={`verdict verdict-${verdictClass(m.verdict)}`}>{m.verdict}</span></div>
+        </div>
+        <div className="managerScoreboard">
+          <div><strong>{m.value}</strong><span>Kaderwert</span></div>
+          <div><strong>{m.grade}</strong><span>Redaktionsnote</span></div>
+          <div><strong>#{m.rank}</strong><span>Power Ranking</span></div>
+        </div>
+      </header>
+
+      <div className="managerBodyV4">
+        <section className="managerStory">
+          <span>MANAGERPROFIL</span>
+          <h3>{m.profileTitle}</h3>
+          <p>{m.profileText}</p>
+          <blockquote><b>Running Gag</b>{m.runningGag}</blockquote>
+        </section>
+
+        <section className="managerAnalysis">
+          <div className="analysisBlock keyBlock"><span>Schlüsselspieler</span><strong>{m.key}</strong></div>
+          <div className="analysisBlock"><span>Stärke</span><p>{m.strength}</p></div>
+          <div className="analysisBlock weaknessBlock"><span>Schwäche</span><p>{m.weakness}</p></div>
+        </section>
       </div>
-      <div className="squadLine"><b>Kader:</b> {m.players.join(' · ')}</div>
-      <div className="managerIdentity">
-        <span>MANAGERPROFIL</span>
-        <h3>{m.profileTitle}</h3>
-        <p>{m.profileText}</p>
-        <div className="runningGag"><b>Running Gag:</b> {m.runningGag}</div>
-      </div>
-      <div className="managerColumns">
-        <div><h3>Schlüsselspieler</h3><p className="keyPlayer">{m.key}</p><h3>Stärke</h3><p>{m.strength}</p><h3>Schwäche</h3><p>{m.weakness}</p></div>
-        <div className="editorVoices"><blockquote><b>Ingo:</b> {m.ingo}</blockquote><blockquote><b>Werner:</b> {m.werner}</blockquote><blockquote className="franz"><b>Franz:</b> {m.franz}</blockquote></div>
-      </div>
+
+      <section className="squadPanel">
+        <div className="panelHeadline"><span>KADER 2026/27</span><small>{m.players.length} Spieler</small></div>
+        <div className="playerChips">{m.players.map((player,index)=><span className={player===m.key?'keyChip':''} key={`${player}-${index}`}>{player}</span>)}</div>
+      </section>
+
+      <section className="editorialPanel">
+        <div className="panelHeadline"><span>DAS SAGT DIE REDAKTION</span><small>Drei Stimmen. Ein Urteil.</small></div>
+        <div className="editorCards">
+          <blockquote><header><b>I</b><span><strong>Ingo</strong><small>Chefredaktion</small></span></header><p>{m.ingo}</p></blockquote>
+          <blockquote><header><b>W</b><span><strong>Werner</strong><small>Analyse</small></span></header><p>{m.werner}</p></blockquote>
+          <blockquote className="franz"><header><b>F</b><span><strong>Franz</strong><small>Boulevard</small></span></header><p>{m.franz}</p></blockquote>
+        </div>
+      </section>
     </article>)}</div>
   </section></Layout>
 }
