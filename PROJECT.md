@@ -46,3 +46,11 @@ ANSTOSS ist das digitale Magazin und Archiv der IWF League: aktuelle Saison, his
 - Uwe steht 2025/26 in der Excel-Datei mit 0 Punkten; vor einer redaktionellen Interpretation prüfen.
 - Historische Reisebilder und Anekdoten nach und nach ergänzen.
 - Bundesliga-Tabelle und Verknüpfung Bundesliga-Spieler ↔ IWF-Kader später ergänzen.
+
+
+## Version 0.7 – Datengetriebenes Magazin
+
+- Artikel werden über `src/data/articles/index.js` geladen und nach `publishedAt` sortiert.
+- Neue Beiträge können als eigene Datei unter `src/data/articles/` angelegt werden.
+- Der aktuellste Beitrag wird automatisch zur Topstory.
+- Neu: Transfer-Ticker vom 22. Juli 2026 mit Kimmich, den Transfers der letzten 48 Stunden und dem Transfermarkt ab 1 Mio. Euro.

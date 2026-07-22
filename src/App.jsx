@@ -1,7 +1,7 @@
 import { Link, NavLink, Route, Routes, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { articles } from './data/articles'
+import { articles } from './data/articles/index.js'
 import { managers } from './data/managers'
 import { weeklyQuotes } from './data/quotes'
 import { seasons, allTimeTable, titleRanking, records } from './data/history'
@@ -84,7 +84,7 @@ function ArticleCard({ article }) {
     <div className="cardCategory">{article.category}</div>
     <h3>{article.title}</h3>
     <p>{article.excerpt}</p>
-    <small>{article.author} · {article.readTime}</small>
+    <small>{article.date} · {article.author} · {article.readTime}</small>
   </Link>
 }
 
