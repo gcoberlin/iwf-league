@@ -184,16 +184,19 @@ function Manager() {
       {managers.map(m => <a href={`#${m.name.toLowerCase()}`} key={m.name}><b>{String(m.rank).padStart(2,'0')}</b><span>{m.name}</span></a>)}
     </nav>
 
-    <div className="managerProfiles">{managers.map(m => {
-      const isSebastian = m.name === 'Sebastian'
-      return <article className={`managerProfileV4 ${isSebastian ? 'managerPrototype' : ''}`} id={m.name.toLowerCase()} key={m.name}>
+    <div className="managerProfiles">{managers.map(m => <article className={`managerProfileV4 ${m.name === 'Sebastian' ? 'managerProfileFeatured' : ''}`} id={m.name.toLowerCase()} key={m.name}>
       <header className="managerCover" data-rank={String(m.rank).padStart(2,'0')}>
-        <div className={`managerPortrait ${isSebastian ? 'managerPortraitIllustrated' : ''}`} aria-hidden="true">{isSebastian ? <img src="./images/managers/sebastian.svg" alt="" /> : <><span>{initials(m.name)}</span><small>ANSTOSS IWF</small></>}</div>
+        <div className={`managerPortrait ${m.name === 'Sebastian' ? 'managerPortraitImage' : ''}`} aria-hidden="true">
+          {m.name === 'Sebastian' ? <img src="./images/managers/sebastian.svg" alt="" /> : <span>{initials(m.name)}</span>}
+          <small>ANSTOSS IWF</small>
+        </div>
         <div className="managerCoverCopy">
           <span className="rankLabel">POWER RANKING #{m.rank}</span>
           <h2>{m.name}</h2>
           <p>{m.team}</p>
-          <div className="managerTags"><span>{m.profileTitle}</span><span className={`verdict verdict-${verdictClass(m.verdict)}`}>{m.verdict}</span>{isSebastian && <><span className="managerBadge">🏆 Rekordmeister</span><span className="managerBadge">💻 Laptoptrainer</span><span className="managerBadge">🔴 Bayern</span></>}</div>{isSebastian && <p className="managerMotto">„Daten schlagen Bauchgefühl.“</p>}
+          <div className="managerTags"><span>{m.profileTitle}</span><span className={`verdict verdict-${verdictClass(m.verdict)}`}>{m.verdict}</span></div>
+          {m.name === 'Sebastian' && <div className="sebastianBadges" aria-label="Sebastians Auszeichnungen"><span>🏆 Rekordmeister</span><span>💻 Laptoptrainer</span><span>📊 Datenfreak</span><span>🔴 Bayern</span></div>}
+          {m.name === 'Sebastian' && <blockquote className="managerMotto">„Daten schlagen Bauchgefühl.“</blockquote>}
         </div>
         <div className="managerScoreboard">
           <div><strong>{m.value}</strong><span>Kaderwert</span></div>
@@ -230,7 +233,7 @@ function Manager() {
           <blockquote className="franz"><header><b>F</b><span><strong>Franz</strong><small>Boulevard</small></span></header><p>{m.franz}</p></blockquote>
         </div>
       </section>
-    </article>})}</div>
+    </article>)}</div>
   </section></Layout>
 }
 
