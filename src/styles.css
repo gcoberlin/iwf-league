@@ -306,3 +306,17 @@ img,svg,video{max-width:100%;height:auto}
   .heroCopy h1{font-size:38px!important}
   .managerCoverCopy h2{font-size:44px!important}
 }
+
+/* v3.6 Manager Polish – Sebastian prototype */
+.managerPrototype{border-color:#58794b;box-shadow:0 26px 72px rgba(0,0,0,.34),0 0 0 1px rgba(105,194,12,.08)}
+.managerPrototype .managerCover{min-height:390px;background:radial-gradient(circle at 17% 35%,rgba(105,194,12,.24),transparent 34%),linear-gradient(112deg,#1c271b 0,#0b100b 56%,#030503 100%)}
+.managerPrototype .managerCover:before{background:repeating-linear-gradient(110deg,transparent 0 52px,rgba(255,255,255,.022) 53px 54px),linear-gradient(90deg,rgba(105,194,12,.035),transparent 44%)}
+.managerPrototype .managerCoverCopy:after{content:'IWF';position:absolute;right:-8px;bottom:-33px;font-family:'Archivo Black',Impact,sans-serif;font-size:54px;color:rgba(105,194,12,.055);letter-spacing:-3px}
+.managerPortraitIllustrated{height:318px;padding:0;background:#101710;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%);overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.3)}
+.managerPortraitIllustrated:before{display:none}
+.managerPortraitIllustrated img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.managerPrototype .managerBadge{background:#182017;border-color:#58724e;color:#edf5e9}
+.managerMotto{margin:18px 0 0!important;padding-left:16px;border-left:4px solid var(--iwf-green);font-family:Georgia,serif;font-size:18px!important;font-style:italic;color:#e8eee5!important}
+.managerPrototype .managerStory blockquote{box-shadow:inset 0 0 0 1px rgba(105,194,12,.08)}
+@media(max-width:1100px){.managerPortraitIllustrated{height:270px}.managerPrototype .managerCover{min-height:350px}}
+@media(max-width:760px){.managerPortraitIllustrated{height:280px}.managerPrototype .managerCover{min-height:0}.managerMotto{font-size:16px!important}}
