@@ -22,7 +22,15 @@ const transferTicker = [
   ['Caci', '2,03 Mio. €', 'Sebastian', 'in'],
   ['G. Mensah', '2,03 Mio. €', 'Henning', 'in'],
   ['Beste', 'verkauft', 'Greg', 'out'],
-  ['Mbuku', 'verkauft', 'Jose', 'out']
+  ['Mbuku', 'verkauft', 'Jose', 'out'],
+  ['Batz', 'verkauft', 'Sebastian', 'out'],
+  ['Haberer', 'verkauft', 'Sebastian', 'out'],
+  ['Klanac', 'verkauft', 'Henning', 'out'],
+  ['Oermann', 'verkauft', 'Henning', 'out'],
+  ['Soumahoro', 'verkauft', 'Henning', 'out'],
+  ['Cardozo', 'an Computer', 'Luca', 'out'],
+  ['Kaltefleiter', 'an Computer', 'Luca', 'out'],
+  ['Tangvik', 'an Computer', 'Luca', 'out']
 ]
 
 const marketPlayers = [
@@ -97,8 +105,8 @@ function Layout({ children }) {
 function TransferTicker() {
   return <section className="portalWidget transferTicker">
     <div className="widgetTitle"><h2>Transfer-Ticker</h2><Link to="/magazin">Alle anzeigen</Link></div>
-    {transferTicker.map(([player, fee, manager, direction], index) => <div className="tickerRow" key={player}>
-      <time>{['14:32','11:47','11:30','10:58','09:41'][index]}</time>
+    {transferTicker.map(([player, fee, manager, direction], index) => <div className="tickerRow" key={`${player}-${manager}`}>
+      <time>{['14:32','11:47','11:30','10:58','09:41','09:20','09:12','08:55','08:47','08:39','08:20','08:14','08:05'][index]}</time>
       <b className={direction}>➜</b><span>{player}</span><strong>{fee}</strong><em>{manager}</em>
     </div>)}
     <Link className="widgetMore" to="/artikel/kimmich-eroeffnet-transferpoker">Alle Transfers →</Link>
