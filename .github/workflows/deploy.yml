@@ -18,26 +18,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Repository laden
-        uses: actions/checkout@v4
-
-      - name: Node.js einrichten
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
-
-      - name: Abhängigkeiten installieren
-        run: npm ci --no-audit --no-fund
-
-      - name: GitHub Pages konfigurieren
-        uses: actions/configure-pages@v5
-
-      - name: Produktionsversion bauen und prüfen
-        run: npm run build
-
-      - name: Pages-Artefakt hochladen
-        uses: actions/upload-pages-artifact@v3
+          node-version: 24
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
@@ -48,6 +36,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Auf GitHub Pages veröffentlichen
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

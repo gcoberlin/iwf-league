@@ -9,7 +9,7 @@ const brownTransferArticle = {
   readTime: '3 Min.',
   category: 'Blitzmeldung',
   topStory: true,
-  hero: '/images/brown-transfer-alert.svg',
+  hero: `${import.meta.env.BASE_URL}images/brown-transfer-alert.svg`,
   content: `
 # Brown sprengt den Markt
 
