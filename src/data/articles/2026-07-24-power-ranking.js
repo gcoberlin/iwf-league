@@ -1,7 +1,7 @@
 const article = {
  slug:'power-ranking-juli-2026', title:'Das erste Kräfteverhältnis: Luca vorne, aber noch ist gar nichts entschieden', kicker:'Power Ranking · 24. Juli 2026',
  excerpt:'Alle zehn Kader im Check: ANSTOSS bewertet Qualität, Stammplatzchancen und Baustellen – mit einem entscheidenden Hinweis: Bis zum Ligastart sind es noch mehr als 30 Tage.',
- author:'Ingo, Werner & Franz', date:'24. Juli 2026', publishedAt:'2026-07-24', readTime:'8 Min.', category:'Power Ranking', topStory:true, hero:'/images/redaktion.png',
+ author:'Ingo, Werner & Franz', date:'24. Juli 2026', publishedAt:'2026-07-24', readTime:'8 Min.', category:'Power Ranking', topStory:true, hero:`${import.meta.env.BASE_URL}images/redaktion.png`,
  content:`
 # Das erste Kräfteverhältnis der IWF League
 
@@ -11,7 +11,7 @@ Dieses Ranking bewertet deshalb nicht die Saison, sondern den **Stand heute**: Q
 
 ## 1. Luca – Der kreative Italo
 
-Kimmich ist das erste echte Statement der Saison. Mit Nusa, Ache, Querfeld, Svensson und Theate steht bereits ein Kader, der heute antreten könnte. LigaInsider sieht Nusa bei Leipzig als gesetzt und traut ihm bei besserer Effizienz sogar den nächsten großen Schritt zu. Das macht Luca zum frühen Favoriten – nicht zum Meister im Juli.
+Kimmich ist das erste echte Statement der Saison. Mit Nusa, Ache, Querfeld, Svensson und Theate steht bereits ein Kader, der heute antreten könnte. LigaInsider führt Nusa in der Leipziger Kaderübersicht mit hoher Einsatzquote; die aktuelle Top-Elf bleibt in der Vorbereitung jedoch beweglich. Das macht Luca zum frühen Favoriten – nicht zum Meister im Juli.
 
 ## 2. Henning – Der Gastgeber
 
@@ -23,7 +23,7 @@ Brown und Doan sind zwei der besten Einzelspieler der Liga. Dahmen und Bernardo 
 
 ## 4. Uwe – Der X-Faktor
 
-Orbán, Nicolas, Lee, Kofane und Adamu ergeben einen überraschend starken Kern. LigaInsider führt Orbán weiter als Top-Elf-Kandidaten, beschreibt aber wachsenden Konkurrenzdruck. Der größere Konkurrenzdruck bleibt ohnehin Uwe selbst: Bleibt er aktiv, ist dieser Kader gefährlich.
+Orbán, Nicolas, Lee, Kofane und Adamu ergeben einen überraschend starken Kern. Orbán bleibt ein zentraler Leipziger Abwehrkandidat, doch der große Innenverteidiger-Kader erhöht den Konkurrenzdruck. Der größere Konkurrenzdruck bleibt ohnehin Uwe selbst: Bleibt er aktiv, ist dieser Kader gefährlich.
 
 ## 5. Sebastian – Der Laptoptrainer
 
@@ -31,11 +31,11 @@ Gnabry, Stöger und eine breite Abwehr – das sieht wieder einmal weniger spekt
 
 ## 6. Jose – Der Raumdeuter
 
-Kobel, Suzuki, Mohya, Tietz und Boniface sind ein gutes Gerüst. Aber elf Spieler sind elf Spieler. LigaInsider bewertet Jaquez als starke Alternative im Stuttgarter Konkurrenzkampf, nicht als unangreifbaren Stammspieler. Jose hat Zeit und wahrscheinlich einen Plan – nur noch keinen fertigen Kader.
+Kobel, Suzuki, Mohya, Tietz und Boniface sind ein gutes Gerüst. Aber elf Spieler sind elf Spieler. Bei Jaquez ist die Rolle noch nicht gesichert; Stuttgarts Kader bietet in der Defensive mehrere Alternativen. Jose hat Zeit und wahrscheinlich einen Plan – nur noch keinen fertigen Kader.
 
 ## 7. Wassili – Der Dino-Coach
 
-Reitz, Gadou, Kohr und Castrop sind spannende Trainertransfers. Doch Reitz startet in Leipzig laut LigaInsider zunächst als Alternative. Viele Wetten, wenig garantierte Punkte: Das kann bis Ende August deutlich besser aussehen.
+Reitz, Gadou, Kohr und Castrop sind spannende Trainertransfers. Doch Reitz muss sich in Leipzig in einem breit besetzten Mittelfeld erst eine klare Rolle erarbeiten. Viele Wetten, wenig garantierte Punkte: Das kann bis Ende August deutlich besser aussehen.
 
 ## 8. Matthias – Der Pumper
 
@@ -47,7 +47,7 @@ Baku ist ein hervorragender Baustein und wird von LigaInsider in Leipzig als ges
 
 ## 10. Greg – Der Dino
 
-Grifo, Kabak, Friedl und Vandevoordt sind stark. LigaInsider sieht Vandevoordt als neue Nummer eins in Leipzig. Dahinter wird der Kader dünn, und der Beste-Verkauf ist noch nicht ersetzt. Greg ist Letzter dieses Rankings, aber mehr als 30 Tage vor dem Start ist selbst das nur eine Momentaufnahme.
+Grifo, Kabak, Friedl und Vandevoordt sind stark. Vandevoordt gehört in Leipzig zum engen Torhüterkreis, die endgültige Hierarchie bleibt Teil der Vorbereitung. Dahinter wird der Kader dünn, und der Beste-Verkauf ist noch nicht ersetzt. Greg ist Letzter dieses Rankings, aber mehr als 30 Tage vor dem Start ist selbst das nur eine Momentaufnahme.
 
 ---
 

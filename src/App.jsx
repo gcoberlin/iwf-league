@@ -18,11 +18,14 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Kimmich', '17,10 Mio. €', 'Luca', 'in'],
+  ['Joshua Kimmich', '17,10 Mio. €', 'Luca', 'in'],
   ['Caci', '2,03 Mio. €', 'Sebastian', 'in'],
   ['G. Mensah', '2,03 Mio. €', 'Henning', 'in'],
+  ['Batz & Haberer', 'verkauft', 'Sebastian', 'out'],
+  ['Klanac, Oermann & Soumahoro', 'verkauft', 'Henning', 'out'],
   ['Beste', 'verkauft', 'Greg', 'out'],
-  ['Mbuku', 'verkauft', 'Jose', 'out']
+  ['Mbuku', 'verkauft', 'Jose', 'out'],
+  ['Cardozo, Kaltefleiter & Tangvik', 'zurück an Computer', 'Liga', 'out']
 ]
 
 const marketPlayers = [
@@ -81,9 +84,11 @@ function Layout({ children }) {
       <div className="breakingViewport">
         <div className="breakingTrack">
           <span>Luca landet Kimmich für 17,10 Mio.</span>
+          <span>Caci verstärkt den Laptoptrainer</span>
           <span>Power Ranking #1 ist online</span>
           <span>Noch über 30 Tage bis zum Ligastart</span>
           <span aria-hidden="true">Luca landet Kimmich für 17,10 Mio.</span>
+          <span aria-hidden="true">Caci verstärkt den Laptoptrainer</span>
           <span aria-hidden="true">Power Ranking #1 ist online</span>
           <span aria-hidden="true">Noch über 30 Tage bis zum Ligastart</span>
         </div>
@@ -98,7 +103,7 @@ function TransferTicker() {
   return <section className="portalWidget transferTicker">
     <div className="widgetTitle"><h2>Transfer-Ticker</h2><Link to="/magazin">Alle anzeigen</Link></div>
     {transferTicker.map(([player, fee, manager, direction], index) => <div className="tickerRow" key={player}>
-      <time>{['14:32','11:47','11:30','10:58','09:41'][index]}</time>
+      <time>{['14:32','11:47','11:30','10:58','10:21','09:58','09:41','09:05'][index]}</time>
       <b className={direction}>➜</b><span>{player}</span><strong>{fee}</strong><em>{manager}</em>
     </div>)}
     <Link className="widgetMore" to="/artikel/kimmich-eroeffnet-transferpoker">Alle Transfers →</Link>
@@ -282,7 +287,7 @@ function Reisen() {
 function Redaktion() {
   return <Layout><section className="page">
     <PageHero eyebrow="Die Redaktion" title="Drei Stimmen. Ein Magazin." text="Ingo erzählt die großen Geschichten, Werner zählt jeden Fehler und Franz macht daraus eine Schlagzeile." stat={{value:"3",label:"Redakteure"}} />
-    <img className="teamImage" src="./images/redaktion.png" alt="Ingo, Werner und Franz" />
+    <img className="teamImage" src={`${import.meta.env.BASE_URL}images/redaktion.png`} alt="Ingo, Werner und Franz" />
     <div className="editorGrid">
       <div><h2>Ingo</h2><p>Chefredakteur, ehemaliger Fußballer und Freund der langen Geschichte. Analytisch, humorvoll und mit leichter Sympathie für Außenseiter.</p></div>
       <div><h2>Werner</h2><p>Ehemaliger Schiedsrichter. Analyse, Noten, Zahlen und die gelegentliche Spitze bei schwacher Leistung.</p></div>
