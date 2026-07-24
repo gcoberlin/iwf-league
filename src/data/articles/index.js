@@ -1,6 +1,7 @@
 import { legacyArticles } from './legacy'
 import kimmichTransferArticle from './2026-07-22-kimmich'
 import brownTransferArticle from './2026-07-22-brown'
+import powerRankingArticle from './2026-07-24-power-ranking'
 
 const legacyWithDates = legacyArticles.map((article, index) => ({
   ...article,
@@ -14,5 +15,5 @@ const previousArticles = [
   ...legacyWithDates
 ]
 
-export const articles = [brownTransferArticle, ...previousArticles]
+export const articles = [powerRankingArticle, brownTransferArticle, ...previousArticles]
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))

@@ -18,16 +18,16 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Svensson', '3,80 Mio. €', 'Luca', 'in'],
-  ['Kobel', '2,78 Mio. €', 'Jose', 'in'],
-  ['Manzambi', '5,05 Mio. €', 'Matthias', 'out'],
-  ['Kompolya', '2,35 Mio. €', 'Sebastian', 'in'],
-  ['Vagnoman', '1,46 Mio. €', 'Sebastian', 'in']
+  ['Kimmich', '17,10 Mio. €', 'Luca', 'in'],
+  ['Caci', '2,03 Mio. €', 'Sebastian', 'in'],
+  ['G. Mensah', '2,03 Mio. €', 'Henning', 'in'],
+  ['Beste', 'verkauft', 'Greg', 'out'],
+  ['Mbuku', 'verkauft', 'Jose', 'out']
 ]
 
 const marketPlayers = [
-  ['Joshua Kimmich', '13,15 Mio. €'], ['Inácio', '3,00 Mio. €'],
-  ['Caci', '2,03 Mio. €'], ['Gruber', '1,54 Mio. €'], ['Kauã Santos', '1,30 Mio. €']
+  ['Joshua Kimmich', '12,93 Mio. €'], ['Nusa', '7,33 Mio. €'],
+  ['Brown', '7,35 Mio. €'], ['F. Nmecha', '6,76 Mio. €'], ['Gnabry', '6,07 Mio. €']
 ]
 
 function Logo() {
@@ -80,12 +80,12 @@ function Layout({ children }) {
       <b><i /> BREAKING</b>
       <div className="breakingViewport">
         <div className="breakingTrack">
-          <span>Kimmich für 13,15 Mio. auf dem Markt</span>
-          <span>Jose verpflichtet Kobel</span>
-          <span>Sebastian erhöht die Schlagzahl</span>
-          <span aria-hidden="true">Kimmich für 13,15 Mio. auf dem Markt</span>
-          <span aria-hidden="true">Jose verpflichtet Kobel</span>
-          <span aria-hidden="true">Sebastian erhöht die Schlagzahl</span>
+          <span>Luca landet Kimmich für 17,10 Mio.</span>
+          <span>Power Ranking #1 ist online</span>
+          <span>Noch über 30 Tage bis zum Ligastart</span>
+          <span aria-hidden="true">Luca landet Kimmich für 17,10 Mio.</span>
+          <span aria-hidden="true">Power Ranking #1 ist online</span>
+          <span aria-hidden="true">Noch über 30 Tage bis zum Ligastart</span>
         </div>
       </div>
     </div>
@@ -196,6 +196,7 @@ function Manager() {
           <div><strong>{m.value}</strong><span>Kaderwert</span></div>
           <div><strong>{m.grade}</strong><span>Redaktionsnote</span></div>
           <div><strong>#{m.rank}</strong><span>Power Ranking</span></div>
+          <div className="scoreTrend"><strong>{m.trend}</strong><span>{m.trendText}</span></div>
         </div>
       </header>
 
@@ -207,8 +208,15 @@ function Manager() {
           <blockquote><b>Running Gag</b>{m.runningGag}</blockquote>
         </section>
 
+        <section className="managerStatusStrip">
+          <div><span>Aktuelle Form</span><strong>{m.trend} {m.trendText}</strong></div>
+          <div><span>Letzter Transfer</span><strong>{m.lastTransfer}</strong></div>
+          <div><span>Meisterchance</span><strong>{m.chance}</strong></div>
+          <div><span>Redaktionsstatus</span><strong>{m.status}</strong></div>
+        </section>
+
         <section className="managerAnalysis">
-          <div className="analysisBlock keyBlock"><span>Schlüsselspieler</span><strong>{m.key}</strong></div>
+          <div className="analysisBlock keyBlock"><span>Schlüsselspieler</span><strong>{m.keys.join(" · ")}</strong></div>
           <div className="analysisBlock"><span>Stärke</span><p>{m.strength}</p></div>
           <div className="analysisBlock weaknessBlock"><span>Schwäche</span><p>{m.weakness}</p></div>
         </section>
