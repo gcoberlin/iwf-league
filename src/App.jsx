@@ -175,7 +175,6 @@ function Saisoncheck() {
 }
 
 function Manager() {
-  const initials = name => name.slice(0, 2).toUpperCase()
   const verdictClass = verdict => verdict.toLowerCase().replace(/[^a-z0-9]+/g, '-')
   return <Layout><section className="page managerPage">
     <PageHero eyebrow="Die zehn Manager" title="Zehn Charaktere. Ein Titel." text="Kader, Stärken, Schwächen und die Prognosen der ANSTOSS-Redaktion – mit all den Eigenheiten, die diese Liga seit Jahren prägen." stat={{value:"10",label:"Manager"}} />
@@ -184,19 +183,14 @@ function Manager() {
       {managers.map(m => <a href={`#${m.name.toLowerCase()}`} key={m.name}><b>{String(m.rank).padStart(2,'0')}</b><span>{m.name}</span></a>)}
     </nav>
 
-    <div className="managerProfiles">{managers.map(m => <article className={`managerProfileV4 ${m.name === 'Sebastian' ? 'managerProfileFeatured' : ''}`} id={m.name.toLowerCase()} key={m.name}>
+    <div className="managerProfiles">{managers.map(m => <article className="managerProfileV4" id={m.name.toLowerCase()} key={m.name}>
       <header className="managerCover" data-rank={String(m.rank).padStart(2,'0')}>
-        <div className={`managerPortrait ${m.name === 'Sebastian' ? 'managerPortraitImage' : ''}`} aria-hidden="true">
-          {m.name === 'Sebastian' ? <img src="./images/managers/sebastian.svg" alt="" /> : <span>{initials(m.name)}</span>}
-          <small>ANSTOSS IWF</small>
-        </div>
+        <div className="managerPortrait"><img src={m.image} alt={`${m.name} – ${m.profileTitle}`} /><small>ANSTOSS IWF</small></div>
         <div className="managerCoverCopy">
           <span className="rankLabel">POWER RANKING #{m.rank}</span>
           <h2>{m.name}</h2>
           <p>{m.team}</p>
-          <div className="managerTags"><span>{m.profileTitle}</span><span className={`verdict verdict-${verdictClass(m.verdict)}`}>{m.verdict}</span></div>
-          {m.name === 'Sebastian' && <div className="sebastianBadges" aria-label="Sebastians Auszeichnungen"><span>🏆 Rekordmeister</span><span>💻 Laptoptrainer</span><span>📊 Datenfreak</span><span>🔴 Bayern</span></div>}
-          {m.name === 'Sebastian' && <blockquote className="managerMotto">„Daten schlagen Bauchgefühl.“</blockquote>}
+          <div className="managerTags"><span>{m.profileTitle}</span><span className={`verdict verdict-${verdictClass(m.verdict)}`}>{m.verdict}</span></div><blockquote className="managerClaim">„{m.claim}“</blockquote>
         </div>
         <div className="managerScoreboard">
           <div><strong>{m.value}</strong><span>Kaderwert</span></div>

@@ -307,15 +307,10 @@ img,svg,video{max-width:100%;height:auto}
   .managerCoverCopy h2{font-size:44px!important}
 }
 
-/* v3.6 – Sebastian-Prototyp: Evolution statt Redesign */
-.managerProfileFeatured{border-color:#69c20c;box-shadow:0 24px 70px rgba(0,0,0,.35),0 0 0 1px rgba(105,194,12,.22)}
-.managerProfileFeatured .managerCover{background:radial-gradient(circle at 14% 30%,rgba(105,194,12,.31),transparent 34%),linear-gradient(115deg,#1d2a19 0,#0b0f0b 55%,#030503 100%)}
-.managerProfileFeatured .managerCover:before{background:repeating-linear-gradient(110deg,transparent 0 52px,rgba(105,194,12,.035) 53px 54px)}
-.managerPortraitImage{padding:0;justify-content:flex-end;background:#0c120b;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%)}
-.managerPortraitImage:before{display:none}
-.managerPortraitImage img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-.managerPortraitImage small{left:50%;transform:translateX(-50%);padding:6px 10px;background:rgba(4,8,4,.82);border:1px solid rgba(105,194,12,.45);white-space:nowrap}
-.sebastianBadges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.sebastianBadges span{padding:7px 10px;border-radius:999px;background:rgba(105,194,12,.12);border:1px solid rgba(105,194,12,.45);color:#e9f5df;font-size:11px;font-weight:900;letter-spacing:.2px}
-.managerMotto{margin:18px 0 0;padding:0 0 0 15px;border-left:4px solid #69c20c;color:#fff;font-family:Georgia,serif;font-size:20px;font-style:italic;line-height:1.35}
-@media(max-width:760px){.managerPortraitImage{height:300px}.sebastianBadges{margin-top:12px}.managerMotto{font-size:18px}}
+/* v3.6 – illustrierte Managerprofile */
+.managerPortrait{padding:0;justify-content:flex-end;background:radial-gradient(circle at 50% 24%,rgba(105,194,12,.22),transparent 46%),linear-gradient(145deg,#233020,#0d150c)}
+.managerPortrait:before{width:190px;height:190px;border-width:20px;top:22px}
+.managerPortrait img{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 16px 16px rgba(0,0,0,.38))}
+.managerPortrait small{z-index:3;padding:5px 9px;background:rgba(4,8,4,.78);border:1px solid rgba(105,194,12,.35)}
+.managerClaim{max-width:680px;margin:18px 0 0;padding:12px 15px;border-left:3px solid var(--iwf-green);background:rgba(8,12,8,.7);color:#eef4eb;font-size:14px;font-weight:750;line-height:1.45}
+@media(max-width:760px){.managerPortrait{height:250px}.managerPortrait img{max-height:245px}.managerClaim{margin-top:14px}}
