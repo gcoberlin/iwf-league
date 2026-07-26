@@ -20,3 +20,66 @@
 
 @media(max-width:950px){.magClaim b{display:none}.magClaim{grid-template-columns:1fr 1fr}.magLeadGrid{grid-template-columns:1fr}.magHero{height:570px}.magHeroCopy{width:min(650px,78%)}.magSidebar{display:grid;grid-template-columns:1fr 1fr}.marketCenter{grid-row:span 2}.magDashboard,.magBottomGrid{grid-template-columns:1fr 1fr}.quoteLarge{grid-column:span 2}.editorGridNew{grid-template-columns:1fr}.editorCardNew{border-right:0;border-bottom:1px solid var(--line);height:330px}}
 @media(max-width:650px){.magClaim{padding:9px 12px}.magClaim em{text-align:right;font-size:9px}.magBrandRow{padding:14px 12px}.magSeal{width:62px;height:62px}.magSeal strong{font-size:20px}.magBrand{font-size:48px;letter-spacing:-4px}.magNav{justify-content:flex-start;gap:22px}.magBreaking span{font-size:10px}.magPage{padding:7px}.magHero{height:560px}.magHeroCopy{left:18px;right:18px;bottom:20px;width:auto}.magHeroCopy h1{font-size:46px;letter-spacing:-2px}.magHeroCopy h2{font-size:18px}.magHeroCopy p{font-size:14px}.heroActions{align-items:flex-start;flex-direction:column}.magStoryGrid,.magSidebar,.magDashboard,.magBottomGrid{grid-template-columns:1fr}.marketCenter,.quoteLarge{grid-column:auto;grid-row:auto}.storyVisual{height:210px}.editorCardNew{height:340px}.transferLine{grid-template-columns:44px 58px 1fr}.transferLine strong{display:none}.magFooter{grid-template-columns:1fr;text-align:center;gap:12px}.magFooter nav{justify-content:center}}
+
+
+/* FINAL: Transfermarkt – konsistente Typografie und gut lesbare Panels */
+.transferMarketPage{font-family:Inter,Arial,sans-serif}
+.transferMarketPage .pageHeroCopy h1,
+.transferMarketPage .tmPanel h2,
+.transferMarketPage .tmEditorial h2,
+.transferMarketPage .tmRoadmap h2{
+  font-family:'Archivo Black',Impact,sans-serif;
+  letter-spacing:-1.5px;
+}
+.transferMarketPage .tmPanel{
+  background:#080d08!important;
+  color:#f4f7f1!important;
+  border:1px solid #38552f!important;
+  box-shadow:none!important;
+}
+.transferMarketPage .tmPanel header{
+  background:#0b110a!important;
+  color:#fff!important;
+  border-bottom:1px solid #38552f!important;
+}
+.transferMarketPage .tmPanel header small{color:#9be53d!important}
+.transferMarketPage .tmPanel header>span{
+  background:#69c20c!important;
+  color:#071007!important;
+}
+.transferMarketPage .tmRows article{
+  background:#080d08!important;
+  color:#f4f7f1!important;
+  border-bottom:1px solid #263a22!important;
+}
+.transferMarketPage .tmRows article:hover{background:#10190e!important}
+.transferMarketPage .tmRows article>b{color:#9da79a!important}
+.transferMarketPage .tmRows article strong{color:#fff!important;font-weight:900}
+.transferMarketPage .tmRows article small{color:#a7b0a3!important}
+.transferMarketPage .tmRows article>span{color:#e7ece4!important;font-weight:800}
+.transferMarketPage .tmRows article em.up{color:#9be53d!important}
+.transferMarketPage .tmRows article em.down{color:#ff5148!important}
+.transferMarketPage .tmStatus{
+  background:#0b110a!important;
+  color:#dce4d8!important;
+  border-left:5px solid #69c20c!important;
+}
+.transferMarketPage .tmStatus b{color:#9be53d!important}
+.transferMarketPage .tmEditorial,
+.transferMarketPage .tmRoadmap{
+  background:#0a0f09!important;
+  color:#f4f7f1!important;
+  border-color:#38552f!important;
+}
+.transferMarketPage .tmEditorial p,
+.transferMarketPage .tmRoadmap p{color:#bcc6b8!important}
+.marketEmpty{
+  padding:18px 15px 20px;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  color:#aab4a6;
+  border-bottom:1px solid #263a22;
+}
+.marketEmpty b{color:#fff;font-size:13px}
+.marketEmpty span{font-size:11px;line-height:1.45}

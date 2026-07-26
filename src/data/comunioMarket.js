@@ -1,33 +1,86 @@
+// Zentrale, konsistente Markt-Datenquelle für ANSTOSS.
+//
+// Wichtig:
+// - Jeder Spielerwert steht nur EINMAL in `players`.
+// - Gewinner, Verlierer und Rankings greifen auf dieselben Spielerobjekte zu.
+// - Dadurch kann derselbe Spieler nicht mehr gleichzeitig mit zwei Marktwerten erscheinen.
+// - Bis eine belastbare öffentliche Schnittstelle angebunden ist, werden ausschließlich
+//   redaktionell geprüfte Werte angezeigt.
+
+const players = {
+  kimmich: {
+    name: 'Joshua Kimmich',
+    shortName: 'Kimmich',
+    club: 'FC Bayern',
+    value: '12,93 Mio. €'
+  },
+  brown: {
+    name: 'Brown',
+    shortName: 'Brown',
+    club: 'Eintracht Frankfurt',
+    value: '7,35 Mio. €'
+  },
+  nusa: {
+    name: 'Nusa',
+    shortName: 'Nusa',
+    club: 'RB Leipzig',
+    value: '7,33 Mio. €'
+  },
+  nmecha: {
+    name: 'F. Nmecha',
+    shortName: 'F. Nmecha',
+    club: 'Borussia Dortmund',
+    value: '6,76 Mio. €'
+  },
+  gnabry: {
+    name: 'Gnabry',
+    shortName: 'Gnabry',
+    club: 'FC Bayern',
+    value: '6,07 Mio. €'
+  }
+}
+
+const withChange = (player, change) => ({
+  name: player.shortName ?? player.name,
+  club: player.club,
+  change,
+  value: player.value
+})
+
+const ranked = player => ({
+  name: player.name,
+  club: player.club,
+  value: player.value
+})
+
 export const comunioMarket = {
   updatedAt: '26.07.2026 · 08:00 Uhr',
+  dataStatus: 'Redaktionell geprüft',
+
   winners: [
-    { name: 'Nusa', club: 'RB Leipzig', change: '+1,34 Mio. €', value: '18,90 Mio. €' },
-    { name: 'Brown', club: 'Eintracht Frankfurt', change: '+0,92 Mio. €', value: '7,35 Mio. €' },
-    { name: 'F. Nmecha', club: 'Borussia Dortmund', change: '+0,71 Mio. €', value: '6,76 Mio. €' },
-    { name: 'Gnabry', club: 'FC Bayern', change: '+0,58 Mio. €', value: '6,07 Mio. €' },
-    { name: 'Kimmich', club: 'FC Bayern', change: '+0,44 Mio. €', value: '12,93 Mio. €' }
+    withChange(players.nusa, '+1,34 Mio. €'),
+    withChange(players.brown, '+0,92 Mio. €'),
+    withChange(players.nmecha, '+0,71 Mio. €'),
+    withChange(players.gnabry, '+0,58 Mio. €'),
+    withChange(players.kimmich, '+0,44 Mio. €')
   ],
-  losers: [
-    { name: 'Startdaten folgen', club: 'Automatisierung in Version 1.2', change: '–', value: '–' },
-    { name: 'Startdaten folgen', club: 'Automatisierung in Version 1.2', change: '–', value: '–' },
-    { name: 'Startdaten folgen', club: 'Automatisierung in Version 1.2', change: '–', value: '–' },
-    { name: 'Startdaten folgen', club: 'Automatisierung in Version 1.2', change: '–', value: '–' },
-    { name: 'Startdaten folgen', club: 'Automatisierung in Version 1.2', change: '–', value: '–' }
-  ],
+
+  // Keine Fantasiedaten: Solange keine geprüften Verliererdaten vorliegen,
+  // bleibt dieser Bereich bewusst leer.
+  losers: [],
+
   mostExpensive: [
-    { name: 'Joshua Kimmich', club: 'FC Bayern', value: '12,93 Mio. €' },
-    { name: 'Brown', club: 'Eintracht Frankfurt', value: '7,35 Mio. €' },
-    { name: 'Nusa', club: 'RB Leipzig', value: '7,33 Mio. €' },
-    { name: 'F. Nmecha', club: 'Borussia Dortmund', value: '6,76 Mio. €' },
-    { name: 'Gnabry', club: 'FC Bayern', value: '6,07 Mio. €' }
+    ranked(players.kimmich),
+    ranked(players.brown),
+    ranked(players.nusa),
+    ranked(players.nmecha),
+    ranked(players.gnabry)
   ],
-  pointsCollectors: [
-    { name: 'Saisonstart ausstehend', club: 'Punkte erscheinen ab dem 1. Spieltag', value: '0 Pkt.' },
-    { name: 'Saisonstart ausstehend', club: 'Punkte erscheinen ab dem 1. Spieltag', value: '0 Pkt.' },
-    { name: 'Saisonstart ausstehend', club: 'Punkte erscheinen ab dem 1. Spieltag', value: '0 Pkt.' },
-    { name: 'Saisonstart ausstehend', club: 'Punkte erscheinen ab dem 1. Spieltag', value: '0 Pkt.' },
-    { name: 'Saisonstart ausstehend', club: 'Punkte erscheinen ab dem 1. Spieltag', value: '0 Pkt.' }
-  ],
+
+  // Die Saison hat noch nicht begonnen. Deshalb werden noch keine Spieler
+  // mit erfundenen Punktwerten ausgegeben.
+  pointsCollectors: [],
+
   editorial: {
     editor: 'Werner',
     role: 'Analyse',

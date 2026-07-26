@@ -55,8 +55,10 @@ function MarketCenter() {
     <h3>Gewinner des Tages</h3>
     {winners.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="up">{player.change}</em></div>)}
     <h3 className="lossTitle">Verlierer des Tages</h3>
-    {losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)}
-    <small className="dataState">Stand: {comunioMarket.updatedAt} · redaktionelle Startdaten</small>
+    {losers.length > 0
+      ? losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)
+      : <div className="marketEmpty"><b>Noch keine geprüften Daten</b><span>Hier erscheinen erst Werte, sobald sie verlässlich vorliegen.</span></div>}
+    <small className="dataState">Stand: {comunioMarket.updatedAt} · {comunioMarket.dataStatus}</small>
   </section>
 }
 
