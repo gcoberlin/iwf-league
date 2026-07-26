@@ -3,7 +3,6 @@ import App from './App'
 import { articles } from './data/articles/index.js'
 import { weeklyQuotes } from './data/quotes'
 import { comunioMarket } from './data/comunioMarket'
-import { managers } from './data/managers'
 import TravelCountdown from './components/widgets/TravelCountdown'
 import './magazine-home.css'
 
@@ -21,8 +20,11 @@ const news = [
 ]
 
 const rankings = [
-  ['Sebastian', '34 %', '↑'], ['Jose', '26 %', '↑'], ['Luca', '18 %', '↓'],
-  ['Henning', '10 %', '–'], ['Greg', '5 %', '↓']
+  ['Sebastian', '34 %', '↑', 5],
+  ['Jose', '26 %', '↑', 4],
+  ['Luca', '18 %', '↓', 4],
+  ['Henning', '10 %', '–', 3],
+  ['Greg', '5 %', '↓', 2]
 ]
 
 function Header() {
@@ -37,7 +39,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><span>Luca landet Kimmich · Power Ranking online · Countdown Rom läuft · Freitag ist Redaktionsschluss</span></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Luca landet Kimmich · Power Ranking online · Countdown Rom läuft · Freitag ist Redaktionsschluss ·</span></div></div>
   </>
 }
 
@@ -72,13 +74,21 @@ function HomeMagazine() {
           <article className="magHero">
             <img src={top.hero} alt="ANSTOSS Topstory" />
             <div className="magHeroShade" />
-            <div className="magHeroCopy"><span>Top Story</span><h1>{top.title}</h1><p>{top.excerpt}</p><Link to={`/artikel/${top.slug}`}>Artikel lesen →</Link></div>
+            <div className="magHeroCopy">
+              <span>Top Story</span>
+              <h1>Die Liga ist eröffnet</h1>
+              <h2>{top.title}</h2>
+              <p>{top.excerpt}</p>
+              <div className="heroActions"><Link to={`/artikel/${top.slug}`}>Artikel lesen →</Link><small>{top.author} · {top.date} · {top.readTime}</small></div>
+            </div>
           </article>
 
           <div className="magStoryGrid">
             {cards.map((article, index) => <Link className="magStory" to={`/artikel/${article.slug}`} key={article.slug}>
-              <div className={`storyVisual storyVisual${index + 1}`}><span>{article.category}</span></div>
-              <h3>{article.title}</h3><b>Mehr lesen →</b>
+              <div className="storyVisual" style={{backgroundImage:`linear-gradient(180deg,transparent 15%,rgba(0,0,0,.92)),url(${article.hero})`}}>
+                <span>{article.category}</span>
+              </div>
+              <div className="storyCopy"><h3>{article.title}</h3><p>{article.excerpt}</p><b>Mehr lesen →</b></div>
             </Link>)}
           </div>
 
@@ -86,8 +96,8 @@ function HomeMagazine() {
             <PanelTitle link="/redaktion">Unsere Redakteure</PanelTitle>
             <div className="editorGridNew">
               {[['Werner', 'Analysiert', 'Der Markt läuft heiß – aber wer handelt klug und wer zahlt drauf?'], ['Ingo', 'Erzählt', 'Geschichten aus der Liga, die nur das Leben schreibt.'], ['Franz', 'Kommentiert', 'Boulevard, Gerüchte und die Wahrheit irgendwo dazwischen.']].map(([name, role, text], index) => <Link to="/redaktion" className="editorCardNew" key={name}>
-                <div className={`editorPhoto editorPhoto${index + 1}`} style={{backgroundImage:`linear-gradient(90deg,rgba(4,7,4,.20),rgba(4,7,4,.92)),url(${editorImage})`}} />
-                <div><h3>{name}<br/><span>{role}</span></h3><p>{text}</p><b>Zur Redaktion →</b></div>
+                <div className={`editorPhoto editorPhoto${index + 1}`} style={{backgroundImage:`linear-gradient(180deg,transparent 25%,rgba(3,5,3,.96)),url(${editorImage})`}} />
+                <div className="editorText"><h3>{name}<span>{role}</span></h3><p>{text}</p><b>Zur Redaktion →</b></div>
               </Link>)}
             </div>
           </section>
@@ -101,9 +111,9 @@ function HomeMagazine() {
       </div>
 
       <div className="magDashboard">
-        <section className="magPanel"><PanelTitle link="/saisoncheck">🏆 Power Ranking</PanelTitle>{rankings.map(([name, chance, trend], index) => <div className="rankLine" key={name}><b>{index + 1}</b><span>{name}</span><em className={trend === '↓' ? 'down' : 'up'}>{trend}</em><strong>{chance}</strong></div>)}</section>
-        <section className="magPanel"><PanelTitle link="/manager">☺ Manager-Barometer</PanelTitle>{['Jose','Sebastian','Luca','Henning','Greg'].map((name, index) => <div className="barometerLine" key={name}><span>{['😎','🔥','🙂','🤔','🤯'][index]} {name}</span><i><b style={{width:`${88-index*14}%`}} /></i></div>)}</section>
-        <section className="magPanel quoteLarge"><PanelTitle>Zitat der Woche</PanelTitle><blockquote>„{quote.quote}“</blockquote><b>— {quote.speaker}</b></section>
+        <section className="magPanel rankingPanel"><PanelTitle link="/saisoncheck">🏆 Power Ranking</PanelTitle>{rankings.map(([name, chance, trend, stars], index) => <div className="rankCard" key={name}><b>#{index + 1}</b><div><strong>{name}</strong><span>{'★'.repeat(stars)}{'☆'.repeat(5-stars)}</span></div><em className={trend === '↓' ? 'down' : 'up'}>{trend}</em><small>{chance}</small></div>)}</section>
+        <section className="magPanel barometerPanel"><PanelTitle link="/manager">☺ Manager-Barometer</PanelTitle>{['Jose','Sebastian','Luca','Henning','Greg'].map((name, index) => <div className="barometerLine" key={name}><span>{['😎','🔥','🙂','🤔','🤯'][index]} <b>{name}</b></span><i><b style={{width:`${88-index*14}%`}} /></i></div>)}</section>
+        <section className="magPanel quoteLarge"><PanelTitle>Zitat der Woche</PanelTitle><div className="quoteMark">“</div><blockquote>„{quote.quote}“</blockquote><b>— {quote.speaker}</b></section>
       </div>
 
       <div className="magBottomGrid">
