@@ -181,11 +181,24 @@ function Saisoncheck() {
 
 function Manager() {
   const verdictClass = verdict => verdict.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+    const scrollToManager = name => {
+    const target = document.getElementById(name.toLowerCase())
+    target?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
   return <Layout><section className="page managerPage">
     <PageHero eyebrow="Die zehn Manager" title="Zehn Charaktere. Ein Titel." text="Kader, Stärken, Schwächen und die Prognosen der ANSTOSS-Redaktion – mit all den Eigenheiten, die diese Liga seit Jahren prägen." stat={{value:"10",label:"Manager"}} />
 
     <nav className="managerIndex" aria-label="Manager Schnellnavigation">
-      {managers.map(m => <a href={`#${m.name.toLowerCase()}`} key={m.name}><b>{String(m.rank).padStart(2,'0')}</b><span>{m.name}</span></a>)}
+      {managers.map(m => (
+  <button
+    type="button"
+    onClick={() => scrollToManager(m.name)}
+    key={m.name}
+  >
+    <b>{String(m.rank).padStart(2,'0')}</b>
+    <span>{m.name}</span>
+  </button>
+))}
     </nav>
 
     <div className="managerProfiles">{managers.map(m => <article className="managerProfileV4" id={m.name.toLowerCase()} key={m.name}>
