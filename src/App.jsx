@@ -7,12 +7,14 @@ import { managers } from './data/managers'
 import { weeklyQuotes } from './data/quotes'
 import { seasons, allTimeTable, titleRanking, records } from './data/history'
 import { trips, summerIwf } from './data/trips'
+import { comunioMarket } from './data/comunioMarket'
 import BundesligaCountdown from './components/widgets/BundesligaCountdown'
 import BundesligaMatchday from './components/widgets/BundesligaMatchday'
 import TravelCountdown from './components/widgets/TravelCountdown'
 
 const navItems = [
   ['/', 'Home'], ['/magazin', 'Magazin'], ['/manager', 'Manager'],
+  ['/comunio-markt', 'Transfermarkt'],
   ['/hall-of-fame', 'Hall of Fame'], ['/saisonarchiv', 'Saisonarchiv'],
   ['/reisen', 'Reisen'], ['/redaktion', 'Redaktion'], ['/ueber-die-iwf', 'IWF']
 ]
@@ -179,6 +181,52 @@ function Saisoncheck() {
   </section></Layout>
 }
 
+
+function MarketRanking({ title, icon, items, direction }) {
+  return <section className="tmPanel">
+    <header><span>{icon}</span><div><small>Comunio Marktcheck</small><h2>{title}</h2></div></header>
+    <div className="tmRows">
+      {items.map((player,index)=><article key={`${player.name}-${index}`}>
+        <b>{index+1}</b>
+        <div><strong>{player.name}</strong><small>{player.club}</small></div>
+        {player.change && <em className={direction}>{player.change}</em>}
+        <span>{player.value}</span>
+      </article>)}
+    </div>
+  </section>
+}
+
+function ComunioMarkt() {
+  const { winners, losers, mostExpensive, pointsCollectors, editorial, updatedAt } = comunioMarket
+  return <Layout><section className="page transferMarketPage">
+    <PageHero
+      eyebrow="Live-Center · Comunio"
+      title="Der Markt schläft nie."
+      text="Gewinner, Verlierer, Preistreiber und die tägliche Einordnung der ANSTOSS-Redaktion. Noch mit redaktionellen Startdaten – bald automatisch aktualisiert."
+      stat={{value:"LIVE",label:`Stand: ${updatedAt}`}}
+    />
+
+    <div className="tmStatus"><b>ANSTOSS 1.1</b><span>Der Transfermarkt ist jetzt vollständig in Magazin, Navigation und Seitendesign integriert.</span></div>
+
+    <div className="tmGrid">
+      <MarketRanking title="Gewinner des Tages" icon="↗" items={winners} direction="up" />
+      <MarketRanking title="Verlierer des Tages" icon="↘" items={losers} direction="down" />
+      <MarketRanking title="Teuerste Spieler" icon="€" items={mostExpensive} />
+      <MarketRanking title="Punktesammler" icon="★" items={pointsCollectors} />
+    </div>
+
+    <section className="tmEditorial">
+      <div className="tmEditorBadge"><b>{editorial.editor.slice(0,1)}</b><span>{editorial.editor}<small>{editorial.role}</small></span></div>
+      <div><span>IWF-REDAKTION · KOMMENTAR DES TAGES</span><h2>{editorial.headline}</h2><blockquote>„{editorial.text}“</blockquote><p>{editorial.managerAngle}</p></div>
+    </section>
+
+    <section className="tmRoadmap">
+      <span>Nächster Schritt</span><h2>Tagesdaten statt Handarbeit</h2>
+      <p>In Version 1.2 liest diese Seite ihre Inhalte aus einer öffentlichen JSON-Datei. Danach kann ein Cloudflare-Job Marktwerte und Redaktionstext automatisch aktualisieren.</p>
+    </section>
+  </section></Layout>
+}
+
 function Manager() {
   const verdictClass = verdict => verdict.toLowerCase().replace(/[^a-z0-9]+/g, '-')
     const scrollToManager = name => {
@@ -329,6 +377,7 @@ export default function App() {
     <Route path="/artikel/:slug" element={<Article />} />
     <Route path="/saisoncheck" element={<Saisoncheck />} />
     <Route path="/manager" element={<Manager />} />
+    <Route path="/comunio-markt" element={<ComunioMarkt />} />
     <Route path="/hall-of-fame" element={<HallOfFame />} />
     <Route path="/saisonarchiv" element={<Saisonarchiv />} />
     <Route path="/reisen" element={<Reisen />} />
