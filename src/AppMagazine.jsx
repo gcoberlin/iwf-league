@@ -21,7 +21,6 @@ const rankings = fridayEdition.rosterValues.slice(0, 5).map(item => [
   item.trend,
   item.stars
 ])
-]
 
 function Header() {
   return <>
