@@ -1,0 +1,23 @@
+/* Unterseiten-Update 31.07.2026 */
+.managerPage .pageHeroCopy p::after{
+  content:" Stand 31.07.2026 – alle Bewertungen sind Momentaufnahmen.";
+  color:#9be53d;
+  font-weight:800;
+}
+.managerProfileV4 .playerChips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.managerProfileV4 .playerChips span{
+  background:#0b110a;
+  color:#f4f7f1;
+  border:1px solid #35512f;
+  padding:8px 10px;
+}
+.managerProfileV4 .playerChips span.keyChip{
+  background:#69c20c;
+  color:#071007;
+  border-color:#69c20c;
+  font-weight:900;
+}

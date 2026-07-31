@@ -1,25 +1,176 @@
-const managerImage = (filename) => `${import.meta.env.BASE_URL}images/managers/${filename}`
+const managerImage = filename => `${import.meta.env.BASE_URL}images/managers/${filename}`
+
+const seasonNote = 'Stand 31.07.2026 – noch rund vier Wochen bis zum Bundesliga-Start. Alle Bewertungen sind Momentaufnahmen.'
 
 export const managers = [
-{
-name:'Luca',team:'LucaCosta',profileTitle:'Der kreative Italo',claim:'Ideen statt Brechstange – und diesmal schon früh ein echtes Statement.',image:managerImage('luca.png'),profileText:'Luca gewann den ersten Titel der IWF-Geschichte und gehört damit zur Gründungsmythologie. Mehr als 30 Tage vor dem Saisonstart hat er den derzeit teuersten und vollständigsten Kader gebaut. Kimmich gibt dem Team einen Fixpunkt, Nusa bringt Dynamik und Ache Torgefahr. Trotzdem gilt: Der Markt ist dauerhaft offen und die Vorbereitung hat gerade erst begonnen.',runningGag:'Der dritte Platz verfolgt ihn treu – diesmal will er ihm davonlaufen.',rank:1,value:'44,82 Mio.',grade:'1,7',verdict:'Früher Favorit',trend:'↑',trendText:'stark steigend',lastTransfer:'Kimmich · 17,10 Mio.',chance:'20 %',status:'Kader bereits konkurrenzfähig, aber noch lange nicht fertig.',
-players:['Zetterer','Kauã Santos','Querfeld','Svensson','Kübler','Theate','Ogbus','Kimmich','Remberg','Čović','Schallenberg','R. Müller','Nusa','Ache','Inácio','Silas'],keys:['Kimmich','Nusa','Ache'],key:'Kimmich',strength:'Mit Kimmich, Nusa und Ache besitzt Luca die stärkste Spitzenachse der Liga. Auch Querfeld, Svensson und Theate geben dem Kader Substanz.',weakness:'Ein Teil der Breite besteht noch aus günstigen Wetten. Hinter den Topnamen muss sich in der Vorbereitung zeigen, wer wirklich Minuten bekommt.',ingo:'Der kreative Italo hat als Erster einen Kader gebaut, der schon heute nach Spieltag aussieht. Doch ein Julisieg ist noch keine Meisterschaft.',werner:'LigaInsider führt Nusa in Leipzig mit hoher Einsatzquote. Kimmich ist ohnehin der Fixpunkt. Die Startelfquote ist hoch, die Abhängigkeit von wenigen Premiumspielern aber ebenfalls.',franz:'KIMMICH-KNALL! Luca führt die Liga an – mehr als 30 Tage vor dem ersten Punkt.'},
-{
-name:'Henning',team:'Arsene W.',profileTitle:'Der Gastgeber',claim:'Vater der Sommer-IWF – und plötzlich auch Gastgeber im Titelrennen.',image:managerImage('henning.png'),profileText:'Henning ist einer der aktivsten Antreiber der Liga. Sein Kader ist klein, aber auffällig zielgerichtet: Baumann, Nmecha, Prömel, Poku und Larsson bilden ein belastbares Gerüst. Noch fehlt Breite, doch bis zum Saisonstart bleibt reichlich Zeit.',runningGag:'Wenn Henning etwas ankündigt, beginnt entweder ein Transfer oder eine Grundsatzdebatte.',rank:2,value:'24,79 Mio.',grade:'2,0',verdict:'Top 3',trend:'↑',trendText:'positiv',lastTransfer:'G. Mensah · 2,03 Mio.',chance:'14 %',status:'Qualität vor Quantität – zwei Baustellen bleiben offen.',players:['Baumann','Widmer','Can','G. Mensah','F. Nmecha','Prömel','Poku','Larsson','Hong','Ben Seghir'],keys:['F. Nmecha','Prömel','Baumann'],key:'F. Nmecha',strength:'Ein starkes Mittelfeld und ein verlässlicher Torwart. Nmecha, Prömel und Poku können den Kader tragen.',weakness:'Nur zehn Spieler und aktuell kaum Sturm-Tiefe. Vor dem ersten Spieltag muss Henning quantitativ nachlegen.',ingo:'Henning hat noch keinen fertigen Kader, aber schon eine erkennbare Idee. Das ist im Juli mehr wert als bloße Masse.',werner:'Prömel steckt laut LigaInsider in Stuttgart in einem hochklassigen Konkurrenzkampf. Die Qualität stimmt, sichere Einsatzminuten sind noch nicht überall garantiert.',franz:'KLEIN, ABER GEMEIN! Hennings Mini-Kader riecht nach Großangriff.'},
-{
-name:'Tomi',team:'VADDERN 79',profileTitle:'Der Ausredenkönig',claim:'Auf Reisen selten dabei, auf dem Transfermarkt schon mitten im Geschehen.',image:managerImage('tomi.png'),profileText:'Tomi baut gern um große Namen. Brown und Doan geben seinem Kader echte Klasse, Bernardo, Dahmen und Königsdörffer sorgen für einen soliden Punkteboden. Dahinter warten aber viele offene Konkurrenzkämpfe.',runningGag:'Für Transfers reicht die Zeit immer. Für die IWF-Reise leider nie.',rank:3,value:'28,20 Mio.',grade:'2,1',verdict:'Top 5',trend:'→',trendText:'stabil',lastTransfer:'Kader im Aufbau',chance:'13 %',status:'Starke Spitze, noch zu viele Fragezeichen in der zweiten Reihe.',players:['Dahmen','Boss','Brown','Bernardo','N. Banks','Boey','Pinckert','Doan','Neuhaus','Kawasaki','Alvero','Weißhaupt','Sakar','Königsdörffer','Bakayoko','Reyna'],keys:['Brown','Doan','Dahmen'],key:'Brown',strength:'Brown und Doan sind Premiumbausteine. Dazu kommen mit Dahmen und Bernardo bewährte Punktelieferanten.',weakness:'Bakayoko und mehrere günstige Mittelfeldspieler müssen ihre Rollen erst finden. Der Sturm ist noch nicht breit genug.',ingo:'Tomi hat diesmal mehr als nur große Namen. Sein Kader besitzt bereits Kontur – und noch einen Monat Zeit für Feinschliff.',werner:'LigaInsider beschreibt Brown als Neuzugang mit unmittelbarem Startelfpotenzial bei Bayern. Tomis Topspieler haben Substanz, die Tiefe bleibt spekulativ.',franz:'DOAN UND BROWN – VADDERN MACHT AUF CHAMPIONS LEAGUE!'},
-{
-name:'Uwe',team:'uje',profileTitle:'Der X-Faktor',claim:'Zwischen Genie und Tabellenkeller bleibt alles möglich.',image:managerImage('uwe.png'),profileText:'Uwes Kader ist besser als sein Ruf: Orbán, Nicolas, Lee, Kofane, Adamu und Futkeu ergeben eine interessante Mischung. Das Problem ist traditionell nicht das Fußballwissen, sondern die Aktivität.',runningGag:'Niemand weiß, ob Uwe schläft, plant oder längst den nächsten Coup vorbereitet.',rank:4,value:'28,56 Mio.',grade:'2,2',verdict:'Wildcard',trend:'↑',trendText:'überraschend stark',lastTransfer:'Kaderwert auf 28,56 Mio.',chance:'12 %',status:'Sportlich interessant, organisatorisch unberechenbar.',players:['Nicolas','Bredlow','W. Orbán','Coulibaly','Rosenfelder','Koudossou','Lee','Jeong','Maloney','R. Wagner','Micheler','Curda','Kofane','Adamu','Futkeu'],keys:['W. Orbán','Kofane','Nicolas'],key:'W. Orbán',strength:'Mehrere Spieler mit realistischem Stammplatz und ein hoher Kaderwert. Die Achse ist konkurrenzfähig.',weakness:'Orbán bekommt laut LigaInsider stärkeren Konkurrenzdruck. Und der größte Risikofaktor bleibt Uwes Aktivität.',ingo:'Der X-Faktor ist diesmal kein Witz, sondern eine sportliche Beschreibung.',werner:'Orbán bleibt ein Top-Elf-Kandidat, steht aber unter Druck. Uwe braucht laufende Kontrolle statt einen guten Juli-Screenshot.',franz:'UWE IST ONLINE! Die Konkurrenz prüft bereits, ob das ein Systemfehler ist.'},
-{
-name:'Sebastian',team:'DieseHaine',profileTitle:'Der Laptoptrainer',claim:'Zwischen Tabellenkalkulation und Meisterschale.',image:managerImage('sebastian.png'),profileText:'Der Rekordmeister wirkt im Juli selten fertig – und genau deshalb darf man ihn nie unterschätzen. Gnabry ist der Star, Stöger der verlässliche Punkter, dazu kommt eine breite Abwehr mit Caci, Vagnoman und Arthur.',runningGag:'Er verbrennt Praktikanten und vermutlich auch mehrere Excel-Dateien pro Saison.',rank:5,value:'22,59 Mio.',grade:'2,3',verdict:'Lauerstellung',trend:'↑',trendText:'im Aufbau',lastTransfer:'Caci · 2,03 Mio.',chance:'11 %',status:'Typischer Laptoptrainer-Kader: unspektakulär, gefährlich, unfertig.',players:['Rieß','Konoplya','Caci','Vagnoman','Arthur','Chaves','Couto','Stergiou','Nartey','Stöger','Gnabry','Sylla'],keys:['Gnabry','Stöger','Caci'],key:'Gnabry',strength:'Gnabry und Stöger können viele Punkte liefern. Die Abwehr bietet mehrere handelbare Optionen.',weakness:'Nur ein klarer Topstürmer und einige unsichere Rollen. LigaInsider sieht Nartey eher als Alternative als als festen Stammspieler.',ingo:'Sebastian muss im Juli nicht führen. Er muss im August gefährlich sein – und das ist er bereits.',werner:'Mehrere Spieler haben Konkurrenzdruck. Der Kader braucht noch mindestens zwei sichere Startelfoptionen.',franz:'PINKY LÄDT NOCH! Aber wehe, der Laptop ist erst einmal hochgefahren.'},
-{
-name:'Jose',team:'stjosse',profileTitle:'Der Raumdeuter',claim:'Der Fußballromantiker mit Doktortitel.',image:managerImage('jose.png'),profileText:'Jose baut traditionell strukturiert und ohne Hektik. Kobel, Suzuki, Mohya, Tietz und Boniface geben dem kleinen Kader Qualität. Noch fehlt Breite, doch mehr als 30 Tage vor dem Start ist Geduld kein Makel.',runningGag:'Er erklärt den Fußball vollständig. Sebastian nimmt ihm trotzdem regelmäßig die Trophäe ab.',rank:6,value:'18,92 Mio.',grade:'2,5',verdict:'Noch unfertig',trend:'→',trendText:'abwartend',lastTransfer:'Mbuku verkauft',chance:'9 %',status:'Gute Achse, aber aktuell nur elf Spieler.',players:['Kobel','Deman','Sebulonsen','Jaquez','Agu','Suzuki','Banzuzi','Mohya','Tietz','Boniface','Vogt'],keys:['Kobel','Suzuki','Boniface'],key:'Kobel',strength:'Ein starker Torwart und mehrere Spieler mit hohem Punktepotenzial. Der Kader ist klar strukturiert.',weakness:'Die Breite fehlt vollständig. Jaquez wird von LigaInsider beim VfB als starke Alternative, aber nicht als sicherer Stammspieler geführt.',ingo:'Jose wartet auf Räume. Im Juli ist das klug – solange er sie bis Ende August auch besetzt.',werner:'Elf Spieler reichen rechnerisch, aber nicht strategisch. Verletzungen und Konkurrenzkämpfe sind noch nicht eingepreist.',franz:'DOKTORARBEIT UNFERTIG! Jose hat die Gliederung – jetzt fehlen noch Kapitel.'},
-{
-name:'Wassili',team:'Wasko23',profileTitle:'Der Dino-Coach',claim:'Ohne ihn reist die IWF kopflos – mit ihm wird Fußball seziert.',image:managerImage('wassili.png'),profileText:'Wassili ist Trainer und IWF-Dino. Sein Kader setzt auf Entwicklung: Reitz, Castrop, Gadou und Schlager besitzen Potenzial, Kohr bringt Punkte. Die Offensive ist jedoch noch eine Baustelle.',runningGag:'Ohne Wassili findet die IWF weder Unterkunft noch Richtung.',rank:7,value:'19,22 Mio.',grade:'2,7',verdict:'Projektkader',trend:'→',trendText:'ruhig',lastTransfer:'Schlager im Kader',chance:'7 %',status:'Viele Trainer-Wetten, noch wenig sichere Offensive.',players:['Ramaj','Köbbing','Schlager','Kohr','Reggiani','V. Becker','Gadou','Reitz','Castrop','Geiger','Watjen','Swider','Condé','Dardari','Kownacki','Albert'],keys:['Reitz','Gadou','Kohr'],key:'Reitz',strength:'Interessante Talente und mehrere Spieler, deren Marktwert in der Vorbereitung steigen kann.',weakness:'LigaInsider sieht Reitz in Leipzig zunächst als Alternative. Im Sturm fehlt aktuell ein belastbarer Punktegarant.',ingo:'Der Coach baut keinen Juli-Sieger, sondern sucht Rollen. Das kann noch sehr klug aussehen.',werner:'Die Upside ist hoch, die Startelfsicherheit derzeit gering. Der Kader braucht belastbare Minutenprognosen.',franz:'WASSILI COACHT DIE ZUKUNFT! Hoffentlich spielt sie schon diese Saison.'},
-{
-name:'Matthias',team:'mazzephase',profileTitle:'Der Pumper',claim:'Muskelmasse, Lucky Shot und ein Herz für Underdogs.',image:managerImage('matthias.png'),profileText:'Matze setzt auf Spieler, die andere erst googeln müssen. Lokonga, Badé, Backhaus und Dinkçi ergeben eine solide Basis, doch der Kader lebt stark von Entwicklung und Überraschungen.',runningGag:'Er kennt das nächste Talent oft früher als die Verkaufsfunktion.',rank:8,value:'18,66 Mio.',grade:'2,8',verdict:'Überraschung',trend:'→',trendText:'schwer lesbar',lastTransfer:'Kader neu sortiert',chance:'6 %',status:'Breit aufgestellt, aber ohne klaren Premiumspieler.',players:['Backhaus','Blaswich','Badé','Rothe','Belocian','Günter','Sambi Lokonga','Castro-Montes','Conté','Darvich','Kaba','Waldschmidt','Dinkçi','Sieb'],keys:['Sambi Lokonga','Badé','Backhaus'],key:'Sambi Lokonga',strength:'Ordentliche Breite und mehrere Spieler mit Wertsteigerungspotenzial.',weakness:'Es fehlt ein Spieler, der verlässlich 120 bis 150 Punkte verspricht. Viele Rollen sind noch offen.',ingo:'Matze hat Material. Ob daraus eine Mannschaft wird, entscheidet die Vorbereitung.',werner:'Hohe Varianz, wenig gesicherte Spitze. Der aktuelle Rang ist eine Momentaufnahme, kein Urteil.',franz:'PUMPER OHNE SCHWERGEWICHT! Matze sucht noch die Hantel für den Titelkampf.'},
-{
-name:'Jan',team:'Greifbramo',profileTitle:'Der Entertainer',claim:'Immer für eine Show gut – auch aus Bangkok.',image:managerImage('jan.png'),profileText:'Jan besitzt mit Baku, Martel und Chema Andrés ein brauchbares Gerüst. Der Rest ist beweglich, aber noch kein fertiger Spieltagskader. Gerade im Sturm fehlt ein klarer Fixpunkt.',runningGag:'Bei Bayern-Spielern und Regel-Lücken endet die thailändische Gelassenheit.',rank:9,value:'23,50 Mio.',grade:'3,0',verdict:'Wartestellung',trend:'↓',trendText:'noch ohne Star',lastTransfer:'Kaderwert 23,50 Mio.',chance:'5 %',status:'Viel Kapital im Kader, noch wenig klare Hierarchie.',players:['Flekken','Hein','Baku','Dal','I. Traoré','Keidel','Martel','Chema Andrés','Karazor','Maina','O. Højlund','Maksimović','Burke','Moerstedt','T. Gomis'],keys:['Baku','Martel','Chema Andrés'],key:'Baku',strength:'Baku wird von LigaInsider bei Leipzig als gesetzter Rechtsverteidiger geführt. Martel und Chema Andrés sind gute Bausteine.',weakness:'Der Sturm hat aktuell keinen sicheren Topscorer. Im Mittelfeld konkurrieren mehrere Spieler um begrenzte Einsatzzeiten.',ingo:'Der Entertainer hat eine Bühne, aber noch keinen Hauptdarsteller.',werner:'Der Marktwert liegt im Mittelfeld, die projizierte Startelfqualität darunter.',franz:'BANGKOK BRAUCHT EINEN BOMBER! Jan streamt bislang nur die Vorbereitung.'},
-{
-name:'Greg',team:'Griesgram1',profileTitle:'Der Dino',claim:'Adrenalin liebt er – Fußballwissen bleibt optional.',image:managerImage('greg.png'),profileText:'Greg ist IWF-Dino und Adrenalinjunkie. Sein Kader besitzt mit Grifo, Kabak, Friedl und Vandevoordt einige starke Namen, fällt dahinter aber deutlich ab. Der Beste-Verkauf muss noch kompensiert werden.',runningGag:'Je höher und schneller, desto besser – nur beim Fußball bleibt er gern am Boden der Tatsachen.',rank:10,value:'19,38 Mio.',grade:'3,2',verdict:'Baustelle',trend:'↓',trendText:'Grifo-abhängig',lastTransfer:'Beste verkauft',chance:'3 %',status:'Einige starke Einzelteile, noch kein ausgewogener Kader.',players:['Vandevoordt','Hellstern','Kabak','Friedl','Neuendorff','Engelns','Grifo','Skhiri','João Palhinha','Sticker','Onyeka','Ngankam','Quetant'],keys:['Grifo','Kabak','Vandevoordt'],key:'Grifo',strength:'Grifo ist ein Premium-Punkter. Vandevoordt gehört in Leipzig zum engen Kreis für die Nummer eins.',weakness:'Hinter den Topspielern fehlt Tiefe. Palhinha wird zudem mit einem Wechsel in Verbindung gebracht.',ingo:'Greg hat drei gute Säulen. Jetzt braucht er noch ein Haus.',werner:'Die Verteilung des Kaderwerts ist ungünstig. Ein Ausfall oder Wechsel trifft diesen Kader überproportional.',franz:'GRIFO ODER NIX! Gregs Taktik passt auf einen Bierdeckel.'}
+  {
+    name:'Luca', team:'LucaCosta', profileTitle:'Der kreative Italo',
+    claim:'Aktuell vorne – entschieden ist noch gar nichts.',
+    image:managerImage('luca.png'),
+    profileText:`Luca führt die Kaderwert-Tabelle mit 61,07 Mio. €. Kimmich, Nusa, Ache und Ryerson geben dem Team eine starke Achse. ${seasonNote}`,
+    runningGag:'Der dritte Platz verfolgt ihn treu – diesmal will er ihm davonlaufen.',
+    rank:1, value:'61,07 Mio. €', grade:'1,7', verdict:'Momentaufnahme #1',
+    trend:'↑', trendText:'aktuell vorne', lastTransfer:'Aouchiche · 3,551 Mio. €',
+    chance:'offen', status:'Wertvollster Kader, aber noch vier Wochen bis zum Start.',
+    players:['Nusa','Ache','Inácio','Hack','Silas','Kimmich','Remberg','Schallenberg','Aouchiche','R. Müller','Leopold','Ryerson','Querfeld','Svensson','Kübler','Zetterer','Kauã Santos'],
+    keys:['Kimmich','Nusa','Ryerson'], key:'Kimmich',
+    strength:'Die bislang stärkste Kombination aus Spitzenwert und Breite. Mehrere Spieler besitzen klare Rollen und weiteres Marktwertpotenzial.',
+    weakness:'Ein Teil des Vorsprungs kann durch weitere Transfers der Konkurrenz schnell schrumpfen. Die Saisonvorbereitung ist noch lang.',
+    ingo:'Luca führt das Feld an. Aber ein Ranking Ende Juli ist eher Wetterbericht als Wahrsagerei.',
+    werner:'Der Kaderwert ist ein klares Signal, kein Titelbeweis. Entscheidend ist die Startelfsicherheit Ende August.',
+    franz:'LUCA VORNE! Doch die Konkurrenz hat noch vier Wochen Zeit für den Gegenangriff.'
+  },
+  {
+    name:'Tomi', team:'VADDERN 79', profileTitle:'Der Ausredenkönig',
+    claim:'Im Urlaub – und trotzdem auf dem Transfermarkt aktiv.',
+    image:managerImage('tomi.png'),
+    profileText:`Tomi liegt mit 51,59 Mio. € auf Rang zwei. Brown, Doan, Demirović, Quansah und Andrich bilden eine hochwertige Achse. Parallel liefert er fleißig Urlaubsbilder. ${seasonNote}`,
+    runningGag:'Für Transfers reicht die Zeit immer. Für die IWF-Reise leider nie.',
+    rank:2, value:'51,59 Mio. €', grade:'1,9', verdict:'Starke Ausgangslage',
+    trend:'↑', trendText:'Urlaubsmodus mit Geboten', lastTransfer:'Quansah · 5,000 Mio. €',
+    chance:'offen', status:'Hochwertiger Kader, weiterhin im Aufbau.',
+    players:['Demirović','Grüll','Königsdörffer','Bakayoko','Reyna','Doan','Andrich','Neuhaus','Alvero','Weißhaupt','Brown','Diks','Quansah','Bernardo','N. Banks','Juranović','Pinckert','Dahmen'],
+    keys:['Brown','Doan','Demirović'], key:'Brown',
+    strength:'Sehr gute Spitze und bereits viel Breite. Brown, Doan und Demirović können das Team tragen.',
+    weakness:'Mehrere Rollen sind noch nicht endgültig geklärt. Bis zum Saisonstart kann sich die Hierarchie noch verändern.',
+    ingo:'Tomi zeigt, dass man auch zwischen Urlaubsposts einen ernsthaften Kader bauen kann.',
+    werner:'Rang zwei nach Kaderwert ist verdient. Trotzdem bleiben Einsatzchancen wichtiger als der reine Gesamtwert.',
+    franz:'URLAUB? EGAL! Tomi kauft weiter – offenbar gibt es am Pool stabiles WLAN.'
+  },
+  {
+    name:'Henning', team:'Arsene W.', profileTitle:'Der Gastgeber',
+    claim:'Guirassy, Burkardt und Nmecha – Henning greift früh an.',
+    image:managerImage('henning.png'),
+    profileText:`Henning steht mit 50,31 Mio. € nur knapp hinter Tomi. Guirassy, Burkardt, F. Nmecha, Karaman und Prömel geben dem Kader sofortige Qualität. ${seasonNote}`,
+    runningGag:'Wenn Henning etwas ankündigt, beginnt entweder ein Transfer oder eine Grundsatzdebatte.',
+    rank:3, value:'50,31 Mio. €', grade:'2,0', verdict:'Früher Topkader',
+    trend:'↑', trendText:'stark investiert', lastTransfer:'Burkardt · 8,889 Mio. €',
+    chance:'offen', status:'Sehr starke Spitze, noch nicht endgültig fertig.',
+    players:['Guirassy','Burkardt','Ben Seghir','Prömel','Poku','F. Nmecha','Larsson','Karaman','Hong','Widmer','Can','G. Mensah','Baumann'],
+    keys:['Guirassy','Burkardt','F. Nmecha'], key:'Guirassy',
+    strength:'Eine der stärksten Offensiven der Liga und mehrere sofort einsetzbare Leistungsträger.',
+    weakness:'Mit 13 Spielern ist die Breite geringer als bei Luca oder Tomi. Weitere Transfers bleiben wahrscheinlich.',
+    ingo:'Henning hat einen Kader gebaut, der schon heute nach Startelf aussieht – aber eben noch nicht nach fertiger Saison.',
+    werner:'Die Spitzenqualität ist hoch. Für eine belastbare Prognose fehlen noch Breite und endgültige Rollen.',
+    franz:'HENNING DOPPELT GEFÄHRLICH! Erst Sommer-IWF, jetzt Sturm-Großangriff.'
+  },
+  {
+    name:'Gregor', team:'Griesgram1', profileTitle:'Der Transferwirbel',
+    claim:'Schick, Schlotterbeck und Pavlović – die lauteste Woche gehört Gregor.',
+    image:managerImage('greg.png'),
+    profileText:`Gregor steht bei 44,75 Mio. € und hat die spektakulärste Transferphase hingelegt. Schick, Pavlović und N. Schlotterbeck verändern den Kader deutlich. ${seasonNote}`,
+    runningGag:'Keine Ahnung vom Fußball – aber manchmal ein erstaunlich gutes Gebot.',
+    rank:4, value:'44,75 Mio. €', grade:'2,1', verdict:'Transferkönig der Woche',
+    trend:'↑', trendText:'stark steigend', lastTransfer:'Schick · 9,581 Mio. €',
+    chance:'offen', status:'Viele große Namen, Wirkung noch abzuwarten.',
+    players:['Schick','Ngankam','Quetant','Grifo','Pavlović','Skhiri','João Palhinha','Sticker','Onyeka','N. Schlotterbeck','Kabak','Friedl','Neuendorf','Engelns','Urbig','Hellstern'],
+    keys:['Schick','N. Schlotterbeck','Pavlović'], key:'Schick',
+    strength:'Mehrere potenzielle Topspieler und die auffälligste Einkaufstour der Woche.',
+    weakness:'Spektakuläre Namen ersetzen noch keine verlässliche Startelf. Einige Kaderplätze bleiben Wetten.',
+    ingo:'Gregor hat der Liga eine Geschichte geschenkt: drei große Transfers und plötzlich ein völlig neues Bild.',
+    werner:'Der Aufwärtstrend ist real. Ob daraus ein Topkader wird, entscheidet die Startelfquote.',
+    franz:'GREGOR KAUFT HALB EUROPA LEER! Jetzt muss nur noch jemand die Aufstellung erklären.'
+  },
+  {
+    name:'Jan', team:'Greifbramo', profileTitle:'Der Entertainer',
+    claim:'Solide Basis, aber noch kein Schlussakt.',
+    image:managerImage('jan.png'),
+    profileText:`Jan kommt auf 31,44 Mio. €. Baku, Chema Andrés, Martel, Engelhardt und Bülter bilden die Basis. Der Kader ist breit, aber noch ohne klaren Premiumstar. ${seasonNote}`,
+    runningGag:'Bei Bayern-Spielern und Regel-Lücken endet die thailändische Gelassenheit.',
+    rank:5, value:'31,44 Mio. €', grade:'2,7', verdict:'Solider Aufbau',
+    trend:'→', trendText:'noch offen', lastTransfer:'Y. Engelhardt · 3,150 Mio. €',
+    chance:'offen', status:'Breit aufgestellt, Hierarchie noch nicht klar.',
+    players:['Bülter','Burke','Moerstedt','T. Gomis','Martel','Y. Engelhardt','Chema Andrés','Karazor','Maina','O. Højlund','Maksimović','Baku','Dal','I. Traoré','Keidel','Flekken','Hein'],
+    keys:['Baku','Chema Andrés','Martel'], key:'Baku',
+    strength:'Breite und mehrere solide Mittelfeld- und Abwehrwerte.',
+    weakness:'Es fehlt derzeit ein klarer Fixpunkt, der den Kader sportlich und beim Marktwert trägt.',
+    ingo:'Jan besitzt viele brauchbare Teile. Ob daraus eine Mannschaft wird, entscheidet der nächste Monat.',
+    werner:'Solide Breite, noch wenig Spitze. Die Ausgangslage ist offen.',
+    franz:'BANGKOK BAUT BREIT! Der Superstar fehlt allerdings noch im Boarding.'
+  },
+  {
+    name:'Uwe', team:'uje', profileTitle:'Der X-Faktor',
+    claim:'Der Kader ist besser als sein Ruf – jetzt muss nur der Manager online bleiben.',
+    image:managerImage('uwe.png'),
+    profileText:`Uwe steht bei 30,10 Mio. €. Orbán, Kofane, Lee und Nicolas bilden eine interessante Achse. Wie immer bleibt die Aktivität der entscheidende Risikofaktor. ${seasonNote}`,
+    runningGag:'Niemand weiß, ob Uwe schläft, plant oder längst den nächsten Coup vorbereitet.',
+    rank:6, value:'30,10 Mio. €', grade:'2,8', verdict:'Wildcard',
+    trend:'→', trendText:'unberechenbar', lastTransfer:'Kaderstand 31.07.',
+    chance:'offen', status:'Sportlich interessant, organisatorisch unberechenbar.',
+    players:['Kofane','Adamu','Futkeu','Lee','Jeong','Maloney','R. Wagner','Micheler','Curda','W. Orbán','Coulibaly','Rosenfelder','Koudossou','Nicolas','Bredlow'],
+    keys:['W. Orbán','Kofane','Nicolas'], key:'W. Orbán',
+    strength:'Mehrere Spieler mit realistischen Einsatzchancen und ein ordentlicher Gesamtwert.',
+    weakness:'Die größte Schwäche bleibt nicht der Kader, sondern die mögliche Inaktivität des Managers.',
+    ingo:'Uwe hat wieder einen Kader, bei dem niemand weiß, ob er geplant oder zufällig entstanden ist.',
+    werner:'Die sportliche Basis ist besser als Rang sechs vermuten lässt. Laufende Pflege bleibt zwingend.',
+    franz:'UWE HAT EINEN KADER! Die Redaktion prüft, ob er davon weiß.'
+  },
+  {
+    name:'Jose', team:'stjosse', profileTitle:'Der Raumdeuter',
+    claim:'Urlaub mit Meerblick – und noch viel Zeit für den nächsten Zug.',
+    image:managerImage('jose.png'),
+    profileText:`Jose liegt bei 29,19 Mio. €. Palacios, Suzuki, Tietz, Boniface und Kobel geben dem Kader Struktur. Aktuell postet der Fußballromantiker fleißig Urlaubsbilder. ${seasonNote}`,
+    runningGag:'Er erklärt den Fußball vollständig. Sebastian nimmt ihm trotzdem regelmäßig die Trophäe ab.',
+    rank:7, value:'29,19 Mio. €', grade:'2,9', verdict:'Abwartend',
+    trend:'→', trendText:'Urlaubsmodus', lastTransfer:'Palacios · 5,329 Mio. €',
+    chance:'offen', status:'Gute Achse, Kader noch klein.',
+    players:['Tietz','Boniface','Suzuki','Palacios','Banzuzi','Mohya','Deman','Sebulonsen','Jaquez','Agu','Wöber','Lochoshvili','Kobel'],
+    keys:['Palacios','Suzuki','Kobel'], key:'Palacios',
+    strength:'Klare Struktur und mehrere Spieler mit hohem Punktepotenzial.',
+    weakness:'Mit 13 Spielern fehlt noch Breite. Urlaubsmodus darf nicht zu Stillstand werden.',
+    ingo:'Jose beobachtet Räume – derzeit offenbar auch mit Meerblick.',
+    werner:'Die Achse ist brauchbar. Für ein höheres Ranking fehlen Breite und weitere sichere Starter.',
+    franz:'DOKTOR IM URLAUB! Die nächste Transfer-These kommt vermutlich vom Liegestuhl.'
+  },
+  {
+    name:'Matthias', team:'mazzephase', profileTitle:'Der Pumper',
+    claim:'Viele Wetten, noch kein klarer Schwergewichtler.',
+    image:managerImage('matthias.png'),
+    profileText:`Matthias steht bei 24,70 Mio. €. Sambi Lokonga, Jóhannesson, Badé, Backhaus und Mbangula sind interessante Bausteine. Noch fehlt ein eindeutiger Premiumspieler. ${seasonNote}`,
+    runningGag:'Er kennt das nächste Talent oft früher als die Verkaufsfunktion.',
+    rank:8, value:'24,70 Mio. €', grade:'3,0', verdict:'Entwicklungskader',
+    trend:'→', trendText:'schwer lesbar', lastTransfer:'Jóhannesson · 2,220 Mio. €',
+    chance:'offen', status:'Breit, entwicklungsfähig, noch ohne klare Spitze.',
+    players:['Mbangula','Dinkçi','Sieb','Sambi Lokonga','Jóhannesson','Castro-Montes','Conté','Darvich','Kaba','Badé','Couto','Rothe','Belocian','Günter','Backhaus','Blaswich'],
+    keys:['Sambi Lokonga','Jóhannesson','Badé'], key:'Sambi Lokonga',
+    strength:'Viele Spieler mit Entwicklungspotenzial und eine brauchbare Breite.',
+    weakness:'Es fehlt aktuell ein klarer Topspieler mit verlässlich hohem Punktepotenzial.',
+    ingo:'Matze hat viele interessante Namen. Der nächste Monat zeigt, ob daraus mehr als eine Sammlung wird.',
+    werner:'Hohe Varianz und wenig gesicherte Spitze. Rang acht ist nur der aktuelle Stand.',
+    franz:'PUMPER SUCHT SCHWERGEWICHT! Der Kader braucht noch einen Star.'
+  },
+  {
+    name:'Sebastian', team:'DieseHaine', profileTitle:'Der Laptoptrainer',
+    claim:'Ungewöhnlich ruhig – und deshalb keinesfalls abzuschreiben.',
+    image:managerImage('sebastian.png'),
+    profileText:`Sebastian steht aktuell bei 23,17 Mio. €. Gnabry, Stöger, Nartey und Caci bilden die Basis. Beim Rekordmeister kann sich das Bild allerdings mit wenigen Transfers komplett verändern. ${seasonNote}`,
+    runningGag:'Er verbrennt Praktikanten und vermutlich auch mehrere Excel-Dateien pro Saison.',
+    rank:9, value:'23,17 Mio. €', grade:'3,1', verdict:'Lauerstellung',
+    trend:'↓', trendText:'ungewöhnlich ruhig', lastTransfer:'Obermair · 1,370 Mio. €',
+    chance:'offen', status:'Kleiner Kader, aber noch sehr viel Zeit.',
+    players:['Gnabry','Sylla','Nartey','Stöger','Obermair','Vagnoman','Arthur','Caci','Rohr','Rieß'],
+    keys:['Gnabry','Stöger','Nartey'], key:'Gnabry',
+    strength:'Gnabry und Stöger können den Kader tragen. Mehrere Spieler besitzen Marktwertpotenzial.',
+    weakness:'Nur zehn Spieler und mehrere offene Rollen. Der Kader ist klar unfertig.',
+    ingo:'Sebastian muss Ende Juli nicht führen. Seine Geschichte beginnt oft erst dann, wenn andere sich sicher fühlen.',
+    werner:'Die aktuelle Platzierung ist korrekt, aber beim Laptoptrainer besonders vorläufig.',
+    franz:'LAPTOPTRAINER SCHLÄFT? Niemand glaubt ernsthaft daran.'
+  },
+  {
+    name:'Wassilios', team:'Wasko23', profileTitle:'Der Dino-Coach',
+    claim:'Urlaub zuerst, Transfergegenangriff später?',
+    image:managerImage('wassili.png'),
+    profileText:`Wassilios steht bei 20,46 Mio. €. Reitz, Gadou, Castrop, Kohr und Schlager bilden die Basis. Derzeit liefert der IWF-Dino vor allem Urlaubsbilder. ${seasonNote}`,
+    runningGag:'Ohne Wassili findet die IWF weder Unterkunft noch Richtung.',
+    rank:10, value:'20,46 Mio. €', grade:'3,3', verdict:'Noch im Aufbau',
+    trend:'→', trendText:'Urlaubsmodus', lastTransfer:'Kaderstand 31.07.',
+    chance:'offen', status:'Viele Entwicklungswetten, noch wenig sichere Spitze.',
+    players:['Dardari','Kownacki','Albert','Reitz','Castrop','Geiger','Watjen','Swider','Condé','Kohr','Reggiani','V. Becker','Gadou','Ramaj','Köbbing','Schlager'],
+    keys:['Reitz','Gadou','Castrop'], key:'Reitz',
+    strength:'Mehrere Talente und Spieler mit erkennbarem Marktwertpotenzial.',
+    weakness:'Die Offensive besitzt noch keinen verlässlichen Punktegaranten. Nach dem Urlaub muss Bewegung in den Kader.',
+    ingo:'Wassili kennt den Weg – nur sein Kader ist noch nicht am Ziel.',
+    werner:'Die Bewertung ist vorläufig. Potenzial ist vorhanden, Startelfsicherheit aber noch zu gering.',
+    franz:'WASSILI SCHICKT URLAUBSBILDER! Die Liga wartet auf das erste Transfer-Souvenir.'
+  }
 ]
