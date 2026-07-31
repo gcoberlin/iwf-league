@@ -3,6 +3,7 @@ import App from './App'
 import { articles } from './data/articles/index.js'
 import { weeklyQuotes } from './data/quotes'
 import { comunioMarket } from './data/comunioMarket'
+import { fridayEdition } from './data/fridayEdition'
 import TravelCountdown from './components/widgets/TravelCountdown'
 import './magazine-home.css'
 
@@ -12,19 +13,14 @@ const navItems = [
   ['/hall-of-fame', 'Statistiken'], ['/reisen', 'Historie'], ['/ueber-die-iwf', 'Über uns']
 ]
 
-const news = [
-  ['10:21', 'Luca verpflichtet Kimmich für 17,10 Mio. €'],
-  ['09:47', 'Greg verkauft Beste'],
-  ['09:12', 'Das neue Power Ranking ist online'],
-  ['08:33', 'Sebastian beobachtet den Markt weiter']
-]
+const news = fridayEdition.breaking
 
-const rankings = [
-  ['Sebastian', '34 %', '↑', 5],
-  ['Jose', '26 %', '↑', 4],
-  ['Luca', '18 %', '↓', 4],
-  ['Henning', '10 %', '–', 3],
-  ['Greg', '5 %', '↓', 2]
+const rankings = fridayEdition.rosterValues.slice(0, 5).map(item => [
+  item.manager,
+  item.value,
+  item.trend,
+  item.stars
+])
 ]
 
 function Header() {
@@ -39,7 +35,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Luca landet Kimmich · Power Ranking online · Countdown Rom läuft · Freitag ist Redaktionsschluss ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Luca führt beim Kaderwert · Gregor zündet das Transferfeuerwerk · Urlaubsgrüße von Wassili, Tomi und Jose · Noch vier Wochen bis zum Start ·</span></div></div>
   </>
 }
 
@@ -55,10 +51,8 @@ function MarketCenter() {
     <h3>Gewinner des Tages</h3>
     {winners.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="up">{player.change}</em></div>)}
     <h3 className="lossTitle">Verlierer des Tages</h3>
-    {losers.length > 0
-      ? losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)
-      : <div className="marketEmpty"><b>Noch keine geprüften Daten</b><span>Hier erscheinen erst Werte, sobald sie verlässlich vorliegen.</span></div>}
-    <small className="dataState">Stand: {comunioMarket.updatedAt} · {comunioMarket.dataStatus}</small>
+    {losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)}
+    <small className="dataState">Stand: {comunioMarket.updatedAt} · redaktionelle Startdaten</small>
   </section>
 }
 
@@ -78,12 +72,13 @@ function HomeMagazine() {
             <div className="magHeroShade" />
             <div className="magHeroCopy">
               <span>Top Story</span>
-              <h1>Die Liga ist eröffnet</h1>
-              <h2>{top.title}</h2>
-              <p>{top.excerpt}</p>
+              <h1>{fridayEdition.headline}</h1>
+              <h2>{fridayEdition.subheadline}</h2>
+              <p>{fridayEdition.teaser}</p>
               <div className="heroActions"><Link to={`/artikel/${top.slug}`}>Artikel lesen →</Link><small>{top.author} · {top.date} · {top.readTime}</small></div>
             </div>
           </article>
+          <div className="preSeasonNote"><b>Einordnung:</b> {fridayEdition.preSeasonNote}</div>
 
           <div className="magStoryGrid">
             {cards.map((article, index) => <Link className="magStory" to={`/artikel/${article.slug}`} key={article.slug}>
@@ -97,7 +92,11 @@ function HomeMagazine() {
           <section className="magPanel editorsPanel">
             <PanelTitle link="/redaktion">Unsere Redakteure</PanelTitle>
             <div className="editorGridNew">
-              {[['Werner', 'Analysiert', 'Der Markt läuft heiß – aber wer handelt klug und wer zahlt drauf?'], ['Ingo', 'Erzählt', 'Geschichten aus der Liga, die nur das Leben schreibt.'], ['Franz', 'Kommentiert', 'Boulevard, Gerüchte und die Wahrheit irgendwo dazwischen.']].map(([name, role, text], index) => <Link to="/redaktion" className="editorCardNew" key={name}>
+              {[
+                ['Werner', 'Analysiert', fridayEdition.editorial.werner.text],
+                ['Ingo', 'Erzählt', fridayEdition.editorial.ingo.text],
+                ['Franz', 'Kommentiert', fridayEdition.editorial.franz.text]
+              ].map(([name, role, text], index) => <Link to="/redaktion" className="editorCardNew" key={name}>
                 <div className={`editorPhoto editorPhoto${index + 1}`} style={{backgroundImage:`linear-gradient(180deg,transparent 25%,rgba(3,5,3,.96)),url(${editorImage})`}} />
                 <div className="editorText"><h3>{name}<span>{role}</span></h3><p>{text}</p><b>Zur Redaktion →</b></div>
               </Link>)}
@@ -108,7 +107,7 @@ function HomeMagazine() {
         <aside className="magSidebar">
           <section className="magPanel newsPanel"><PanelTitle>🔥 Breaking News</PanelTitle>{news.map(([time, text]) => <div className="newsLine" key={time}><time>{time}</time><span>{text}</span></div>)}<Link className="panelLink" to="/magazin">Zum Newsticker →</Link></section>
           <MarketCenter />
-          <section className="magPanel rumorPanel"><PanelTitle tone="pink">♟ Gerüchteküche</PanelTitle><p>Aus gewöhnlich gut informierten Kreisen heißt es, Greg habe versehentlich auf einen Torwart geboten, weil er das Vereinslogo schön fand.</p><b>Nur Satire!</b></section>
+          <section className="magPanel rumorPanel"><PanelTitle tone="pink">♟ Gerüchteküche</PanelTitle><p>{fridayEdition.rumor}</p><b>Nur Satire!</b></section>
         </aside>
       </div>
 
@@ -119,7 +118,7 @@ function HomeMagazine() {
       </div>
 
       <div className="magBottomGrid">
-        <section className="magPanel transferCompact"><PanelTitle link="/comunio-markt">⇄ Transfer-Ticker</PanelTitle>{[['Luca','kauft','Joshua Kimmich','17,10 Mio. €'],['Greg','verkauft','Jan-Niklas Beste','–'],['Sebastian','kauft','Caci','2,03 Mio. €'],['Henning','kauft','G. Mensah','2,03 Mio. €']].map((row,index)=><div className="transferLine" key={row.join('-')}><time>{['10:21','09:47','09:12','08:33'][index]}</time><b>{row[0]}</b><span>{row[1]} {row[2]}</span><strong>{row[3]}</strong></div>)}</section>
+        <section className="magPanel transferCompact"><PanelTitle link="/comunio-markt">⇄ Transfer-Ticker</PanelTitle>{fridayEdition.transfers.map((row,index)=><div className="transferLine" key={row.join('-')}><time>{['19:10','18:35','17:50','17:05','16:20'][index]}</time><b>{row[0]}</b><span>{row[1]} {row[2]}</span><strong>{row[3]}</strong></div>)}</section>
         <section className="magPanel romCompact"><TravelCountdown compact /></section>
         <section className="magPanel bundesligaCompact"><PanelTitle>Bundesliga News</PanelTitle><p><time>10:40</time> Die Saisonvorbereitung läuft – ANSTOSS beobachtet den Markt.</p><p><time>09:55</time> Freitag folgt das nächste Liga-Update.</p><Link className="panelLink" to="/magazin">Zu den News →</Link></section>
       </div>
