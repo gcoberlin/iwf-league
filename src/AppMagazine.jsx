@@ -47,9 +47,9 @@ function MarketCenter() {
   const losers = comunioMarket.losers.slice(0, 5)
   return <section className="magPanel marketCenter">
     <PanelTitle link="/comunio-markt">↗ Marktcenter</PanelTitle>
-    <h3>Gewinner des Tages</h3>
+    <h3 style={{color:"#1f2937",fontWeight:800}}>Gewinner des Tages</h3>
     {winners.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="up">{player.change}</em></div>)}
-    <h3 className="lossTitle">Verlierer des Tages</h3>
+    <h3 className="lossTitle" style={{color:"#1f2937",fontWeight:800}}>Verlierer des Tages</h3>
     {losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)}
     <small className="dataState">Stand: {comunioMarket.updatedAt} · redaktionelle Startdaten</small>
   </section>
