@@ -337,3 +337,31 @@ img,svg,video{max-width:100%;height:auto}
 .tmEditorial{background:#101010;color:#fff;padding:42px;display:grid;grid-template-columns:180px 1fr;gap:35px;border-top:8px solid #66d000;margin:32px 0}.tmEditorBadge{display:flex;align-items:center;gap:14px;border-right:1px solid #3a3a3a}.tmEditorBadge>b{width:78px;height:78px;display:grid;place-items:center;background:#66d000;color:#111;border-radius:50%;font-family:'Archivo Black';font-size:40px}.tmEditorBadge>span{display:flex;flex-direction:column;font-weight:900;font-size:20px}.tmEditorBadge small{font-size:11px;color:#aaa;text-transform:uppercase;margin-top:4px}.tmEditorial h2{font-family:'Archivo Black';font-size:clamp(31px,4vw,53px);line-height:.98;text-transform:uppercase;margin:13px 0 20px}.tmEditorial blockquote{font-family:'Playfair Display';font-size:25px;line-height:1.45;margin:0 0 20px}.tmEditorial p{color:#c9c9c9;line-height:1.65;max-width:850px}
 .tmRoadmap{background:#66d000;padding:32px;margin-bottom:20px}.tmRoadmap h2{font-family:'Archivo Black';font-size:35px;text-transform:uppercase;margin:8px 0}.tmRoadmap p{max-width:850px;line-height:1.65;margin-bottom:0}
 @media(max-width:900px){.tmGrid{grid-template-columns:1fr}.tmEditorial{grid-template-columns:1fr;padding:28px}.tmEditorBadge{border-right:0;border-bottom:1px solid #3a3a3a;padding-bottom:22px}.tmRows article{grid-template-columns:27px 1fr auto}.tmRows article>span{grid-column:2/-1;text-align:left}.tmStatus{align-items:flex-start;flex-direction:column;gap:5px}}
+
+/* ANSTOSS 1.2 · Kontrast- und Responsive-Fix Transfermarkt */
+.transferMarketPage .tmPanel,
+.transferMarketPage .tmPanel *{color:#171917}
+.transferMarketPage .tmPanel>header{background:#fff}
+.transferMarketPage .tmPanel h2{color:#151715!important;opacity:1!important;text-shadow:none!important}
+.transferMarketPage .tmPanel header small{color:#42a900!important}
+.transferMarketPage .tmPanel>header>span{color:#111!important}
+.transferMarketPage .tmRows article>div strong{color:#202320!important}
+.transferMarketPage .tmRows article>div small{color:#60645f!important}
+.transferMarketPage .tmRows article>b{color:#8d938c!important}
+.transferMarketPage .tmRows article>span{color:#383c38!important}
+.transferMarketPage .tmRows em.up{color:#087a32!important}
+.transferMarketPage .tmRows em.down{color:#bd1f2d!important}
+.transferMarketPage .tmStatus b{color:#151715}
+.tmEmpty{min-height:170px;padding:34px 28px;display:flex;flex-direction:column;justify-content:center;gap:8px;background:#f7f8f5}
+.tmEmpty b{font-family:'Archivo Black';font-size:18px;text-transform:uppercase;color:#333!important}
+.tmEmpty span{color:#686d67!important;line-height:1.5}
+.tmRoadmap strong{font-family:'Archivo Black'}
+@media(max-width:640px){
+  .transferMarketPage .tmPanel>header{padding:18px 16px;gap:13px}
+  .transferMarketPage .tmPanel>header>span{width:42px;height:42px;font-size:23px;flex:0 0 42px}
+  .transferMarketPage .tmPanel h2{font-size:22px}
+  .transferMarketPage .tmRows article{grid-template-columns:25px minmax(0,1fr) auto;padding:14px 14px;gap:9px}
+  .transferMarketPage .tmRows article>span{grid-column:2/-1;font-size:13px}
+  .transferMarketPage .tmRows em{font-size:15px;white-space:nowrap}
+  .transferMarketPage .tmStatus{padding:15px 17px}
+}

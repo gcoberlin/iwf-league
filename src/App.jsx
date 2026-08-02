@@ -186,6 +186,7 @@ function MarketRanking({ title, icon, items, direction }) {
   return <section className="tmPanel">
     <header><span>{icon}</span><div><small>Comunio Marktcheck</small><h2>{title}</h2></div></header>
     <div className="tmRows">
+      {items.length === 0 && <div className="tmEmpty"><b>Noch keine verifizierten Daten</b><span>Dieser Bereich wird aktualisiert, sobald belastbare Werte vorliegen.</span></div>}
       {items.map((player,index)=><article key={`${player.name}-${index}`}>
         <b>{index+1}</b>
         <div><strong>{player.name}</strong><small>{player.club}</small></div>
@@ -202,11 +203,11 @@ function ComunioMarkt() {
     <PageHero
       eyebrow="Live-Center · Comunio"
       title="Der Markt schläft nie."
-      text="Gewinner, Verlierer, Preistreiber und die tägliche Einordnung der ANSTOSS-Redaktion. Noch mit redaktionellen Startdaten – bald automatisch aktualisiert."
+      text="Gewinner, Verlierer, Preistreiber und aktuelle Transferalarme – eingeordnet von der ANSTOSS-Redaktion."
       stat={{value:"LIVE",label:`Stand: ${updatedAt}`}}
     />
 
-    <div className="tmStatus"><b>ANSTOSS 1.1</b><span>Der Transfermarkt ist jetzt vollständig in Magazin, Navigation und Seitendesign integriert.</span></div>
+    <div className="tmStatus"><b>ANSTOSS 1.2</b><span>Olise-Alarm, aktualisierte Marktwerte und ein kontraststarkes Design für Desktop und Mobil.</span></div>
 
     <div className="tmGrid">
       <MarketRanking title="Gewinner des Tages" icon="↗" items={winners} direction="up" />
@@ -221,8 +222,8 @@ function ComunioMarkt() {
     </section>
 
     <section className="tmRoadmap">
-      <span>Nächster Schritt</span><h2>Tagesdaten statt Handarbeit</h2>
-      <p>In Version 1.2 liest diese Seite ihre Inhalte aus einer öffentlichen JSON-Datei. Danach kann ein Cloudflare-Job Marktwerte und Redaktionstext automatisch aktualisieren.</p>
+      <span>Transferalarm</span><h2>Michael Olise auf dem Markt</h2>
+      <p><strong>18,47 Mio. € Marktwert.</strong> Der erste Premiumspieler der Vorbereitung ist verfügbar – und der erste echte Bieterkrieg der Saison kann beginnen.</p>
     </section>
   </section></Layout>
 }
