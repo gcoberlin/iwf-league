@@ -1,5 +1,5 @@
 // Redaktionell geprüfte Marktwerte und Tagesbewegungen der IWF League.
-// Stand: 02.08.2026. Werte werden erst ersetzt, wenn neue verifizierte Daten vorliegen.
+// Stand: 03.08.2026. Werte werden erst ersetzt, wenn neue verifizierte Daten vorliegen.
 
 const players = {
   olise: { name: 'Michael Olise', shortName: 'Olise', club: 'FC Bayern', value: '18,47 Mio. €' },
@@ -20,7 +20,7 @@ const withChange = (player, change) => ({
 const ranked = player => ({ name: player.name, club: player.club, value: player.value })
 
 export const comunioMarket = {
-  updatedAt: '02.08.2026 · 10:00 Uhr',
+  updatedAt: '03.08.2026 · 04:58 Uhr',
   dataStatus: 'Redaktionell geprüft',
   winners: [
     withChange(players.nusa, '+1,34 Mio. €'),
@@ -41,8 +41,8 @@ export const comunioMarket = {
   editorial: {
     editor: 'Franz',
     role: 'Breaking News',
-    headline: 'Olise ist da – wer verliert zuerst die Nerven?',
-    text: '18,47 Millionen Euro Marktwert, zehn Manager und vermutlich deutlich weniger gelassene Gesichter, als die Gruppe gerade vorgibt.',
-    managerAngle: 'Während ligaweit Kontostände geprüft werden, laufen die Bier-Updates stabil weiter. Die Devise des Tages: erst das Bier, dann das Bieten.'
+    headline: 'Wassili gewinnt den Olise-Poker vom Griechenland-Strand aus',
+    text: '20,47 Millionen Euro Ablöse, dazu Sander und Chaïbi: Wassili investiert in einer Nacht 27,37 Millionen und springt im Kader-Ranking auf Platz vier.',
+    managerAngle: 'Während Bier-, Wein- und Strandbilder den Gruppenchat bestimmen, liefert Wassili den ersten echten Titelkampf-Moment der Saison.'
   }
 }

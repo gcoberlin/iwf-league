@@ -34,7 +34,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Luca führt beim Kaderwert · Gregor zündet das Transferfeuerwerk · Urlaubsgrüße von Wassili, Tomi und Jose · Noch vier Wochen bis zum Start ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Wassili holt Olise für 20,47 Mio. € · Dreifachschlag vom Griechenland-Strand · Luca verpflichtet Seiwald · Sebastian holt Aséko ·</span></div></div>
   </>
 }
 

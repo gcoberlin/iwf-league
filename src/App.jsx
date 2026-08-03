@@ -20,14 +20,14 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Joshua Kimmich', '17,10 Mio. €', 'Luca', 'in'],
-  ['Caci', '2,03 Mio. €', 'Sebastian', 'in'],
-  ['G. Mensah', '2,03 Mio. €', 'Henning', 'in'],
-  ['Batz & Haberer', 'verkauft', 'Sebastian', 'out'],
-  ['Klanac, Oermann & Soumahoro', 'verkauft', 'Henning', 'out'],
-  ['Beste', 'verkauft', 'Greg', 'out'],
-  ['Mbuku', 'verkauft', 'Jose', 'out'],
-  ['Cardozo, Kaltefleiter & Tangvik', 'zurück an Computer', 'Liga', 'out']
+  ['Michael Olise', '20,47 Mio. €', 'Wassilios', 'in'],
+  ['Seiwald', '4,76 Mio. €', 'Luca', 'in'],
+  ['Sander', '3,60 Mio. €', 'Wassilios', 'in'],
+  ['Aséko', '3,43 Mio. €', 'Sebastian', 'in'],
+  ['Chaïbi', '3,30 Mio. €', 'Wassilios', 'in'],
+  ['Svensson', '4,10 Mio. € verkauft', 'Luca', 'out'],
+  ['Agu & Wöber', '2,85 Mio. € verkauft', 'Jose', 'out'],
+  ['Conté', '0,74 Mio. € verkauft', 'Matthias', 'out']
 ]
 
 const marketPlayers = [
@@ -85,14 +85,14 @@ function Layout({ children }) {
       <b><i /> BREAKING</b>
       <div className="breakingViewport">
         <div className="breakingTrack">
-          <span>Luca landet Kimmich für 17,10 Mio.</span>
-          <span>Caci verstärkt den Laptoptrainer</span>
-          <span>Power Ranking #1 ist online</span>
-          <span>Noch über 30 Tage bis zum Ligastart</span>
-          <span aria-hidden="true">Luca landet Kimmich für 17,10 Mio.</span>
-          <span aria-hidden="true">Caci verstärkt den Laptoptrainer</span>
-          <span aria-hidden="true">Power Ranking #1 ist online</span>
-          <span aria-hidden="true">Noch über 30 Tage bis zum Ligastart</span>
+          <span>Wassili holt Olise für 20,47 Mio.</span>
+          <span>27,37 Mio. € Dreifachschlag vom Griechenland-Strand</span>
+          <span>Luca legt mit Seiwald nach</span>
+          <span>Sebastian verpflichtet Aséko</span>
+          <span aria-hidden="true">Wassili holt Olise für 20,47 Mio.</span>
+          <span aria-hidden="true">27,37 Mio. € Dreifachschlag vom Griechenland-Strand</span>
+          <span aria-hidden="true">Luca legt mit Seiwald nach</span>
+          <span aria-hidden="true">Sebastian verpflichtet Aséko</span>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@ function TransferTicker() {
       <time>{['14:32','11:47','11:30','10:58','10:21','09:58','09:41','09:05'][index]}</time>
       <b className={direction}>➜</b><span>{player}</span><strong>{fee}</strong><em>{manager}</em>
     </div>)}
-    <Link className="widgetMore" to="/artikel/kimmich-eroeffnet-transferpoker">Alle Transfers →</Link>
+    <Link className="widgetMore" to="/artikel/wassili-olise-griechenland-2026">Alle Transfers →</Link>
   </section>
 }
 
@@ -122,7 +122,7 @@ function QuoteWidget() {
 
 function MarketWidget() {
   return <section className="portalWidget marketWidget">
-    <div className="widgetTitle"><h2>Marktcheck</h2><Link to="/artikel/kimmich-eroeffnet-transferpoker">Alle Spieler</Link></div>
+    <div className="widgetTitle"><h2>Marktcheck</h2><Link to="/comunio-markt">Alle Spieler</Link></div>
     {marketPlayers.map(([name,value],i)=><div className={i===0?'marketRow leader':'marketRow'} key={name}><b>{i+1}.</b><span>{name}</span><strong>{value}</strong></div>)}
     <small>Spieler mit Marktwert über 1 Mio. €</small>
   </section>
@@ -222,8 +222,8 @@ function ComunioMarkt() {
     </section>
 
     <section className="tmRoadmap">
-      <span>Transferalarm</span><h2>Michael Olise auf dem Markt</h2>
-      <p><strong>18,47 Mio. € Marktwert.</strong> Der erste Premiumspieler der Vorbereitung ist verfügbar – und der erste echte Bieterkrieg der Saison kann beginnen.</p>
+      <span>Transferhammer</span><h2>Olise wechselt zu Wassili</h2>
+      <p><strong>20,47 Mio. € Ablöse.</strong> Vom Griechenland-Strand aus gewinnt Wassili den ersten großen Bieterkrieg der Saison. Sander und Chaïbi kommen ebenfalls.</p>
     </section>
   </section></Layout>
 }
