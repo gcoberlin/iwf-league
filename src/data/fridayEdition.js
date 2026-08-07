@@ -1,54 +1,47 @@
 export const fridayEdition = {
-  date: '03.08.2026',
-  issue: 'Breaking-Ausgabe',
-  preSeasonNote: 'Noch knapp vier Wochen bis zum Bundesliga-Start: Die Transfers vom 1. bis 3. August haben das Kader-Ranking deutlich verändert.',
-
-  headline: 'Vom Griechenland-Strand zum Transferkönig',
-  subheadline: 'Wassili holt Olise für 20,47 Millionen Euro und investiert mit Sander und Chaïbi insgesamt 27,37 Millionen.',
-  teaser: 'Während die Liga Bier-, Wein- und Urlaubsposts liefert, zündet der IWF-Dino die erste echte Transferbombe der Saison. Luca bleibt beim Kaderwert vorne, doch Wassili springt von Rang zehn auf Rang vier.',
-
+  date: '07.08.2026',
+  issue: 'Freitagsausgabe',
+  preSeasonNote: 'Noch drei Wochen bis zum Bundesliga-Start. Kaderwerte und Transfers entsprechen dem erfassten Comunio-Stand vom 7. August.',
+  headline: 'Verlobt, vergrillt, verreist',
+  subheadline: 'Jan sagt Ja in Amsterdam, Wassili testet Peroni für Rom, Tomi grillt Kroatien leer – und Sebastian bleibt real.',
+  teaser: 'Europa ist fest in IWF-Hand. Neben Urlaub, Bier und Verlobung wird auch sportlich gearbeitet: Luca bleibt vorne, Gregor holt Kramarić und der Laptoptrainer fährt hoch.',
   breaking: [
-    ['04:58', 'Wassili holt Olise für 20,47 Mio. €'],
-    ['04:58', 'Sander und Chaïbi wechseln ebenfalls zu Wassili'],
-    ['04:58', 'Luca verpflichtet Seiwald für 4,76 Mio. €'],
-    ['02.08.', 'Sebastian sichert sich Aséko für 3,43 Mio. €'],
-    ['01.08.', 'Jose verkauft Agu und Wöber an den Computer']
+    ['06.08.', 'Jan ist verlobt – Glückwunsch aus der gesamten IWF!'],
+    ['07.08.', 'Gregor holt Kramarić für 7,93 Mio. €'],
+    ['05.08.', 'Sebastian verpflichtet Schmid für 5,73 Mio. €'],
+    ['05.08.', 'Henning holt Ayhan für 1,68 Mio. €'],
+    ['07.08.', 'Luca führt das Kaderwert-Ranking mit 59,76 Mio. € an']
   ],
-
   rosterValues: [
-    { rank: 1, manager: 'Luca', value: '61,73 Mio. €', trend: '↑', stars: 5 },
-    { rank: 2, manager: 'Tomi', value: '51,59 Mio. €', trend: '→', stars: 4 },
-    { rank: 3, manager: 'Henning', value: '50,31 Mio. €', trend: '→', stars: 4 },
-    { rank: 4, manager: 'Wassilios', value: '47,83 Mio. €', trend: '↑', stars: 5 },
-    { rank: 5, manager: 'Gregor', value: '44,75 Mio. €', trend: '→', stars: 4 },
-    { rank: 6, manager: 'Jan', value: '31,44 Mio. €', trend: '→', stars: 3 },
-    { rank: 7, manager: 'Uwe', value: '30,10 Mio. €', trend: '→', stars: 3 },
-    { rank: 8, manager: 'Sebastian', value: '26,60 Mio. €', trend: '↑', stars: 3 },
-    { rank: 9, manager: 'Jose', value: '26,34 Mio. €', trend: '↓', stars: 2 },
-    { rank: 10, manager: 'Matthias', value: '23,96 Mio. €', trend: '↓', stars: 2 }
+    { rank: 1, manager: 'Luca', value: '59,76 Mio. €', trend: '→', stars: 5 },
+    { rank: 2, manager: 'Tomi', value: '56,02 Mio. €', trend: '↑', stars: 5 },
+    { rank: 3, manager: 'Henning', value: '54,74 Mio. €', trend: '↑', stars: 4 },
+    { rank: 4, manager: 'Gregor', value: '53,80 Mio. €', trend: '↑', stars: 4 },
+    { rank: 5, manager: 'Wassilios', value: '45,06 Mio. €', trend: '→', stars: 4 },
+    { rank: 6, manager: 'Sebastian', value: '37,10 Mio. €', trend: '↑', stars: 4 },
+    { rank: 7, manager: 'Jan', value: '32,89 Mio. €', trend: '→', stars: 3 },
+    { rank: 8, manager: 'Uwe', value: '32,10 Mio. €', trend: '→', stars: 3 },
+    { rank: 9, manager: 'Matthias', value: '30,87 Mio. €', trend: '↑', stars: 3 },
+    { rank: 10, manager: 'Jose', value: '26,55 Mio. €', trend: '→', stars: 3 }
   ],
-
   transfers: [
-    ['Wassilios', 'kauft', 'Olise', '20.470.000 €'],
-    ['Wassilios', 'kauft', 'Sander', '3.600.000 €'],
-    ['Wassilios', 'kauft', 'Chaïbi', '3.300.000 €'],
-    ['Luca', 'kauft', 'Seiwald', '4.760.001 €'],
-    ['Sebastian', 'kauft', 'Aséko', '3.430.000 €']
+    ['Gregor', 'kauft', 'Kramarić', '7,93 Mio. €'],
+    ['Sebastian', 'kauft', 'Schmid', '5,73 Mio. €'],
+    ['Henning', 'kauft', 'Ayhan', '1,68 Mio. €'],
+    ['Matthias', 'kauft', 'Campbell', '2,11 Mio. €'],
+    ['Sebastian', 'kauft', 'Krauß', '1,59 Mio. €']
   ],
-
   awards: {
-    manager: 'Wassilios',
-    managerText: 'Vom Griechenland-Strand aus investiert Wassili 27,37 Millionen Euro und springt im Kaderwert-Ranking von Platz zehn auf Platz vier.',
-    transfer: 'Olise zu Wassili für 20.470.000 €',
-    surprise: 'Luca legt mit Seiwald leise nach und behauptet die Spitze.',
-    watch: 'Jose und Matthias schaffen durch Verkäufe Platz – die nächsten Gebote dürften folgen.'
+    manager: 'Jan',
+    managerText: 'Der wichtigste Deal der Woche: Verlobung am 6. August in Amsterdam. Die IWF gratuliert – und fragt bereits nach JGA und Bangkok-Hochzeit.',
+    transfer: 'Kramarić zu Gregor für 7,93 Mio. €',
+    surprise: 'Sebastian kauft Schmid, Krauß und Poreba – der Laptoptrainer fährt hoch.',
+    watch: 'Tomi fragt nach finanzieller Comunio-Unterstützung, obwohl sein Kader 56,02 Mio. € wert ist.'
   },
-
   editorial: {
-    ingo: { title: 'Urlaub war nur Tarnung', text: 'Wassili postet vom Strand in Griechenland und schlägt wenige Stunden später mit dem größten Transfer der Saison zu. Eine bessere IWF-Geschichte kann man kaum schreiben.' },
-    werner: { title: 'Statement mit Risiko', text: 'Olise ist den Aufschlag wert, wenn er seine erwartete Rolle erfüllt. Gleichzeitig konzentriert Wassili nun sehr viel Kapital auf einen Spieler.' },
-    franz: { title: 'Strand, Sonne, Superstar!', text: 'Andere bringen Olivenöl mit. Wassili bringt Olise. 20,47 Millionen Euro – und plötzlich ist der Urlauber Titelkandidat.' }
+    ingo: { title: 'Europa in IWF-Hand', text: 'Jan verlobt sich in Amsterdam, Wassili prüft Apulien für Rom, Tomi grillt in Kroatien und Henning testet Schweizer Bier. Nebenbei wird sogar noch Comunio gespielt.' },
+    werner: { title: 'Die Spitze rückt zusammen', text: 'Luca führt weiter, aber Tomi, Henning und Gregor liegen beim Kaderwert eng dahinter. Sebastian hat mit drei Einkäufen die interessanteste Bewegung der Woche.' },
+    franz: { title: 'Verlobt, vergrillt, verreist!', text: 'Jan sagt Ja, Tomi braucht Geld, Wassili trinkt Peroni im Dienst und Sebastian isst nur, was real ist. Mehr IWF passt kaum in eine Woche.' }
   },
-
-  rumor: 'Aus gut informierten Kreisen heißt es, dass mehrere Manager nach Wassilis Dreifachschlag ihre Kontostände erneut geöffnet haben. Der nächste Bieterkrieg dürfte nicht lange auf sich warten lassen.'
+  rumor: 'Die Redaktion wartet nach Tomis Bitte um finanzielle Unterstützung gespannt auf den ersten offiziellen IWF-Rettungsschirm. Bürgschaften in Form von Grillfleisch werden nicht akzeptiert.'
 }

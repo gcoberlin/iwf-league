@@ -6,6 +6,7 @@ import transferTickerArticle from './2026-07-24-transferticker'
 import fridayEditionArticle from './2026-07-31-freitagsausgabe'
 import breakingOliseArticle from './2026-08-02-breaking-olise'
 import wassiliOliseArticle from './2026-08-03-wassili-olise'
+import fridayEdition0708 from './2026-08-07-freitagsausgabe'
 
 const legacyWithDates = legacyArticles.map((article, index) => ({
   ...article,
@@ -20,6 +21,7 @@ const previousArticles = [
 ]
 
 export const articles = [
+  fridayEdition0708,
   wassiliOliseArticle,
   breakingOliseArticle,
   fridayEditionArticle,
@@ -28,7 +30,7 @@ export const articles = [
   brownTransferArticle,
   ...previousArticles
 ]
-  .map(article => article.slug === wassiliOliseArticle.slug
+  .map(article => article.slug === fridayEdition0708.slug
     ? article
     : { ...article, topStory: false })
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))

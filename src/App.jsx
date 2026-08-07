@@ -20,19 +20,19 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Michael Olise', '20,47 Mio. €', 'Wassilios', 'in'],
-  ['Seiwald', '4,76 Mio. €', 'Luca', 'in'],
-  ['Sander', '3,60 Mio. €', 'Wassilios', 'in'],
-  ['Aséko', '3,43 Mio. €', 'Sebastian', 'in'],
-  ['Chaïbi', '3,30 Mio. €', 'Wassilios', 'in'],
-  ['Svensson', '4,10 Mio. € verkauft', 'Luca', 'out'],
-  ['Agu & Wöber', '2,85 Mio. € verkauft', 'Jose', 'out'],
-  ['Conté', '0,74 Mio. € verkauft', 'Matthias', 'out']
+  ['Kramarić', '7,93 Mio. €', 'Gregor', 'in'],
+  ['Schmid', '5,73 Mio. €', 'Sebastian', 'in'],
+  ['Ayhan', '1,68 Mio. €', 'Henning', 'in'],
+  ['Campbell', '2,11 Mio. €', 'Matthias', 'in'],
+  ['Krauß', '1,59 Mio. €', 'Sebastian', 'in'],
+  ['Harder', '1,90 Mio. €', 'Matthias', 'in'],
+  ['Poreba', '1,07 Mio. €', 'Sebastian', 'in'],
+  ['Maina', '0,92 Mio. € verkauft', 'Jan', 'out']
 ]
 
 const marketPlayers = [
-  ['Joshua Kimmich', '12,93 Mio. €'], ['Nusa', '7,33 Mio. €'],
-  ['Brown', '7,35 Mio. €'], ['F. Nmecha', '6,76 Mio. €'], ['Gnabry', '6,07 Mio. €']
+  ['Joshua Kimmich', '15,09 Mio. €'], ['Guirassy', '11,83 Mio. €'],
+  ['Schick', '10,95 Mio. €'], ['Demirović', '9,00 Mio. €'], ['F. Nmecha', '8,48 Mio. €']
 ]
 
 function Logo() {
@@ -85,14 +85,14 @@ function Layout({ children }) {
       <b><i /> BREAKING</b>
       <div className="breakingViewport">
         <div className="breakingTrack">
-          <span>Wassili holt Olise für 20,47 Mio.</span>
-          <span>27,37 Mio. € Dreifachschlag vom Griechenland-Strand</span>
-          <span>Luca legt mit Seiwald nach</span>
-          <span>Sebastian verpflichtet Aséko</span>
-          <span aria-hidden="true">Wassili holt Olise für 20,47 Mio.</span>
-          <span aria-hidden="true">27,37 Mio. € Dreifachschlag vom Griechenland-Strand</span>
-          <span aria-hidden="true">Luca legt mit Seiwald nach</span>
-          <span aria-hidden="true">Sebastian verpflichtet Aséko</span>
+          <span>Jan ist seit 06.08. verlobt – Glückwunsch!</span>
+          <span>Gregor holt Kramarić für 7,93 Mio.</span>
+          <span>Sebastian verpflichtet Schmid, Krauß und Poreba</span>
+          <span>Luca führt mit 59,76 Mio. € Kaderwert</span>
+          <span aria-hidden="true">Jan ist seit 06.08. verlobt – Glückwunsch!</span>
+          <span aria-hidden="true">Gregor holt Kramarić für 7,93 Mio.</span>
+          <span aria-hidden="true">Sebastian verpflichtet Schmid, Krauß und Poreba</span>
+          <span aria-hidden="true">Luca führt mit 59,76 Mio. € Kaderwert</span>
         </div>
       </div>
     </div>
@@ -108,7 +108,7 @@ function TransferTicker() {
       <time>{['14:32','11:47','11:30','10:58','10:21','09:58','09:41','09:05'][index]}</time>
       <b className={direction}>➜</b><span>{player}</span><strong>{fee}</strong><em>{manager}</em>
     </div>)}
-    <Link className="widgetMore" to="/artikel/wassili-olise-griechenland-2026">Alle Transfers →</Link>
+    <Link className="widgetMore" to="/artikel/freitagsausgabe-07-08-2026">Alle Transfers →</Link>
   </section>
 }
 
@@ -207,7 +207,7 @@ function ComunioMarkt() {
       stat={{value:"LIVE",label:`Stand: ${updatedAt}`}}
     />
 
-    <div className="tmStatus"><b>ANSTOSS 1.2</b><span>Olise-Alarm, aktualisierte Marktwerte und ein kontraststarkes Design für Desktop und Mobil.</span></div>
+    <div className="tmStatus"><b>ANSTOSS 1.2</b><span>Aktueller Kaderstand, neue Transfers und die Freitagsanalyse der ANSTOSS-Redaktion.</span></div>
 
     <div className="tmGrid">
       <MarketRanking title="Gewinner des Tages" icon="↗" items={winners} direction="up" />
@@ -222,8 +222,8 @@ function ComunioMarkt() {
     </section>
 
     <section className="tmRoadmap">
-      <span>Transferhammer</span><h2>Olise wechselt zu Wassili</h2>
-      <p><strong>20,47 Mio. € Ablöse.</strong> Vom Griechenland-Strand aus gewinnt Wassili den ersten großen Bieterkrieg der Saison. Sander und Chaïbi kommen ebenfalls.</p>
+      <span>Transfer der Woche</span><h2>Gregor holt Kramarić</h2>
+      <p><strong>7,93 Mio. € Ablöse.</strong> Gregor legt prominent nach. Sebastian kauft gleich dreifach ein, Henning holt Ayhan – und Luca verteidigt beim Kaderwert weiter die Spitze.</p>
     </section>
   </section></Layout>
 }
