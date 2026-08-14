@@ -1,47 +1,45 @@
 export const fridayEdition = {
-  date: '07.08.2026',
-  issue: 'Freitagsausgabe',
-  preSeasonNote: 'Noch drei Wochen bis zum Bundesliga-Start. Kaderwerte und Transfers entsprechen dem erfassten Comunio-Stand vom 7. August.',
-  headline: 'Verlobt, vergrillt, verreist',
-  subheadline: 'Jan sagt Ja in Amsterdam, Wassili testet Peroni für Rom, Tomi grillt Kroatien leer – und Sebastian bleibt real.',
-  teaser: 'Europa ist fest in IWF-Hand. Neben Urlaub, Bier und Verlobung wird auch sportlich gearbeitet: Luca bleibt vorne, Gregor holt Kramarić und der Laptoptrainer fährt hoch.',
+  date: '14.08.2026', issue: 'Freitagsausgabe',
+  preSeasonNote: 'Noch zwei Wochen bis zum Bundesliga-Start. Kaderwerte entsprechen dem erfassten Comunio-Stand vom 14. August. Wichtig: Kaderwert ist nicht Vermögen – Kontostände sind unbekannt und Manager können im Minus sein.',
+  headline: 'Zurück. Beim Bier. Und schon wieder im Transferwahn.',
+  subheadline: 'Zwei IWF-Biergipfel, Tomis nächste Absage, Muje am Rande der Verzweiflung und Sebastians erster echter Griff ins Klo.',
+  teaser: 'Die Urlauber sind zurück, die IWF trifft sich wieder – und auf Comunio eskaliert der Markt. Matthias kauft für über 30 Millionen ein, Sebastian korrigiert Schmid und Luca bleibt der Maßstab.',
   breaking: [
-    ['06.08.', 'Jan ist verlobt – Glückwunsch aus der gesamten IWF!'],
-    ['07.08.', 'Gregor holt Kramarić für 7,93 Mio. €'],
-    ['05.08.', 'Sebastian verpflichtet Schmid für 5,73 Mio. €'],
-    ['05.08.', 'Henning holt Ayhan für 1,68 Mio. €'],
-    ['07.08.', 'Luca führt das Kaderwert-Ranking mit 59,76 Mio. € an']
+    ['14.08.', 'Matthias holt Uzun für 8,10 Mio. € – sein Kader steht jetzt bei 62,14 Mio. €'],
+    ['13.08.', 'Sebastian holt Stiller für 9,34 Mio. €'],
+    ['12.08.', 'Schmid verlässt die Bundesliga – Sebastian verkauft mit rund 1,05 Mio. € Verlust'],
+    ['12.08.', 'Luca schnappt Muje Moreira für 8,80 Mio. € weg'],
+    ['14.08.', 'Berlin und Bayern im Biergipfel-Modus – Tomi fehlt natürlich']
   ],
   rosterValues: [
-    { rank: 1, manager: 'Luca', value: '59,76 Mio. €', trend: '→', stars: 5 },
-    { rank: 2, manager: 'Tomi', value: '56,02 Mio. €', trend: '↑', stars: 5 },
-    { rank: 3, manager: 'Henning', value: '54,74 Mio. €', trend: '↑', stars: 4 },
-    { rank: 4, manager: 'Gregor', value: '53,80 Mio. €', trend: '↑', stars: 4 },
-    { rank: 5, manager: 'Wassilios', value: '45,06 Mio. €', trend: '→', stars: 4 },
-    { rank: 6, manager: 'Sebastian', value: '37,10 Mio. €', trend: '↑', stars: 4 },
-    { rank: 7, manager: 'Jan', value: '32,89 Mio. €', trend: '→', stars: 3 },
-    { rank: 8, manager: 'Uwe', value: '32,10 Mio. €', trend: '→', stars: 3 },
-    { rank: 9, manager: 'Matthias', value: '30,87 Mio. €', trend: '↑', stars: 3 },
-    { rank: 10, manager: 'Jose', value: '26,55 Mio. €', trend: '→', stars: 3 }
+    { rank:1, manager:'Luca', value:'71,25 Mio. €', trend:'↑', stars:5 },
+    { rank:2, manager:'Henning', value:'56,83 Mio. €', trend:'↑', stars:5 },
+    { rank:3, manager:'Sebastian', value:'55,66 Mio. €', trend:'↑', stars:5 },
+    { rank:4, manager:'Gregor', value:'54,73 Mio. €', trend:'↑', stars:4 },
+    { rank:5, manager:'Matthias', value:'62,14 Mio. €', trend:'↑', stars:4 },
+    { rank:6, manager:'Tomi', value:'56,86 Mio. €', trend:'→', stars:4 },
+    { rank:7, manager:'Wassilios', value:'44,64 Mio. €', trend:'→', stars:3 },
+    { rank:8, manager:'Jan', value:'30,95 Mio. €', trend:'↓', stars:3 },
+    { rank:9, manager:'Uwe', value:'33,93 Mio. €', trend:'→', stars:3 },
+    { rank:10, manager:'Jose', value:'28,98 Mio. €', trend:'→', stars:3 }
   ],
   transfers: [
-    ['Gregor', 'kauft', 'Kramarić', '7,93 Mio. €'],
-    ['Sebastian', 'kauft', 'Schmid', '5,73 Mio. €'],
-    ['Henning', 'kauft', 'Ayhan', '1,68 Mio. €'],
-    ['Matthias', 'kauft', 'Campbell', '2,11 Mio. €'],
-    ['Sebastian', 'kauft', 'Krauß', '1,59 Mio. €']
+    ['Matthias','kauft','Karl','9,35 Mio. €'],
+    ['Sebastian','kauft','Stiller','9,34 Mio. €'],
+    ['Luca','kauft','Moreira','8,80 Mio. €'],
+    ['Matthias','kauft','Uzun','8,10 Mio. €'],
+    ['Matthias','kauft','Onyedika','6,62 Mio. €']
   ],
   awards: {
-    manager: 'Jan',
-    managerText: 'Der wichtigste Deal der Woche: Verlobung am 6. August in Amsterdam. Die IWF gratuliert – und fragt bereits nach JGA und Bangkok-Hochzeit.',
-    transfer: 'Kramarić zu Gregor für 7,93 Mio. €',
-    surprise: 'Sebastian kauft Schmid, Krauß und Poreba – der Laptoptrainer fährt hoch.',
-    watch: 'Tomi fragt nach finanzieller Comunio-Unterstützung, obwohl sein Kader 56,02 Mio. € wert ist.'
+    manager:'Matthias', managerText:'Vom Kiosk-Hellen zum Großinvestor: mehr als 30 Millionen Euro Einkaufsvolumen und plötzlich der zweitteuerste Kader.',
+    transfer:'Stiller zu Sebastian für 9,34 Mio. €',
+    surprise:'Gregor besitzt plötzlich einen Kader, der ernsthaft nach Spitzengruppe aussieht.',
+    watch:'Muje scheitert bei Moreira um 238.000 Euro – und beklagt öffentlich, dass alle anderen zu viel Geld haben.'
   },
   editorial: {
-    ingo: { title: 'Europa in IWF-Hand', text: 'Jan verlobt sich in Amsterdam, Wassili prüft Apulien für Rom, Tomi grillt in Kroatien und Henning testet Schweizer Bier. Nebenbei wird sogar noch Comunio gespielt.' },
-    werner: { title: 'Die Spitze rückt zusammen', text: 'Luca führt weiter, aber Tomi, Henning und Gregor liegen beim Kaderwert eng dahinter. Sebastian hat mit drei Einkäufen die interessanteste Bewegung der Woche.' },
-    franz: { title: 'Verlobt, vergrillt, verreist!', text: 'Jan sagt Ja, Tomi braucht Geld, Wassili trinkt Peroni im Dienst und Sebastian isst nur, was real ist. Mehr IWF passt kaum in eine Woche.' }
+    ingo:{title:'Die IWF ist wieder da',text:'Berlin trinkt zusammen, Greg und Sebastian halten ihren eigenen Biergipfel in Bayern ab und Tomi findet trotz Urlaubsende eine Ausrede. Es fühlt sich sofort wieder normal an.'},
+    werner:{title:'Marktwert ist nicht Vermögen',text:'Luca bleibt mein Maßstab. Matthias hat zwar 62,14 Millionen Kaderwert, bindet aber sehr viel Kapital in 23 Spielern. Ohne Kontostände bleibt jede Finanzanalyse bewusst vorläufig.'},
+    franz:{title:'Schmid war nicht real',text:'Sebastian verbrennt eine Million, Muje bekommt keinen Spieler, Matthias kauft halb Comunio leer und Tomi schafft es wieder nicht zum Bier. Perfekter Freitag.'}
   },
-  rumor: 'Die Redaktion wartet nach Tomis Bitte um finanzielle Unterstützung gespannt auf den ersten offiziellen IWF-Rettungsschirm. Bürgschaften in Form von Grillfleisch werden nicht akzeptiert.'
+  rumor:'Nach Mujes Robin-Hood-Hilferuf prüft die Liga einen Solidaritätszuschlag für arme Manager. Tomi hat vorsorglich bereits Interesse angemeldet.'
 }

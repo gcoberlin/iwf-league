@@ -20,19 +20,19 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Kramarić', '7,93 Mio. €', 'Gregor', 'in'],
-  ['Schmid', '5,73 Mio. €', 'Sebastian', 'in'],
-  ['Ayhan', '1,68 Mio. €', 'Henning', 'in'],
-  ['Campbell', '2,11 Mio. €', 'Matthias', 'in'],
-  ['Krauß', '1,59 Mio. €', 'Sebastian', 'in'],
-  ['Harder', '1,90 Mio. €', 'Matthias', 'in'],
-  ['Poreba', '1,07 Mio. €', 'Sebastian', 'in'],
-  ['Maina', '0,92 Mio. € verkauft', 'Jan', 'out']
+  ['Uzun', '8,10 Mio. €', 'Matthias', 'in'],
+  ['Stiller', '9,34 Mio. €', 'Sebastian', 'in'],
+  ['Karl', '9,35 Mio. €', 'Matthias', 'in'],
+  ['Moreira', '8,80 Mio. €', 'Luca', 'in'],
+  ['Onyedika', '6,62 Mio. €', 'Matthias', 'in'],
+  ['Rômulo', '6,24 Mio. €', 'Sebastian', 'in'],
+  ['Tillman', '5,56 Mio. €', 'Jan', 'in'],
+  ['Schmid', '4,68 Mio. € verkauft', 'Sebastian', 'out']
 ]
 
 const marketPlayers = [
-  ['Joshua Kimmich', '15,09 Mio. €'], ['Guirassy', '11,83 Mio. €'],
-  ['Schick', '10,95 Mio. €'], ['Demirović', '9,00 Mio. €'], ['F. Nmecha', '8,48 Mio. €']
+  ['Joshua Kimmich', '14,38 Mio. €'], ['Guirassy', '12,22 Mio. €'],
+  ['Schick', '12,19 Mio. €'], ['Burkardt', '11,53 Mio. €'], ['Nusa', '9,35 Mio. €']
 ]
 
 function Logo() {

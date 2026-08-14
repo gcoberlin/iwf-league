@@ -1,26 +1,5 @@
 export const weeklyQuotes = [
-  {
-    date: '21.07.2026',
-    speaker: 'Henning',
-    context: 'Nach seinem symbolischen ersten Transfer',
-    quote: 'Mein erster Transfer ist symbolisch, danach wird es ernst: Man bezeichnet jemanden als Hong, der etwas Dämliches oder Verpeiltes getan hat – meist ohne damit eine tiefe, böse Beleidigung zu meinen (ähnlich wie „Eimer“, „Pfosten“ oder „Grasdackel“).',
-    editor: 'Franz',
-    verdict: 'Der Transfermarkt ist eröffnet – und Henning liefert direkt die erste sprachwissenschaftliche Pressekonferenz.'
-  },
-  {
-    date: '21.07.2026',
-    speaker: 'Matthias',
-    context: 'Zur neuen Comunio-App',
-    quote: 'Wie verkaufe ich denn einen Spieler? Verdammt',
-    editor: 'Werner',
-    verdict: 'Technische Probleme sind keine Ausrede. In diesem Fall aber zumindest eine sehr glaubwürdige.'
-  },
-  {
-    date: 'Dauerbrenner',
-    speaker: 'Sebastian',
-    context: 'Vor nahezu jeder Saison',
-    quote: 'Mir fehlt noch etwas die Motivation …',
-    editor: 'Ingo',
-    verdict: 'Der berühmteste Satz der IWF-Geschichte. Meist folgt darauf ein Titelkampf.'
-  }
+  { date:'14.08.2026', speaker:'Christoph / Muje', context:'Nach mehreren gescheiterten Geboten', quote:'Comanji nervt maximal. Ihr habt alle viel zu viel Geld 😩', editor:'Werner', verdict:'238.000 Euro fehlten bei Moreira. So klein kann der Abstand zwischen Transfer und Verzweiflung sein.' },
+  { date:'14.08.2026', speaker:'Sebastian', context:'Über Romano Schmid', quote:'Aber mit Schmid auch schon 1 Griff ins Klo…', editor:'Franz', verdict:'Selbstkritik vom Laptoptrainer – selten, wertvoll und in diesem Fall rund 1,05 Millionen Euro teuer.' },
+  { date:'Dauerbrenner', speaker:'Sebastian', context:'Vor nahezu jeder Saison', quote:'Mir fehlt noch etwas die Motivation …', editor:'Ingo', verdict:'Der berühmteste Satz der IWF-Geschichte. Meist folgt darauf ein Titelkampf.' }
 ]
