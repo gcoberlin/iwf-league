@@ -1,11 +1,11 @@
 const article = {
   slug:'freitagsausgabe-14-08-2026', category:'Freitagsausgabe', kicker:'IWF WOCHENRÜCKBLICK · 14. August 2026',
-  title:'Zurück. Beim Bier. Und schon wieder im Transferwahn.',
+  title:'Zurück beim Bier. Transfermarkt im Vollrausch.',
   excerpt:'Zwei Biergipfel, Tomis nächste Absage, Muje verzweifelt am Markt, Sebastian verbrennt mit Schmid eine Million – und Matthias kauft plötzlich halb Comunio leer.',
   author:'Ingo, Werner & Franz', date:'14.08.2026', publishedAt:'2026-08-14', readTime:'11 Min.', topStory:true,
-  hero:`${import.meta.env.BASE_URL}images/redaktion.png`,
+  hero:`${import.meta.env.BASE_URL}images/managers/sebastian.png`,
   content:`
-# Zurück. Beim Bier. Und schon wieder im Transferwahn.
+# Zurück beim Bier. Transfermarkt im Vollrausch.
 
 Die Urlauber sind zurück – und die IWF braucht keine 48 Stunden, um wieder in ihren natürlichen Aggregatzustand zu wechseln: **Bier, Transfers und gegenseitige Sticheleien.**
 

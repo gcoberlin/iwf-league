@@ -85,14 +85,14 @@ function Layout({ children }) {
       <b><i /> BREAKING</b>
       <div className="breakingViewport">
         <div className="breakingTrack">
-          <span>Jan ist seit 06.08. verlobt – Glückwunsch!</span>
-          <span>Gregor holt Kramarić für 7,93 Mio.</span>
-          <span>Sebastian verpflichtet Schmid, Krauß und Poreba</span>
-          <span>Luca führt mit 59,76 Mio. € Kaderwert</span>
-          <span aria-hidden="true">Jan ist seit 06.08. verlobt – Glückwunsch!</span>
-          <span aria-hidden="true">Gregor holt Kramarić für 7,93 Mio.</span>
-          <span aria-hidden="true">Sebastian verpflichtet Schmid, Krauß und Poreba</span>
-          <span aria-hidden="true">Luca führt mit 59,76 Mio. € Kaderwert</span>
+          <span>Matthias kauft für über 30 Mio. € ein</span>
+          <span>Sebastian holt Stiller für 9,34 Mio. €</span>
+          <span>Muje scheitert bei Moreira um nur 238.000 €</span>
+          <span>Zwei IWF-Biergipfel – Tomi fehlt natürlich</span>
+          <span aria-hidden="true">Matthias kauft für über 30 Mio. € ein</span>
+          <span aria-hidden="true">Sebastian holt Stiller für 9,34 Mio. €</span>
+          <span aria-hidden="true">Muje scheitert bei Moreira um nur 238.000 €</span>
+          <span aria-hidden="true">Zwei IWF-Biergipfel – Tomi fehlt natürlich</span>
         </div>
       </div>
     </div>

@@ -1,14 +1,14 @@
 export const fridayEdition = {
   date: '14.08.2026', issue: 'Freitagsausgabe',
   preSeasonNote: 'Noch zwei Wochen bis zum Bundesliga-Start. Kaderwerte entsprechen dem erfassten Comunio-Stand vom 14. August. Wichtig: Kaderwert ist nicht Vermögen – Kontostände sind unbekannt und Manager können im Minus sein.',
-  headline: 'Zurück. Beim Bier. Und schon wieder im Transferwahn.',
+  headline: 'Zurück beim Bier. Transfermarkt im Vollrausch.',
   subheadline: 'Zwei IWF-Biergipfel, Tomis nächste Absage, Muje am Rande der Verzweiflung und Sebastians erster echter Griff ins Klo.',
   teaser: 'Die Urlauber sind zurück, die IWF trifft sich wieder – und auf Comunio eskaliert der Markt. Matthias kauft für über 30 Millionen ein, Sebastian korrigiert Schmid und Luca bleibt der Maßstab.',
   breaking: [
     ['14.08.', 'Matthias holt Uzun für 8,10 Mio. € – sein Kader steht jetzt bei 62,14 Mio. €'],
     ['13.08.', 'Sebastian holt Stiller für 9,34 Mio. €'],
     ['12.08.', 'Schmid verlässt die Bundesliga – Sebastian verkauft mit rund 1,05 Mio. € Verlust'],
-    ['12.08.', 'Luca schnappt Muje Moreira für 8,80 Mio. € weg'],
+    ['12.08.', 'Luca schnappt Muje Moreira für nur 238.000 € mehr weg'],
     ['14.08.', 'Berlin und Bayern im Biergipfel-Modus – Tomi fehlt natürlich']
   ],
   rosterValues: [

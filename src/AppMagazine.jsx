@@ -47,10 +47,15 @@ function MarketCenter() {
   const losers = comunioMarket.losers.slice(0, 5)
   return <section className="magPanel marketCenter">
     <PanelTitle link="/comunio-markt">↗ Marktcenter</PanelTitle>
-    <h3>Gewinner des Tages</h3>
-    {winners.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="up">{player.change}</em></div>)}
-    <h3 className="lossTitle">Verlierer des Tages</h3>
-    {losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)}
+    {winners.length || losers.length ? <>
+      <h3>Gewinner des Tages</h3>
+      {winners.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="up">{player.change}</em></div>)}
+      <h3 className="lossTitle">Verlierer des Tages</h3>
+      {losers.map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="down">{player.change}</em></div>)}
+    </> : <>
+      <h3>Teuerste Spieler der IWF</h3>
+      {comunioMarket.mostExpensive.slice(0,5).map(player => <div className="marketLine" key={player.name}><span><b>{player.name}</b><small>{player.club}</small></span><em className="up">{player.value}</em></div>)}
+    </>}
     <small className="dataState">Stand: {comunioMarket.updatedAt} · redaktionelle Startdaten</small>
   </section>
 }
