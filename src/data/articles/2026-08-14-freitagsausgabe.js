@@ -3,7 +3,7 @@ const article = {
   title:'Zurück beim Bier. Transfermarkt im Vollrausch.',
   excerpt:'Zwei Biergipfel, Tomis nächste Absage, Muje verzweifelt am Markt, Sebastian verbrennt mit Schmid eine Million – und Matthias kauft plötzlich halb Comunio leer.',
   author:'Ingo, Werner & Franz', date:'14.08.2026', publishedAt:'2026-08-14', readTime:'11 Min.', topStory:true,
-  hero:`${import.meta.env.BASE_URL}images/managers/sebastian.png`,
+  hero:`${import.meta.env.BASE_URL}images/managers/iwf-manager-gruppenbild-2026.png`,
   content:`
 # Zurück beim Bier. Transfermarkt im Vollrausch.
 

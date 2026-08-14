@@ -197,8 +197,20 @@ function MarketRanking({ title, icon, items, direction }) {
   </section>
 }
 
+function RecentTransfers({ items }) {
+  return <section className="tmPanel tmTransfers">
+    <header><span>↔</span><div><small>Comunio Transfer-Ticker</small><h2>Neueste Transfers</h2></div></header>
+    <div className="tmRows">
+      {items.map((t,index)=><article key={`${t.date}-${t.player}-${index}`}>
+        <b>{t.date}</b><div><strong>{t.player}</strong><small>{t.manager}</small></div>
+        <em className={t.direction === 'out' ? 'down' : 'up'}>{t.direction === 'out' ? 'VERKAUF' : 'KAUF'}</em><span>{t.fee}</span>
+      </article>)}
+    </div>
+  </section>
+}
+
 function ComunioMarkt() {
-  const { winners, losers, mostExpensive, pointsCollectors, editorial, updatedAt } = comunioMarket
+  const { mostExpensive, editorial, updatedAt, recentTransfers } = comunioMarket
   return <Layout><section className="page transferMarketPage">
     <PageHero
       eyebrow="Live-Center · Comunio"
@@ -209,11 +221,9 @@ function ComunioMarkt() {
 
     <div className="tmStatus"><b>ANSTOSS 1.2</b><span>Aktueller Kaderstand, neue Transfers und die Freitagsanalyse der ANSTOSS-Redaktion.</span></div>
 
-    <div className="tmGrid">
-      <MarketRanking title="Gewinner des Tages" icon="↗" items={winners} direction="up" />
-      <MarketRanking title="Verlierer des Tages" icon="↘" items={losers} direction="down" />
+    <div className="tmGrid tmGridCurrent">
+      <RecentTransfers items={recentTransfers} />
       <MarketRanking title="Teuerste Spieler" icon="€" items={mostExpensive} />
-      <MarketRanking title="Punktesammler" icon="★" items={pointsCollectors} />
     </div>
 
     <section className="tmEditorial">
@@ -222,8 +232,8 @@ function ComunioMarkt() {
     </section>
 
     <section className="tmRoadmap">
-      <span>Transfer der Woche</span><h2>Gregor holt Kramarić</h2>
-      <p><strong>7,93 Mio. € Ablöse.</strong> Gregor legt prominent nach. Sebastian kauft gleich dreifach ein, Henning holt Ayhan – und Luca verteidigt beim Kaderwert weiter die Spitze.</p>
+      <span>Transfer-Fokus · 14.08.</span><h2>Matthias kauft weiter ein</h2>
+      <p><strong>Uzun für 8,10 Mio. €.</strong> Nach Karl, Onyedika und Ansah folgt der nächste große Einkauf. Sebastian kontert mit Stiller für 9,34 Mio. €, Luca hatte zuvor Moreira für 8,80 Mio. € geholt.</p>
     </section>
   </section></Layout>
 }

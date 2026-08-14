@@ -365,3 +365,14 @@ img,svg,video{max-width:100%;height:auto}
   .transferMarketPage .tmRows em{font-size:15px;white-space:nowrap}
   .transferMarketPage .tmStatus{padding:15px 17px}
 }
+
+/* 14.08.2026 final hero + market quickfix */
+.portalHero img{object-position:center 42%;}
+.v2Article{padding-top:76px!important;}
+.tmGridCurrent{grid-template-columns:1.35fr .65fr!important;}
+.tmTransfers{grid-row:span 1;}
+.tmTransfers .tmRows article{grid-template-columns:62px minmax(0,1fr) 78px 110px;}
+.tmTransfers .tmRows article>b{font-size:12px;color:#555;}
+.tmTransfers .tmRows article em{font-style:normal;font-size:11px;font-weight:1000;text-align:right;}
+.tmTransfers .tmRows article em.up{color:#16843a}.tmTransfers .tmRows article em.down{color:#d22630}
+@media(max-width:900px){.tmGridCurrent{grid-template-columns:1fr!important}.v2Article{padding-top:58px!important}.portalHero img{object-position:center center}}
