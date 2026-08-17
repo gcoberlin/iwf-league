@@ -34,7 +34,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Matthias kauft für über 30 Mio. € ein · Sebastian holt Stiller für 9,34 Mio. € · Muje verzweifelt am Markt · Zwei IWF-Biergipfel ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Harry Kane auf dem Markt · Nusa wechselt von Luca zu Sebastian für 9,2875 Mio. € · Wer geht beim Königstransfer All-in? ·</span></div></div>
   </>
 }
 

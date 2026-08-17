@@ -1,5 +1,5 @@
 const article = {
- slug:'power-ranking-juli-2026', title:'Das erste Kräfteverhältnis: Luca vorne, aber noch ist gar nichts entschieden', kicker:'Power Ranking · 24. Juli 2026',
+ slug:'power-ranking-juli-2026', title:'Luca vorne, aber noch ist gar nichts entschieden', kicker:'Power Ranking · 24. Juli 2026',
  excerpt:'Alle zehn Kader im Check: ANSTOSS bewertet Qualität, Stammplatzchancen und Baustellen – mit einem entscheidenden Hinweis: Bis zum Ligastart sind es noch mehr als 30 Tage.',
  author:'Ingo, Werner & Franz', date:'24. Juli 2026', publishedAt:'2026-07-24', readTime:'8 Min.', category:'Power Ranking', topStory:true, hero:`${import.meta.env.BASE_URL}images/redaktion.png`,
  content:`

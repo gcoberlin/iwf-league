@@ -1,15 +1,15 @@
 export const fridayEdition = {
-  date: '14.08.2026', issue: 'Freitagsausgabe',
-  preSeasonNote: 'Noch zwei Wochen bis zum Bundesliga-Start. Kaderwerte entsprechen dem erfassten Comunio-Stand vom 14. August. Wichtig: Kaderwert ist nicht Vermögen – Kontostände sind unbekannt und Manager können im Minus sein.',
-  headline: 'Zurück beim Bier. Transfermarkt im Vollrausch.',
-  subheadline: 'Zwei IWF-Biergipfel, Tomis nächste Absage, Muje am Rande der Verzweiflung und Sebastians erster echter Griff ins Klo.',
-  teaser: 'Die Urlauber sind zurück, die IWF trifft sich wieder – und auf Comunio eskaliert der Markt. Matthias kauft für über 30 Millionen ein, Sebastian korrigiert Schmid und Luca bleibt der Maßstab.',
+  date: '17.08.2026', issue: 'Transferalarm',
+  preSeasonNote: 'Kane ist der Königstransfer auf dem aktuellen Markt. Kaderwert ist nicht Vermögen – Kontostände sind unbekannt und Manager können im Minus sein.',
+  headline: 'Kane auf dem Markt – und plötzlich wird es ernst',
+  subheadline: 'Sebastian schnappt Luca Nusa weg. Dann erscheint Harry Kane – und die Karten werden neu gemischt.',
+  teaser: '21,79 Millionen Marktwert, maximaler Punktehunger und eine Liga voller Fragezeichen: Wer hat noch genug Munition für den Königstransfer?',
   breaking: [
-    ['14.08.', 'Matthias holt Uzun für 8,10 Mio. € – sein Kader steht jetzt bei 62,14 Mio. €'],
-    ['13.08.', 'Sebastian holt Stiller für 9,34 Mio. €'],
-    ['12.08.', 'Schmid verlässt die Bundesliga – Sebastian verkauft mit rund 1,05 Mio. € Verlust'],
-    ['12.08.', 'Luca schnappt Muje Moreira für nur 238.000 € mehr weg'],
-    ['14.08.', 'Berlin und Bayern im Biergipfel-Modus – Tomi fehlt natürlich']
+    ['17.08.', 'Harry Kane steht auf dem Transfermarkt – der Königstransfer ist eröffnet'],
+    ['17.08.', 'Nusa wechselt für 9,2875 Mio. € von Luca zu Sebastian'],
+    ['17.08.', 'Sebastian holt Nebel für 3,65 Mio. € und verkauft Aséko für 4,2248 Mio. €'],
+    ['17.08.', 'Gregor holt Dompé für 880.000 €'],
+    ['17.08.', 'Matthias holt Finkgräfe für 590.000 €']
   ],
   rosterValues: [
     { rank:1, manager:'Luca', value:'71,25 Mio. €', trend:'↑', stars:5 },
