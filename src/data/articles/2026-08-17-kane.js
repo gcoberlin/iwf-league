@@ -9,7 +9,7 @@ export default {
   readTime:'8 Min.',
   category:'Breaking',
   topStory:false,
-  hero:`${import.meta.env.BASE_URL}images/kane-iwf-hero-2026.png`,
+  hero:`${import.meta.env.BASE_URL}images/kane-iwf-duell-hero-2026.png`,
   content:`
 # Kane auf dem Markt – und plötzlich wird es ernst
 
