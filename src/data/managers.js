@@ -1,86 +1,85 @@
 const managerImage = filename => `${import.meta.env.BASE_URL}images/managers/${filename}`
-
-const seasonNote = 'Stand 14.08.2026 – Kader und Kaderwerte entsprechen dem aktuell erfassten Comunio-Stand. Kontostände sind nicht bekannt; Manager können im Minus sein.'
+const seasonNote = 'Aktueller Comunio-Kaderstand. Das Power Ranking bewertet ausdrücklich die sportliche Qualität des Kaders – nicht den reinen Marktwert. Kontostände sind unbekannt.'
 
 export const managers = [
-  {
-    name:'Luca', team:'LucaCosta', profileTitle:'Der kreative Italo', claim:'71 Millionen Kaderwert – und diesmal ist es nicht nur Masse.', image:managerImage('luca.png'),
-    profileText:`Luca besitzt mit 71,25 Mio. € den wertvollsten Kader der Liga. Kimmich, Nusa, Moreira, Ache und Ryerson ergeben bereits eine sehr klare Achse. ${seasonNote}`,
-    runningGag:'Der dritte Platz verfolgt ihn treu – aktuell läuft Luca allerdings vorneweg.', rank:1, value:'71,25 Mio. €', grade:'1,4', verdict:'Der Maßstab', trend:'↑', trendText:'klar vorne', lastTransfer:'Moreira · 8,80 Mio. €', chance:'sehr hoch', status:'Höchster Kaderwert und aus Sicht der Redaktion aktuell auch der stärkste Kader.',
-    players:['Nusa','Ache','Hack','Silas','Moreira','Kimmich','Seiwald','Remberg','Aouchiche','Ryerson','Querfeld','Kübler','Zetterer','Kauã Santos'], keys:['Kimmich','Nusa','Moreira'], key:'Kimmich',
-    strength:'Spitzenqualität und Breite passen zusammen. Kimmich ist der Fixpunkt, Nusa und Moreira bringen enormes Potenzial.', weakness:'Der hohe Kaderwert ist kein Kontostand. Wie viel finanzieller Spielraum noch vorhanden ist, bleibt offen.',
-    ingo:'Luca ist derzeit der Maßstab. Nicht nur wegen der 71 Millionen, sondern weil man schon jetzt eine echte Startelf erkennt.', werner:'Kimmich, Nusa, Moreira, Ache und Ryerson – das ist Substanz. Platz eins im Power Ranking ist verdient.', franz:'71 MILLIONEN! Luca ist entweder reich oder sehr, sehr tief im Dispo.'
-  },
-  {
-    name:'Henning', team:'Arsene W.', profileTitle:'Der Gastgeber', claim:'Leffe auf, Guirassy und Burkardt vorne rein – läuft.', image:managerImage('henning.png'),
-    profileText:`Henning steht bei 56,83 Mio. €. Guirassy und Burkardt bilden das teuerste Sturmduo der Liga, dahinter warten Nmecha, Prömel und Karaman. Zurück aus dem Urlaub wird erst einmal Leffe genossen. ${seasonNote}`,
-    runningGag:'Wenn Henning etwas ankündigt, beginnt entweder ein Transfer oder eine Grundsatzdebatte.', rank:2, value:'56,83 Mio. €', grade:'1,7', verdict:'Titelreif', trend:'↑', trendText:'starke Achse', lastTransfer:'Can verkauft · 0,618 Mio. €', chance:'hoch', status:'Konzentrierter Kader mit sehr starker Spitze.',
-    players:['Guirassy','Burkardt','Ben Seghir','Prömel','Poku','F. Nmecha','Larsson','Karaman','Hong','Widmer','Ayhan','G. Mensah','Baumann'], keys:['Guirassy','Burkardt','F. Nmecha'], key:'Guirassy',
-    strength:'Guirassy und Burkardt sind ein enormes Fundament. Viel Kapital steckt in Spielern, die tatsächlich tragen sollen.', weakness:'Der Kader ist schmaler als bei Matthias oder Sebastian. Verletzungen würden schneller durchschlagen.',
-    ingo:'Henning hat keine 23 Spieler nötig. Seine Qualität sitzt sehr konzentriert in einer starken Achse.', werner:'Die Struktur gefällt mir besser als der reine Marktwert vermuten lässt. Ein klarer Titelkandidat.', franz:'LEFFE UND LUXUSSTURM! Henning hat die Vorbereitung verstanden.'
-  },
-  {
-    name:'Sebastian', team:'DieseHaine', profileTitle:'Der Laptoptrainer', claim:'Schmid war nicht real. Der anschließende Großeinkauf schon.', image:managerImage('sebastian.png'),
-    profileText:`Sebastian ist auf 55,66 Mio. € hochgeschossen. Schmid wurde nach dessen Wechsel zu Frosinone mit rund 1,05 Mio. € Verlust verkauft; danach kamen unter anderem Stiller, Rômulo, Schwäbe, Pieper und Vermeeren. ${seasonNote}`,
-    runningGag:'Er verbrennt Praktikanten, Excel-Dateien – und diesmal eine Million mit Romano Schmid.', rank:3, value:'55,66 Mio. €', grade:'1,8', verdict:'Laptop hochgefahren', trend:'↑', trendText:'Großumbau', lastTransfer:'Stiller · 9,34 Mio. €', chance:'hoch', status:'Nach dem Schmid-Fehler sofort reagiert und den Kader massiv aufgewertet.',
-    players:['Rômulo','Gnabry','Sylla','Marino','Stiller','Nartey','Stöger','Krauß','Aséko','Vermeeren','Poreba','Mohr','Obermair','Pieper','Vagnoman','Arthur','Caci','Rohr','Schwäbe'], keys:['Stiller','Gnabry','Rômulo'], key:'Stiller',
-    strength:'Viele relevante Spieler und inzwischen deutlich mehr Breite. Stiller, Gnabry und Rômulo geben dem Kader Spitze.', weakness:'Der Schmid-Fehlgriff zeigt das Risiko des aggressiven Tradings. Auch hier kennen wir den Kontostand nicht.',
-    ingo:'Der Fehler mit Schmid ist real. Noch realer ist aber, wie schnell Sebastian danach den nächsten Kader gebaut hat.', werner:'Fehler erkannt, Verlust realisiert, Kapital neu eingesetzt. Sportlich ist der Kader jetzt klar stärker.', franz:'SCHMID INS KLO, LAPTOP WIEDER AN! Eine Million weg und trotzdem schon wieder 55 Millionen auf dem Hof.'
-  },
-  {
-    name:'Gregor', team:'Griesgram1', profileTitle:'Der Transferwirbel', claim:'Bier mit Sebastian – und nebenbei einen erstaunlich guten Kader gebaut.', image:managerImage('greg.png'),
-    profileText:`Gregor steht bei 54,73 Mio. €. Schick, Pavlović, Grifo, Kramarić und Schlotterbeck lesen sich erstaunlich stark. Beim Besuch von Sebastian in Bayern soll allerdings eher Bier als Kaderanalyse Thema gewesen sein. ${seasonNote}`,
-    runningGag:'Keine Ahnung vom Fußball – aber inzwischen verdächtig viele gute Spieler.', rank:4, value:'54,73 Mio. €', grade:'1,9', verdict:'Dark Horse', trend:'↑', trendText:'verdächtig stark', lastTransfer:'Skhiri verkauft · 1,465 Mio. €', chance:'hoch', status:'Der vielleicht überraschend kompletteste Kader hinter der Spitze.',
-    players:['Schick','Ngankam','Quetant','Kramarić','Grifo','Pavlović','João Palhinha','Onyeka','N. Schlotterbeck','Kabak','Friedl','Neuendorf','Engels','Urbig','Hellstern'], keys:['Schick','Pavlović','N. Schlotterbeck'], key:'Schick',
-    strength:'Mehrere etablierte Punktelieferanten und starke Namen in allen Mannschaftsteilen.', weakness:'Einige billige Kaderplätze sind Wetten. Außerdem bleibt offen, ob Greg weiß, warum sein Kader so gut ist.',
-    ingo:'Vielleicht wurde beim Biergipfel doch fünf Minuten über Fußball gesprochen.', werner:'Schick, Pavlović, Grifo und Schlotterbeck sind kein Zufall mehr. Gregor gehört in die Spitzengruppe.', franz:'ERMITTLUNGEN EINGELEITET! Greg hat plötzlich einen guten Kader.'
-  },
-  {
-    name:'Matthias', team:'mazzephase', profileTitle:'Der Pumper', claim:'Vom Kiosk-Hellen zum 31-Millionen-Shoppingrausch.', image:managerImage('matthias.png'),
-    profileText:`Matthias explodiert auf 62,14 Mio. € Kaderwert. Uzun, Karl, Onyedika, Ansah, Fabio Silva, Milošević und Malatini kamen in wenigen Tagen – rund 31,8 Mio. € Einkaufsvolumen allein für diese sieben. ${seasonNote}`,
-    runningGag:'Er kennt das nächste Talent oft früher als die Verkaufsfunktion.', rank:5, value:'62,14 Mio. €', grade:'2,0', verdict:'Großinvestor', trend:'↑', trendText:'explodiert', lastTransfer:'Uzun · 8,10 Mio. €', chance:'hoch', status:'Zweithöchster Kaderwert, aber 23 Spieler und unbekannter Kontostand bremsen die Euphorie.',
-    players:['Uzun','Ansah','Mbangula','Fábio Silva','Harder','Dinkçi','Topp','Milošević','Sieb','Campbell','Karl','Sambi Lokonga','Castro-Montes','Darvich','Kaba','Onyedika','Badé','Rothe','Belocian','Günter','Malatini','Backhaus','Blaswich'], keys:['Karl','Uzun','Onyedika'], key:'Karl',
-    strength:'Enorme Breite und mehrere teure Neuzugänge mit echtem Potenzial. Die Mannschaft ist in einer Woche komplett verändert.', weakness:'23 Spieler binden sehr viel Kapital. 62 Millionen Kaderwert können bei aggressivem Einkauf auch einen tiefroten Kontostand bedeuten.',
-    ingo:'Matthias ist die große Bewegung der Woche. Aus einem unscheinbaren Kader wurde binnen Tagen ein Schwergewicht.', werner:'Der Marktwert beeindruckt, die Effizienz muss sich erst zeigen. Ich möchte den Kontostand sehen.', franz:'31 MILLIONEN SHOPPING! Das Helle vom Kiosk war offenbar ein Pre-Workout.'
-  },
-  {
-    name:'Tomi', team:'VADDERN 79', profileTitle:'Der Ausredenkönig', claim:'Zurück aus dem Urlaub – beim Biertermin trotzdem verhindert.', image:managerImage('tomi.png'),
-    profileText:`Tomi ist zurück aus dem Urlaub und steht bei 56,86 Mio. €. Demirović, Brown, Doan, Diks und Quansah ergeben einen breiten Kader. Zum Bier mit Christoph, Wassili, Uwe und Luca schaffte er es trotzdem nicht. ${seasonNote}`,
-    runningGag:'Für Transfers reicht die Zeit immer. Für Treffen findet sich zuverlässig eine Ausrede.', rank:6, value:'56,86 Mio. €', grade:'2,1', verdict:'Stark, aber still', trend:'→', trendText:'solide', lastTransfer:'Kaderstand 14.08.', chance:'gut', status:'Gute Breite, aber weniger Spitzenwert als die Manager vor ihm im Power Ranking.',
-    players:['Demirović','Grüll','Königsdörffer','Bakayoko','Reyna','Doan','Andrich','Neuhaus','Alvero','Weißhaupt','Brown','Diks','Quansah','Bernardo','N. Banks','Juranović','Pinckert','Dahmen'], keys:['Demirović','Brown','Doan'], key:'Demirović',
-    strength:'Sehr ordentliche Breite und mehrere sichere, wertvolle Säulen.', weakness:'Im direkten Vergleich fehlt derzeit der eine absolute Premiumanker. Und die Finanzlage bleibt nach Hilferufen nebulös.',
-    ingo:'Tomi ist sportlich besser aufgestellt, als seine Finanzkommunikation vermuten lässt.', werner:'56,86 Millionen sind stark. Im Power Ranking sehe ich fünf Kader mit etwas mehr Spitze oder Dynamik.', franz:'57 MILLIONEN KADER UND TROTZDEM NICHT ZUM BIER! Wo geht das ganze Geld hin?'
-  },
-  {
-    name:'Wassilios', team:'Wasko23', profileTitle:'Der Dino-Coach', claim:'Zurück aus Italien – jetzt wieder Bierdienst in der Heimat.', image:managerImage('wassili.png'),
-    profileText:`Wassilios ist aus dem Urlaub zurück und steht bei 44,64 Mio. €. Beim Treffen mit Christoph, Uwe und Luca war der IWF-Dino natürlich dabei. Sportlich steckt mit 17,00 Mio. € ein großer Teil des Kaderwerts in Olise. ${seasonNote}`,
-    runningGag:'Ohne Wassili findet die IWF weder Unterkunft noch Richtung.', rank:7, value:'44,64 Mio. €', grade:'2,4', verdict:'Topstar-Wette', trend:'→', trendText:'konzentriert', lastTransfer:'Kaderstand 14.08.', chance:'offen', status:'Ein Superstar, dahinter deutlich weniger Marktwert als bei der Spitzengruppe.',
-    players:['Olise','Dardari','Kownacki','Albert','Reitz','Sander','Chaïbi','Castrop','Geiger','Wätjen','Swider','Condé','Kohr','Reggiani','V. Becker','Gadou','Ramaj','Köbbing','Schlager'], keys:['Olise','Reitz','Gadou'], key:'Olise',
-    strength:'Olise ist ein echter Unterschiedsspieler. Reitz, Sander und Gadou geben zusätzliche Substanz.', weakness:'Rund 38 Prozent des gesamten Kaderwerts stecken in Olise. Hinter dem Superstar fehlt aktuell die zweite Premiumebene.',
-    ingo:'Wassili hat den Star. Jetzt braucht er um ihn herum noch ein wenig mehr Mannschaft.', werner:'Die Konzentration auf Olise ist sportlich nachvollziehbar, erhöht aber das Risiko deutlich.', franz:'DINO ZURÜCK! Peroni ausgetrunken, jetzt muss der Rest des Kaders wachsen.'
-  },
-  {
-    name:'Jan', team:'Greifbramo', profileTitle:'Der Entertainer', claim:'Zurück in Bangkok: Kader klein, Bilderrätsel groß.', image:managerImage('jan.png'),
-    profileText:`Jan ist zurück in BKK, verschickt wieder Bilderrätsel und hat seinen Kader auf zehn Spieler reduziert. Tillman, Baku und Chema Andrés führen einen Kader von 30,95 Mio. € an. Verkäufe könnten allerdings viel Cash freigemacht haben. ${seasonNote}`,
-    runningGag:'Bangkok, Bayern und Bilderrätsel – selten ist klar, was als Nächstes kommt.', rank:8, value:'30,95 Mio. €', grade:'2,7', verdict:'Cash unbekannt', trend:'↓', trendText:'Kader bereinigt', lastTransfer:'Tillman · 5,556 Mio. €', chance:'offen', status:'Nur zehn Spieler; der niedrige Kaderwert kann bewusst aufgebautem Cash gegenüberstehen.',
-    players:['Bülter','Burke','Moerstedt','Tillman','Martel','Y. Engelhardt','Chema Andrés','Baku','Mwene','Flekken'], keys:['Tillman','Baku','Chema Andrés'], key:'Tillman',
-    strength:'Kompakter Kader mit brauchbaren Bausteinen. Viele Verkäufe könnten finanziellen Spielraum geschaffen haben.', weakness:'Aktuell fehlt Breite und ein echter Topstar. Ohne Kontostand ist die Lage schwer zu bewerten.',
-    ingo:'Bei Jan ist Platz acht ausdrücklich vorläufig. Zehn Spieler sprechen dafür, dass noch etwas kommen kann.', werner:'Marktwert allein wäre hier irreführend. Erst die nächsten Einkäufe zeigen, ob die Bereinigung sinnvoll war.', franz:'KAAS-KIND, YANKEE, BANGKOK! Ich verstehe das Rätsel nicht – und den Kontostand erst recht nicht.'
-  },
-  {
-    name:'Uwe', team:'uje', profileTitle:'Der X-Faktor', claim:'Beim Bier zuverlässig – bei Comunio bleibt die Aktivität die offene Frage.', image:managerImage('uwe.png'),
-    profileText:`Uwe steht bei 33,93 Mio. €. Kofane und Orbán sind mit je rund 6,5 Mio. € die Säulen. Beim Bier mit Christoph, Wassili und Luca war der X-Faktor präsent – jetzt müsste diese Aktivität nur noch auf Comunio überspringen. ${seasonNote}`,
-    runningGag:'Niemand weiß, ob Uwe schläft, plant oder längst den nächsten Coup vorbereitet.', rank:9, value:'33,93 Mio. €', grade:'2,9', verdict:'Wildcard', trend:'→', trendText:'unberechenbar', lastTransfer:'Kaderstand 14.08.', chance:'offen', status:'Brauchbare Basis, aber weiterhin abhängig von der Aktivität des Managers.',
-    players:['Kofane','Adamu','Futkeu','Lee','Jeong','Maloney','R. Wagner','Micheler','Curda','W. Orbán','Coulibaly','Rosenfelder','Koudossou','Nicolas','Bredlow'], keys:['Kofane','W. Orbán','Nicolas'], key:'Kofane',
-    strength:'Kofane, Orbán, Lee und Nicolas geben dem Team ein brauchbares Gerüst.', weakness:'Der Kader braucht weitere Qualität – und vor allem regelmäßige Pflege.',
-    ingo:'Uwes Kader ist nicht hoffnungslos. Die eigentliche Variable bleibt Uwe selbst.', werner:'Mit Aktivität wäre mehr möglich. Ohne Aktivität ist Rang neun plausibel.', franz:'BEIM BIER ONLINE! Jetzt bitte denselben Login-Reflex bei Comunio.'
-  },
-  {
-    name:'Jose', team:'stjosse', profileTitle:'Der Raumdeuter', claim:'Kleiner Kader, klare Achse – aber noch zu wenig Material.', image:managerImage('jose.png'),
-    profileText:`Jose kommt auf 28,98 Mio. €. Tietz, Palacios, Mohya und Suzuki bilden eine ordentliche Achse, doch zwölf Spieler sind für den Saisonstart noch knapp. Meyer und Alfa-Ruprecht kamen günstig dazu. ${seasonNote}`,
-    runningGag:'Er erklärt den Fußball vollständig. Sebastian nimmt ihm trotzdem regelmäßig die Trophäe ab.', rank:10, value:'28,98 Mio. €', grade:'3,0', verdict:'Noch unfertig', trend:'→', trendText:'kleine Schritte', lastTransfer:'Alfa-Ruprecht · 0,770 Mio. €', chance:'offen', status:'Solides Fundament, aber noch klarer Handlungsbedarf.',
-    players:['Tietz','Alfa-Ruprecht','Suzuki','Palacios','Banzuzi','Mohya','Deman','Jaquez','Lochoshvili','Kobel','Meyer'], keys:['Tietz','Palacios','Mohya'], key:'Palacios',
-    strength:'Vier Spieler um oder über vier Millionen geben dem Kader eine klare Basis.', weakness:'Zu wenig Breite und aktuell kein Premiumspieler. Für einen Sprung im Ranking braucht es noch zwei bis drei Treffer.',
-    ingo:'Jose ist noch nicht fertig. Der Kader wirkt eher wie ein Grundriss als wie das fertige Haus.', werner:'Die Achse ist ordentlich, aber im Vergleich zur Spitze fehlt schlicht Kapital auf dem Platz.', franz:'RAUMDEUTER SUCHT NOCH RÄUME IM KADER! Elf Namen sind ein Anfang.'
-  }
+{
+ name:'Sebastian', team:'DieseHaine', profileTitle:'Der Laptoptrainer', claim:'Nusa, Stiller, Gnabry, Rômulo – der Laptop läuft wieder im Leistungsmodus.', image:managerImage('sebastian.png'),
+ profileText:`Sebastian führt den Kaderwert mit 65,20 Mio. € an. Entscheidend für Rang eins ist aber die Mischung: Nusa, Gnabry, Stiller und Rômulo liefern Spitze, dahinter gibt es ungewöhnlich viel brauchbare Tiefe. ${seasonNote}`,
+ runningGag:'„Macht ihr mal … :)“ klingt bei Sebastian traditionell weniger nach Rückzug als nach Drohung.', rank:1, value:'65,20 Mio. €', grade:'1,4', verdict:'Favorit', trend:'↑', trendText:'stärkster Gesamtmix', lastTransfer:'Nebel · 3,65 Mio. €', chance:'sehr hoch', status:'Die Redaktion sieht aktuell den komplettesten Kader der Liga.',
+ players:['Nusa','Rômulo','Gnabry','Sylla','Marino','Stiller','Nebel','Nartey','Stöger','Krauß','Vermeeren','Poreba','Mohr','Obermair','Pieper','Arthur','Caci','Rohr','Schwäbe'], keys:['Nusa','Stiller','Gnabry'], key:'Nusa',
+ strength:'Sehr starke offensive Spitze, ein Premium-Mittelfeldspieler mit Stiller und viel verwertbare Breite.', weakness:'Die hohen Ausgaben der letzten Tage reduzieren vermutlich die Flexibilität. Der Kader muss jetzt liefern.',
+ ingo:'Sebastian steht nicht wegen 65 Millionen oben, sondern weil die erste Elf inzwischen kaum noch echte Löcher zeigt.', werner:'Nusa, Stiller, Gnabry und Rômulo sind ein sehr gutes Gerüst. Dazu genug Tiefe für einen langen Comunio-Winter.', franz:'„MACHT IHR MAL :)“ – der Mann kauft vorher halb Leipzig und stellt sich dann unschuldig an die Seitenlinie.'
+},
+{
+ name:'Luca', team:'LucaCosta', profileTitle:'Der kreative Italo', claim:'Nusa ist weg – aber Kimmich bleibt das teuerste Schweizer Taschenmesser der Liga.', image:managerImage('luca.png'),
+ profileText:`Luca steht bei 64,28 Mio. €. Der Nusa-Verkauf kostet ihn im Ranking etwas Spitze, doch Kimmich, Moreira, Ache, Ryerson und eine starke Mittelfeldbreite halten ihn ganz oben. ${seasonNote}`,
+ runningGag:'Der dritte Platz verfolgt ihn seit Jahren. Dieses Mal will Luca offenbar gar nicht erst in seine Nähe.', rank:2, value:'64,28 Mio. €', grade:'1,5', verdict:'Titelkader', trend:'→', trendText:'weiter ganz oben', lastTransfer:'Stange · 1,40 Mio. €', chance:'sehr hoch', status:'Kimmich als Anker, dazu Qualität in fast jedem Mannschaftsteil.',
+ players:['Ache','Hack','Stange','Silas','Moreira','Kimmich','Seiwald','Remberg','Aouchiche','Ryerson','Querfeld','Kübler','Zetterer','Kauã Santos'], keys:['Kimmich','Moreira','Ryerson'], key:'Kimmich',
+ strength:'Kimmich ist einer der wertvollsten Comunio-Bausteine überhaupt. Moreira, Ache und Ryerson geben zusätzliche Substanz.', weakness:'Nach Nusas Abgang fehlt im Sturm ein zweiter Spieler mit echtem Starpotenzial.',
+ ingo:'Luca verliert Nusa, aber keinen Titelkader. Kimmich hält dieses Team auf einem sehr hohen Boden.', werner:'Weniger spektakulär als Sebastian, dafür mit Kimmich der vielleicht sicherste Einzelbaustein der Liga.', franz:'NUSA WEG, KIMMICH NOCH DA. Italienische Gelassenheit oder innerer Vulkan – wir werden es erfahren.'
+},
+{
+ name:'Henning', team:'Arsene W.', profileTitle:'Der Gastgeber', claim:'Guirassy plus Burkardt: zwei Stürmer, bei denen die Redaktion nicht lange rechnen muss.', image:managerImage('henning.png'),
+ profileText:`Henning kommt auf 57,43 Mio. €. Sein Rang drei ist ein Qualitätsurteil: Guirassy und Burkardt bilden das stärkste Sturmduo der Liga, Nmecha, Prömel und Karaman geben dem Mittelfeld Substanz. ${seasonNote}`,
+ runningGag:'Wenn Henning etwas ankündigt, folgt entweder ein Transfer, eine Grundsatzdebatte oder Leffe.', rank:3, value:'57,43 Mio. €', grade:'1,7', verdict:'Luxussturm', trend:'→', trendText:'starke Achse', lastTransfer:'Ben Seghir verkauft · 1,25 Mio. €', chance:'hoch', status:'Weniger Breite als die Top zwei, dafür enorme Qualität an der Spitze.',
+ players:['Guirassy','Burkardt','Prömel','Poku','F. Nmecha','Larsson','Karaman','Hong','Widmer','Ayhan','G. Mensah','Baumann'], keys:['Guirassy','Burkardt','F. Nmecha'], key:'Guirassy',
+ strength:'Guirassy und Burkardt können eine Comunio-Saison fast im Alleingang tragen.', weakness:'Nur zwölf Spieler. Fällt einer der Stars aus, ist die Fallhöhe größer als bei Sebastian oder Luca.',
+ ingo:'Henning hat weniger Spieler, aber sehr viele davon würde jeder Manager sofort nehmen.', werner:'Qualität vor Quantität. Das ist hier keine Floskel, sondern die Begründung für Platz drei.', franz:'ZWÖLF SPIELER, ZWEI KANONEN. Henning spart sich einfach den ganzen Kleinkram.'
+},
+{
+ name:'Gregor', team:'Griesgram1', profileTitle:'Der Transferwirbel', claim:'Schick, Kramarić, Grifo, Pavlović, Schlotterbeck – aus Versehen ziemlich gut.', image:managerImage('greg.png'),
+ profileText:`Gregor steht bei 54,24 Mio. €. Sein Kaderwert ist nur Mittel zum Zweck: Schick, Kramarić, Grifo, Pavlović und Schlotterbeck sind eine erstaunlich erwachsene Achse. ${seasonNote}`,
+ runningGag:'Der Fußball-Laie besitzt inzwischen auffällig viele Spieler, die Fußball können.', rank:4, value:'54,24 Mio. €', grade:'1,8', verdict:'Dark Horse', trend:'↑', trendText:'verdächtig komplett', lastTransfer:'Dompé · 0,88 Mio. €', chance:'hoch', status:'Viele etablierte Punktelieferanten statt reiner Marktwertfantasie.',
+ players:['Schick','Dompé','Ngankam','Quetant','Kramarić','Grifo','Pavlović','Onyeka','N. Schlotterbeck','Kabak','Friedl','Neuendorf','Engels','Urbig','Hellstern'], keys:['Schick','Grifo','N. Schlotterbeck'], key:'Schick',
+ strength:'Mehrere bewährte Scorer und Stammspieler in allen Mannschaftsteilen.', weakness:'Hinter den Leistungsträgern wird es dünner; einige Kaderplätze sind klare Spekulation.',
+ ingo:'Gregor ist der unangenehme Gegner dieses Rankings: wenig Glamour, aber sehr viele echte Punktequellen.', werner:'Schick, Grifo, Kramarić, Pavlović, Schlotterbeck – das ist qualitativ besser als Platz sechs nach Marktwert vermuten lässt.', franz:'ICH FORDERE EINE UNTERSUCHUNG. Greg hat plötzlich einen Plan – oder unfassbares Glück.'
+},
+{
+ name:'Jose', team:'stjosse', profileTitle:'Der Raumdeuter', claim:'Welcome Harry. Mehr muss man zu diesem Morgen eigentlich nicht sagen.', image:managerImage('jose.png'),
+ profileText:`José springt mit Harry Kane auf 54,75 Mio. € Kaderwert. Der Königstransfer verändert alles: Kane ist der beste Einzelspieler dieses Kaders und vermutlich der mächtigste Comunio-Stürmer der Liga. Tietz, Suzuki, Mohya und Ginter bilden das Gerüst dahinter. ${seasonNote}`,
+ runningGag:'Er erklärt den Fußball vollständig. Diesmal erklärt Harry Kane den anderen Managern den Unterschied.', rank:5, value:'54,75 Mio. €', grade:'1,9', verdict:'Kane-Faktor', trend:'↑', trendText:'Königstransfer', lastTransfer:'Kane · 26,30 Mio. €', chance:'hoch', status:'Der beste Einzeltransfer der Vorbereitung katapultiert José in die erweiterte Spitzengruppe.',
+ players:['Kane','Tietz','Alfa-Ruprecht','Suzuki','Banzuzi','Mohya','Ginter','Deman','Jaquez','Lochoshvili','Kobel','Meyer'], keys:['Kane','Tietz','Ginter'], key:'Kane',
+ strength:'Harry Kane. Dazu mit Tietz, Suzuki, Mohya und Ginter ein brauchbares Fundament.', weakness:'Nur zwölf Spieler und sehr starke Konzentration auf Kane. Die Tiefe bleibt deutlich schwächer als bei den Top vier.',
+ ingo:'Kane macht aus einem unfertigen Kader sofort einen gefährlichen Kader. Für ganz oben fehlt mir noch etwas Breite.', werner:'26,3 Millionen sind brutal – sportlich aber nachvollziehbar. Kein anderer Einzeltransfer verändert ein Ranking so stark.', franz:'WELCOME HARRY! Während Jan trauert und Tomi Wortspiele macht, hält José einfach das Trikot hoch.'
+},
+{
+ name:'Matthias', team:'mazzephase', profileTitle:'Der Pumper', claim:'Viele Talente, viel Kapital, viel Hoffnung – jetzt muss aus Masse Klasse werden.', image:managerImage('matthias.png'),
+ profileText:`Matthias besitzt einen 59,89-Mio.-€-Kader mit enormer Breite. Uzun, Karl, Onyedika, Fabio Silva und Ansah haben Qualität und Fantasie – die Redaktion sieht aber mehr offene Wetten als bei den fünf Teams vor ihm. ${seasonNote}`,
+ runningGag:'Er kennt das nächste Talent oft früher als die Verkaufsfunktion.', rank:6, value:'59,89 Mio. €', grade:'2,0', verdict:'Upside-Kader', trend:'→', trendText:'viel Potenzial', lastTransfer:'Finkgräfe · 0,59 Mio. €', chance:'gut', status:'Hohe Decke, aber mehr Projektion und Konkurrenzkämpfe als bei der Spitze.',
+ players:['Ansah','Fábio Silva','Harder','Dinkçi','Topp','Milošević','Campbell','Karl','Sambi Lokonga','Uzun','Darvich','Kaba','Onyedika','Badé','Castro-Montes','Rothe','Belocian','Günter','Finkgräfe','Boey','Malatini','Backhaus','Blaswich'], keys:['Uzun','Karl','Onyedika'], key:'Uzun',
+ strength:'Enorme Breite und mehrere Spieler mit großem Entwicklungspotenzial.', weakness:'Viele Namen müssen ihre Rolle erst festigen. Der hohe Kaderwert garantiert hier weniger Punkte als bei etablierten Stars.',
+ ingo:'Matthias kann in einem Monat deutlich höher stehen. Heute sind mir noch zu viele Rollen nicht endgültig geklärt.', werner:'Sehr guter Spekulationskader, aber ein Power Ranking ist keine Depotbewertung.', franz:'23 SPIELER! Matthias hat offenbar beschlossen, einfach alle zu kaufen und später nachzuzählen.'
+},
+{
+ name:'Tomi', team:'VADDERN 79', profileTitle:'Der Ausredenkönig', claim:'Pleite und ahnungslos? Der Kader sieht deutlich weniger hilflos aus als sein Manager.', image:managerImage('tomi.png'),
+ profileText:`Tomi steht bei 58,22 Mio. €. Demirović, Doan, Brown, Diks und Quansah sind ein solides Fundament. Sein öffentliches Urteil zum neuen Comunio-Design fällt deutlich schlechter aus als das Urteil der Redaktion über seinen Kader. ${seasonNote}`,
+ runningGag:'„Pleite und Ahnungslos“ ist ab sofort entweder Zustandsbeschreibung oder neue Vereinsphilosophie.', rank:7, value:'58,22 Mio. €', grade:'2,2', verdict:'Solide Substanz', trend:'→', trendText:'besser als die Laune', lastTransfer:'Kaderstand aktuell', chance:'gut', status:'Breit und ordentlich, aber weniger echte Premiumspitze als die Konkurrenz davor.',
+ players:['Demirović','Grüll','Königsdörffer','Bakayoko','Reyna','Doan','Andrich','Neuhaus','Alvero','Weißhaupt','Brown','Diks','Quansah','Bernardo','N. Banks','Juranović','Pinckert','Dahmen'], keys:['Demirović','Doan','Brown'], key:'Demirović',
+ strength:'Gute Breite und mehrere verlässliche Bundesliga-Spieler.', weakness:'Kein Spieler besitzt aktuell den Kane-, Kimmich-, Guirassy- oder Nusa-Faktor.',
+ ingo:'Tomi ist nicht ahnungslos aufgestellt. Der Kader ist solide und deutlich besser als die Selbstbeschreibung.', werner:'Das neue Design mag Scheiße sein – Demirović und Doan werden dadurch nicht schlechter.', franz:'PLEITE UND AHNUNGSLOS! Matthias sagt „richtig Scheiße“. Endlich wieder echte Geschlossenheit in der IWF.'
+},
+{
+ name:'Wassilios', team:'Wasko23', profileTitle:'Der Dino-Coach', claim:'Olise trägt die Krone – und ziemlich viel vom restlichen Kader gleich mit.', image:managerImage('wassili.png'),
+ profileText:`Wassilios kommt auf 47,12 Mio. €. Olise ist der klare Superstar, dahinter folgen Reitz, Gadou, Chaïbi und Sander. Für die Redaktion ist das weiterhin eine starke Ein-Mann-Spitze mit ordentlichem Unterbau. ${seasonNote}`,
+ runningGag:'Ohne Wassili findet die IWF weder Unterkunft noch Richtung.', rank:8, value:'47,12 Mio. €', grade:'2,5', verdict:'Olise-Wette', trend:'→', trendText:'starabhängig', lastTransfer:'Kaderstand aktuell', chance:'offen', status:'Ein Superstar hält den Kader gefährlich; die zweite Premiumebene fehlt.',
+ players:['Olise','Dardari','Kownacki','Albert','Reitz','Sander','Chaïbi','Castrop','Geiger','Wätjen','Swider','Condé','Kohr','Reggiani','V. Becker','Gadou','Ramaj','Köbbing','Schlager'], keys:['Olise','Reitz','Gadou'], key:'Olise',
+ strength:'Olise kann Spiele und Comunio-Duelle allein entscheiden.', weakness:'Zu viel Last auf einem Spieler; hinter Olise fehlt der zweite große Punkteanker.',
+ ingo:'Wassili bleibt wegen Olise gefährlich. Für mehr als Platz acht brauche ich noch einen zweiten echten Unterschiedsspieler.', werner:'Die Spitze ist Champions-League-Niveau, die Breite eher Donnerstagabend.', franz:'OLISE UND DIE 18 ZWERGE! Das klingt unfair, ist aber ein gutes Magazincover.'
+},
+{
+ name:'Uwe', team:'uje', profileTitle:'Der X-Faktor', claim:'Kofane, Orbán, Lee – nicht leer, aber der X-Faktor bleibt vor allem Uwes Aktivität.', image:managerImage('uwe.png'),
+ profileText:`Uwe steht bei 36,57 Mio. €. Kofane, Orbán, Lee, Futkeu und Nicolas ergeben eine brauchbare Basis. Wie immer entscheidet aber nicht nur der Kader, sondern die Frage, wie oft der Manager ihn tatsächlich anschaut. ${seasonNote}`,
+ runningGag:'Niemand weiß, ob Uwe schläft, plant oder längst den nächsten wilden Transfer vorbereitet.', rank:9, value:'36,57 Mio. €', grade:'2,9', verdict:'Wildcard', trend:'→', trendText:'unberechenbar', lastTransfer:'Kaderstand aktuell', chance:'Außenseiter', status:'Ein paar gute Bausteine, insgesamt aber klar weniger Qualität als die obere Hälfte.',
+ players:['Kofane','Adamu','Futkeu','Lee','Jeong','Maloney','R. Wagner','Micheler','Curda','W. Orbán','Coulibaly','Rosenfelder','Koudossou','Nicolas','Bredlow'], keys:['Kofane','W. Orbán','Lee'], key:'Kofane',
+ strength:'Kofane, Orbán und Lee geben dem Team ein solides Gerüst.', weakness:'Zu wenig hochwertige Tiefe – und Aktivität bleibt die größte unbekannte Variable.',
+ ingo:'Uwe hat genug Qualität, um nicht abgeschrieben zu werden. Für mehr braucht es aber Transfers und Aufmerksamkeit.', werner:'Der Kader ist derzeit schlicht schwächer als die acht davor.', franz:'UWE IST DER EINZIGE MANAGER, BEI DEM DER LOGIN SELBST EIN TRANSFERGERÜCHT IST.'
+},
+{
+ name:'Jan', team:'Greifbramo', profileTitle:'Der Entertainer', claim:'Kane wollte nach Bangkok. Kane ging zu Muhle. Das Leben ist hart.', image:managerImage('jan.png'),
+ profileText:`Jan steht bei 34,05 Mio. €. Baku, Chema Andrés, Tillman, Bülter und Flekken sind brauchbar, aber der Kader ist klein und ohne echten Premiumspieler. Besonders bitter: Kane, sein Star der Vorsaison, landet ausgerechnet bei José. ${seasonNote}`,
+ runningGag:'Bangkok, Bayern und Bilderrätsel – und jetzt auch noch Kane-Liebeskummer.', rank:10, value:'34,05 Mio. €', grade:'3,0', verdict:'Noch Baustelle', trend:'↓', trendText:'Kane verpasst', lastTransfer:'Höler · 2,55 Mio. €', chance:'Außenseiter', status:'Gute Einzelteile, aber aktuell der dünnste Qualitätskader der Liga.',
+ players:['Bülter','Höler','Burke','Moerstedt','Tillman','Martel','Y. Engelhardt','Chema Andrés','Baku','Mwene','Flekken'], keys:['Baku','Tillman','Chema Andrés'], key:'Baku',
+ strength:'Baku, Tillman und Chema Andrés sind brauchbare Bausteine; der Kader lässt noch Raum für große Einkäufe.', weakness:'Zu wenig Spitze und nur elf Spieler. Kane hätte genau das Problem gelöst.',
+ ingo:'Jan ist nicht chancenlos, aber im aktuellen Qualitätsvergleich fehlt ihm der Spieler, vor dem Gegner Respekt haben.', werner:'Kane wäre der Sprung gewesen. Ohne ihn bleibt der Kader vorerst auf Platz zehn.', franz:'„KANE BEI MUHLE :(“ – Bangkok trauert. José antwortet mit „Welcome Harry“. Fußball kann grausam sein.'
+}
 ]

@@ -20,19 +20,19 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Uzun', '8,10 Mio. €', 'Matthias', 'in'],
-  ['Stiller', '9,34 Mio. €', 'Sebastian', 'in'],
-  ['Karl', '9,35 Mio. €', 'Matthias', 'in'],
-  ['Moreira', '8,80 Mio. €', 'Luca', 'in'],
-  ['Onyedika', '6,62 Mio. €', 'Matthias', 'in'],
-  ['Rômulo', '6,24 Mio. €', 'Sebastian', 'in'],
-  ['Tillman', '5,56 Mio. €', 'Jan', 'in'],
-  ['Schmid', '4,68 Mio. € verkauft', 'Sebastian', 'out']
+  ['Kane', '26,30 Mio. €', 'Jose', 'in'],
+  ['Nusa', '9,2875 Mio. €', 'Sebastian', 'in'],
+  ['Nebel', '3,65 Mio. €', 'Sebastian', 'in'],
+  ['Dompé', '0,88 Mio. €', 'Gregor', 'in'],
+  ['Finkgräfe', '0,59 Mio. €', 'Matthias', 'in'],
+  ['Stange', '1,4001 Mio. €', 'Luca', 'in'],
+  ['Ginter', '5,78 Mio. €', 'Jose', 'in'],
+  ['Uzun', '8,10 Mio. €', 'Matthias', 'in']
 ]
 
 const marketPlayers = [
-  ['Joshua Kimmich', '14,38 Mio. €'], ['Guirassy', '12,22 Mio. €'],
-  ['Schick', '12,19 Mio. €'], ['Burkardt', '11,53 Mio. €'], ['Nusa', '9,35 Mio. €']
+  ['Harry Kane', '22,59 Mio. €'], ['Michael Olise', '18,86 Mio. €'],
+  ['Joshua Kimmich', '15,66 Mio. €'], ['Guirassy', '12,31 Mio. €'], ['Schick', '11,95 Mio. €']
 ]
 
 function Logo() {
@@ -85,14 +85,14 @@ function Layout({ children }) {
       <b><i /> BREAKING</b>
       <div className="breakingViewport">
         <div className="breakingTrack">
-          <span>Matthias kauft für über 30 Mio. € ein</span>
-          <span>Sebastian holt Stiller für 9,34 Mio. €</span>
-          <span>Muje scheitert bei Moreira um nur 238.000 €</span>
-          <span>Zwei IWF-Biergipfel – Tomi fehlt natürlich</span>
-          <span aria-hidden="true">Matthias kauft für über 30 Mio. € ein</span>
-          <span aria-hidden="true">Sebastian holt Stiller für 9,34 Mio. €</span>
-          <span aria-hidden="true">Muje scheitert bei Moreira um nur 238.000 €</span>
-          <span aria-hidden="true">Zwei IWF-Biergipfel – Tomi fehlt natürlich</span>
+          <span>BREAKING: José holt Harry Kane für 26,3 Mio. €</span>
+          <span>Jan trauert: „Kane bei Muhle :(“</span>
+          <span>Tomi: „Kane doch nicht wahr sein“</span>
+          <span>José trocken: „Welcome Harry“</span>
+          <span aria-hidden="true">BREAKING: José holt Harry Kane für 26,3 Mio. €</span>
+          <span aria-hidden="true">Jan trauert: „Kane bei Muhle :(“</span>
+          <span aria-hidden="true">Tomi: „Kane doch nicht wahr sein“</span>
+          <span aria-hidden="true">José trocken: „Welcome Harry“</span>
         </div>
       </div>
     </div>

@@ -1,265 +1,103 @@
-const article = {
+export default {
   slug:'kane-auf-dem-markt-2026',
-  category:'Transfermarkt',
-  kicker:'IWF TRANSFERALARM',
-  title:'Kane auf dem Markt – und plötzlich wird es ernst',
-  excerpt:'Sebastian schnappt Luca Nusa weg, die ersten Millionen sind verbrannt – und ausgerechnet jetzt erscheint Harry Kane. Der größte Fisch des Sommers zwingt die IWF-Manager zur Entscheidung.',
+  publishedAt:'2026-08-18',
+  kicker:'BLITZNEWS · IWF TRANSFERMARKT',
+  title:'Kane bei Muhle – José holt den Königstransfer',
+  excerpt:'26,3 Millionen Euro, ein trockenes „Welcome Harry“ und kollektiver Schmerz in der IWF: José schnappt sich Harry Kane. Jan trauert in Bangkok, Tomi liefert das Wortspiel des Morgens.',
   author:'Ingo, Werner & Franz',
-  date:'17.08.2026',
-  publishedAt:'2026-08-17',
-  readTime:'8 Min.',
+  date:'18. August 2026',
+  readTime:'5 Min.',
+  category:'Breaking',
   topStory:true,
   hero:`${import.meta.env.BASE_URL}images/kane-iwf-hero-2026.png`,
   content:`
-# Kane auf dem Markt – und plötzlich wird es ernst
+# Kane bei Muhle – José holt den Königstransfer
 
-Es gibt diese Momente auf dem Comunio-Transfermarkt, bei denen man aufs Handy schaut und sofort weiß: **Heute wird gearbeitet.**
+Es ist passiert. Der größte Spieler auf dem IWF-Transfermarkt hat einen neuen Besitzer: **Harry Kane wechselt für 26,3 Millionen Euro zu José.**
 
-Nicht im Büro. Nicht im Homeoffice.
+Der Raumdeuter, zuletzt noch mit einem vergleichsweise kleinen Kader unterwegs, legt damit den Transfer hin, der die Kräfteverhältnisse der Liga auf einen Schlag verändert. Kein Schnäppchen, kein Talent für später, kein „mal schauen, ob der steigt“.
 
-**Am Taschenrechner.**
+**Harry Kane. Fertig.**
 
-Harry Kane ist auf dem Transfermarkt der IWF League.
+José kommentiert den Königstransfer standesgemäß ausführlich:
 
-21,79 Millionen Marktwert. Bayern. Stürmer. Punktelieferant. Und ziemlich genau die Sorte Spieler, bei der plötzlich neun Manager behaupten, sie hätten „sowieso noch etwas geplant“.
+> **„Welcome Harry“**
 
-Dabei war vorher schon genug los.
+Mehr Pressekonferenz braucht es nicht.
 
----
+## Bangkok trauert
 
-## NUSA: SEBASTIAN KAUFT AUSGERECHNET BEI LUCA
+Als Erster meldet sich Jan im Chat – und man spürt den Schmerz durch das Display:
 
-Antonio Nusa wechselt für **9.287.500 Euro von Luca zu Sebastian**.
+> **„Kane bei Muhle :( Er wollte nach Bangkok wie letztes Jahr“**
 
-Das Interessante daran ist weniger der Spieler als die Mechanik dahinter: Bei Comunio sieht der Verkäufer nicht, wer auf seinen Spieler bietet. Hinter einem Angebot kann der Computer stecken – oder einer der Konkurrenten.
+Jan hatte Kane in der vergangenen Saison. Eine Wiedervereinigung in Bangkok wäre romantisch gewesen. Stattdessen steht der Engländer jetzt bei José im Kader und Jan muss mit ansehen, wie der Ex beim direkten Konkurrenten einzieht.
 
-Luca hat verkauft.
+Tomi versucht es mit Humor:
 
-Sebastian hat gekauft.
+> **„Kane doch nicht wahr sein“**
 
-**Überraschung.**
+Die Redaktion verhängt dafür weder Geldstrafe noch Wortspielverbot. Noch nicht.
 
-Damit verstärkt ausgerechnet der aktuelle Spitzenreiter seinen Kader mit einem Spieler eines direkten Konkurrenten. Das ist ungefähr so, als würde man seinem Nachbarn den Rasenmäher verkaufen und anschließend feststellen, dass er damit gerade den eigenen Vorgarten mäht.
+## José springt ins Rennen
 
-Und Sebastian macht ohnehin weiter Sebastian-Sachen.
+Der Transfer macht aus Josés Kader nicht automatisch den besten der Liga. Genau hier trennt die Redaktion Marktwert von Power Ranking.
 
-Nach **Nebel für 3,65 Millionen**, **Stiller für 9,34 Millionen** und jetzt **Nusa für 9,29 Millionen** hat der Laptoptrainer ordentlich Kapital in seinen Kader geschoben. Gleichzeitig gingen mit Aséko und zuvor Vagnoman auch Spieler zurück zum Computer.
+Mit **Kane** besitzt José jetzt möglicherweise den stärksten Einzelspieler der gesamten IWF. Dahinter stehen Tietz, Suzuki, Mohya und Ginter. Das ist plötzlich ein Gerüst, das niemand mehr belächeln kann.
 
-Sportlich sieht das nach Plan aus.
+Aber: Der Kader ist mit zwölf Spielern weiterhin schmal. Sebastian, Luca und Gregor besitzen mehr Tiefe, Henning mit Guirassy und Burkardt eine gewaltige Doppelspitze. Deshalb schießt José im neuen Redaktionsranking deutlich nach oben – aber noch nicht auf Platz eins.
 
-Finanziell könnte das Timing allerdings kaum interessanter sein.
+**Der Kane-Faktor ist real. Die Kane-Abhängigkeit allerdings auch.**
 
-Denn jetzt liegt da Kane.
+## Sebastian: „Macht ihr mal … :)“
 
-**Danke, Harry.**
+Besonders interessant wird der Transfer im Rückblick auf Sebastians Nachricht:
 
----
+> **„Macht ihr mal... :)“**
 
-## DER KÖNIGSTRANSFER
+Der Laptoptrainer hatte zuvor kräftig investiert. Nusa kam von Luca, dazu Stiller, Nebel und weitere Bausteine. Dass Sebastian beim 26,3-Millionen-Hammer nicht zuschlug, dürfte deshalb weniger mit fehlendem Interesse als mit der bereits laufenden Kaderoffensive zu tun haben.
 
-Über Harry Kane muss man eigentlich nicht lange diskutieren.
+Und trotzdem steht Sebastian im neuen Power Ranking der Redaktion ganz oben. Nicht wegen seines Kaderwerts, sondern weil Nusa, Stiller, Gnabry und Rômulo zusammen mit der vorhandenen Breite aktuell den komplettesten Mix ergeben.
 
-Wer ihn bekommt, kauft nicht einfach einen Stürmer. Er kauft einen der wahrscheinlichsten Top-Punktesammler der gesamten Saison.
+## Tomi gegen die Technik
 
-Genau deshalb ist sein Marktwert von **21,79 Millionen Euro** eigentlich nur die Eintrittskarte zur Auktion.
+Während José einen Weltklassestürmer begrüßt, kämpft Tomi an einer anderen Front. Sein Urteil über das neue Comunio-Design:
 
-Wer bietet Marktwert? Wer legt drei Millionen drauf? Wer fünf?
+> **„Ich komme mit dem neuen Comunji Design gar nicht klar, Pleite und Ahnungslos“**
 
-Und welcher völlig enthemmte IWF-Manager wacht am Ende mit Harry Kane im Kader und einem Finanzplan auf, der ungefähr auf dem Niveau eines griechischen Staatshaushalts von 2010 liegt?
+Unterstützung kommt prompt aus der Liga. Matthias fasst die allgemeine Stimmung diplomatisch zusammen:
 
-Willkommen in der IWF League.
+> **„Ist richtig Scheiße“**
 
----
+Selten war die IWF geschlossener.
 
-## UND PLÖTZLICH IST SEBASTIAN NICHT MEHR AUTOMATISCH FAVORIT
+Sportlich gibt es für Tomi allerdings weniger Grund zur Selbstaufgabe: Demirović, Doan, Brown, Diks und Quansah ergeben einen ordentlichen Kader. Die Benutzeroberfläche mag neu sein – die Ausreden funktionieren weiterhin tadellos.
 
-Normalerweise wäre der Gedanke einfach:
+## Das neue Blitz-Power-Ranking der Redaktion
 
-Großer Spieler auf dem Markt → Sebastian bietet → Sebastian bekommt ihn → alle anderen ärgern sich.
+| Rang | Manager | Redaktionsurteil |
+|---|---|---|
+| **1** | **Sebastian** | Nusa, Stiller, Gnabry, Rômulo plus Tiefe – aktuell der kompletteste Kader |
+| **2** | **Luca** | Kimmich als Premiumanker, Moreira und Ryerson dahinter – trotz Nusa-Abgang titelreif |
+| **3** | **Henning** | Guirassy und Burkardt bilden den gefährlichsten Doppelsturm |
+| **4** | **Gregor** | Schick, Grifo, Kramarić, Pavlović und Schlotterbeck: erstaunlich viele sichere Punktequellen |
+| **5** | **José** | Kane verändert alles – für ganz oben fehlt noch Breite |
+| **6** | **Matthias** | Riesige Auswahl und viel Upside, aber auch viele offene Rollen |
+| **7** | **Tomi** | Solider, breiter Kader ohne absoluten Premiumanker |
+| **8** | **Wassilios** | Olise ist Weltklasse, dahinter fehlt die zweite große Säule |
+| **9** | **Uwe** | Brauchbares Gerüst – Aktivität und zusätzliche Qualität bleiben entscheidend |
+| **10** | **Jan** | Baku und Tillman sind ordentlich, Kane wäre genau der fehlende Star gewesen |
 
-Diesmal könnte es anders sein.
+**Wichtig:** Das ist ausdrücklich **kein Kaderwert-Ranking**. Marktwert kann durch Spekulationen, Breite und offene Rollen aufgebläht sein. Bewertet werden Spitze, erwartbare Einsatzzeit, Punktepotenzial, Breite und die Qualität der voraussichtlichen Stammelf.
 
-Sebastian hat bereits massiv investiert. Nusa allein kostete fast 9,3 Millionen. Dazu Stiller, Nebel und weitere Einkäufe.
+## Fazit
 
-Der Tabellenführer nach Mannschaftswert besitzt mit **64,44 Millionen Euro** zwar aktuell den wertvollsten Kader der Liga. Aber Kaderwert ist eben nicht dasselbe wie verfügbares Bargeld.
+Der Königstransfer ist vergeben. José hat aus dem Hintergrund zugeschlagen und die Liga mit einem einzigen Gebot neu sortiert.
 
-Und genau hier öffnet sich plötzlich ein Fenster für die Konkurrenz.
+Jan trauert. Tomi dichtet. Sebastian lächelt verdächtig. Und José?
 
-Vielleicht hat Sebastian noch genug Munition. Vielleicht müsste er verkaufen. Vielleicht sagt der Laptoptrainer sogar zum ersten Mal in seinem Leben:
+José sagt einfach:
 
-**„Der ist mir zu teuer.“**
-
-Die Redaktion hat diesen Satz vorsichtshalber schon einmal eingerahmt.
-
----
-
-## LUCA: RACHE MIT DER 9?
-
-Direkt dahinter steht Luca mit **64,20 Millionen Euro Mannschaftswert**.
-
-Und die Dramaturgie wäre natürlich absurd schön.
-
-Er verkauft Nusa – unwissentlich – an Sebastian. Kurz darauf erscheint Harry Kane.
-
-Wenn Luca jetzt ausgerechnet Sebastian beim größten Transfer der bisherigen Vorbereitung aussticht, hätte diese Geschichte alles.
-
-**Nusa weg. Kane da.**
-
-Aus einem guten Geschäft würde innerhalb kürzester Zeit italienische Transferkunst.
-
-Allerdings gilt auch für Luca wie für alle anderen: Ein hoher Mannschaftswert bedeutet nicht automatisch, dass irgendwo 25 Millionen unbeschäftigt auf einem Girokonto herumliegen.
-
-Für Kane braucht es nicht nur Mut. Es braucht Liquidität. Oder Verkäufe. Oder beides.
-
----
-
-## UND DANN STEHT DA NOCH JOSÉ
-
-Während Sebastian und Luca an der Spitze mit Kaderwerten jenseits der 64 Millionen hantieren, kommt aus dem hinteren Teil der Tabelle ein Name, den man bei dieser Auktion nicht ignorieren sollte:
-
-**José.**
-
-Sein Mannschaftswert liegt aktuell bei **32,18 Millionen Euro** – dem niedrigsten Wert der Liga.
-
-Normalerweise wäre das keine besonders beeindruckende Bewerbung um Harry Kane. Aber genau deshalb wird es interessant.
-
-Denn wer bislang weniger Kapital in seinen Kader gesteckt hat, könnte ausgerechnet jetzt die größere Kriegskasse besitzen.
-
-José hat zuletzt Ginter für 5,78 Millionen und Alfa-Ruprecht für 770.100 Euro geholt, gleichzeitig Palacios für 4,38 Millionen an den Computer verkauft.
-
-Vielleicht ist der Raumdeuter also gar nicht hinten dran. Vielleicht wartet er einfach.
-
-Während vorne bereits mit Millionen um sich geworfen wurde, könnte José gemütlich im Hintergrund stehen, das Kane-Trikot hochhalten und denken:
-
-**„Macht ihr mal.“**
-
-Die Redaktion möchte ausdrücklich festhalten: Das wäre sehr José.
-
----
-
-## MATTHIAS HAT AUCH SCHON ORDENTLICH GELD VERBRANNT
-
-Matthias liegt mit **63,10 Millionen Euro** Mannschaftswert auf Rang drei und hat mit Uzun für **8,1 Millionen Euro** bereits einen der größeren Transfers hingelegt.
-
-Dazu kam Finkgräfe für 590.000 Euro, während Sieb verkauft wurde.
-
-Auch hier gilt deshalb: sportlich stark aufgestellt, aber Kane ist keine normale Verstärkung.
-
-Kane ist ein finanzieller Vorschlaghammer.
-
-Wer ihn holt, verändert möglicherweise seine komplette Kaderplanung.
-
-Und Matthias müsste sich entscheiden:
-
-**Breite behalten – oder König holen?**
-
----
-
-## TOMI, HENNING, GREGOR, WASSILIOS: HALLO? JEMAND ZU HAUSE?
-
-Tomi: **57,38 Mio.**
-
-Henning: **55,68 Mio.**
-
-Gregor: **53,25 Mio.**
-
-Wassilios: **47,05 Mio.**
-
-Vier Manager. Vier ordentliche Ausgangspositionen. Und Harry Kane liegt auf dem Markt.
-
-Meine Herren:
-
-**Das wäre jetzt ein hervorragender Zeitpunkt, einmal kurz Lebenszeichen zu senden.**
-
-Gregor hat immerhin Dompé für 880.000 Euro eingesammelt. Henning verkaufte Ben Seghir. Wassilios bewegt sich bislang eher mit der Eleganz eines Mannes über den Markt, der noch nicht bemerkt hat, dass die Saison irgendwann tatsächlich beginnt.
-
-Und Tomi?
-
-Bei Tomi wartet die Redaktion grundsätzlich erst einmal auf die Erklärung, warum ein Kane-Transfer organisatorisch leider nicht möglich war.
-
----
-
-## UWE KÖNNTE NATÜRLICH ALLES ZERSTÖREN
-
-Dann gibt es noch Uwe.
-
-Mannschaftswert: **36,09 Millionen Euro**.
-
-Transferaktivität zuletzt: überschaubar.
-
-Planbarkeit: null.
-
-Und genau deshalb muss man ihn bei Kane nennen.
-
-Denn Uwe ist der Manager, dem man problemlos zutraut, lange gar nichts zu machen und anschließend **27.413.728 Euro auf Harry Kane** zu bieten, weil er „mal schauen wollte“.
-
-Würde es Sinn ergeben? Irrelevant.
-
-Würde es zur IWF passen? Absolut.
-
----
-
-## UND JAN?
-
-Jan liegt mit **33,59 Millionen Euro** ebenfalls deutlich hinter der Spitzengruppe. Zuletzt verkaufte er Hein und Karazor und holte zuvor Höler.
-
-Auch bei ihm könnte deshalb interessant werden, ob die bisherigen Verkäufe Teil einer größeren Strategie waren.
-
-Oder ob wir ihm gerade eine Strategie unterstellen, die niemals existiert hat.
-
-Beides ist möglich.
-
----
-
-## DIE KANE-FRAGE TEILT DIE LIGA
-
-Das Faszinierende an diesem Transfer ist deshalb nicht nur Harry Kane selbst.
-
-Es ist der Zeitpunkt.
-
-Sebastian führt beim Mannschaftswert, hat aber gerade massiv investiert. Luca sitzt ihm praktisch im Nacken und hat soeben Nusa an ihn verloren. Matthias hat ebenfalls bereits Millionen ausgegeben.
-
-Dahinter stehen mehrere Manager, bei denen völlig unklar ist, wie groß ihre Reserven tatsächlich noch sind.
-
-Und ganz hinten lauern José, Jan und Uwe mit vergleichsweise kleinen Kadern – was bei einer solchen Auktion plötzlich kein Nachteil mehr sein muss.
-
-**Zum ersten Mal könnte Sparsamkeit sexy werden.**
-
-Oder, wie Werner aus der Redaktion es formulierte:
-
-> **„Wenn du im August 25 Millionen für einen Engländer ausgibst, solltest du wenigstens hoffen, dass er Elfmeter schießt.“**
-
-Tut er.
-
----
-
-## ANSTOSS-PROGNOSE
-
-Wir erwarten **keinen Schnäppchenpreis**.
-
-Kane ist der erste Spieler auf diesem Transfermarkt, bei dem mehrere Manager ihre bisherige Strategie komplett über den Haufen werfen könnten.
-
-Sebastian wäre sportlich der logische Käufer – aber seine jüngsten Investitionen machen ihn verwundbarer.
-
-Luca hätte die schönste Geschichte.
-
-Matthias wäre der Angriff auf Platz eins zuzutrauen.
-
-José ist unser Kandidat für den großen Hinterhalt.
-
-Und irgendwo sitzt Uwe.
-
-Das reicht als Warnung.
-
-Fest steht nur:
-
-Die gemütliche Phase dieser Saisonvorbereitung ist vorbei.
-
-Nusa war das Vorspiel.
-
-**Jetzt liegt Harry Kane auf dem Tisch.**
-
-Und wer bei diesem Transfer nur vernünftig rechnet, hat die IWF League vermutlich noch nicht verstanden.
+**Welcome Harry.**
 `
 }
-export default article
