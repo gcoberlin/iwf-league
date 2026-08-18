@@ -34,7 +34,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>Harry Kane auf dem Markt · Nusa wechselt von Luca zu Sebastian für 9,2875 Mio. € · Wer geht beim Königstransfer All-in? ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>José holt Harry Kane für 26,3 Mio. € · Jan: „Kane bei Muhle :(“ · Tomi: „Kane doch nicht wahr sein“ · José: „Welcome Harry“ ·</span></div></div>
   </>
 }
 

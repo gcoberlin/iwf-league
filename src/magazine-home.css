@@ -36,3 +36,7 @@
 .magHero img[src*="managers/sebastian"]{object-position:72% 28%;background:#dfe6dd}
 .magHeroCopy{bottom:28px}
 @media(max-width:650px){.magHeroCopy h1{font-size:40px;line-height:.92}.magHero img[src*="managers/sebastian"]{object-position:66% 20%}}
+
+/* 18.08.2026 Kane hero crop fix */
+.magHero img[src*="kane-iwf-hero-2026"]{object-position:center 12%;}
+@media(max-width:650px){.magHero img[src*="kane-iwf-hero-2026"]{object-position:center 8%;}}
