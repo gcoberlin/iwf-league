@@ -34,7 +34,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>José holt Harry Kane für 26,30 Mio. € · Jan: „Kane bei Muhle :(“ · Tomi: „Kane doch nicht wahr sein“ · José: „Welcome Harry“ ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>REDaktionskonferenz: Luca übernimmt Platz 1 · Sebastian und Tomi im Titelkreis · José setzt auf Kane · Matthias muss seinen XXL-Kader verdichten ·</span></div></div>
   </>
 }
 

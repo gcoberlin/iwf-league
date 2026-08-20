@@ -1,45 +1,40 @@
 export const fridayEdition = {
-  date: '18.08.2026', issue: 'Königstransfer',
-  preSeasonNote: 'José holt Harry Kane für 26,30 Mio. €. Das Power Ranking bewertet weiterhin die sportliche Qualität der Kader – nicht den reinen Marktwert.',
-  headline: 'Kane bei Muhle – José holt den Königstransfer',
-  subheadline: '26,3 Millionen Euro, ein trockenes „Welcome Harry“ und kollektiver Schmerz in der IWF: José schnappt sich Harry Kane.',
-  teaser: 'Jan trauert um seinen Vorjahresstar, Tomi liefert das Wortspiel des Morgens und die Redaktion sortiert die Liga nach dem Kane-Hammer neu.',
-  breaking: [
-    ['18.08.', 'José holt Harry Kane für 26,30 Mio. € – der Königstransfer ist durch'],
-    ['18.08.', 'Jan trauert: „Kane bei Muhle :( Er wollte nach Bangkok wie letztes Jahr“'],
-    ['18.08.', 'Tomi: „Kane doch nicht wahr sein“'],
-    ['18.08.', 'José nach dem Transfer: „Welcome Harry“'],
-    ['17.08.', 'Nusa wechselt für 9,2875 Mio. € von Luca zu Sebastian']
+  date:'20.08.2026', issue:'Redaktionskonferenz II',
+  preSeasonNote:'Noch acht Tage bis zum Bundesligastart. Kontostände sind unbekannt – ein hoher Kaderwert kann deshalb auch Verkaufsdruck bedeuten. Bewertet wird die sportliche Qualität, nicht die reine Summe.',
+  headline:'Eine Woche vor dem Start: Die IWF-Kader im Härtetest',
+  subheadline:'Ein Monat Transfermarkt hat die Liga verändert. Luca übernimmt Rang eins, Sebastian und Tomi lauern – José setzt auf Harry Kane.',
+  teaser:'Die Redaktion prüft alle zehn Kader, die Transferarbeit seit Juli und den Handlungsdruck vor dem ersten Spieltag.',
+  breaking:[
+    ['20.08.','Luca übernimmt im neuen Redaktionsranking Platz eins'],
+    ['20.08.','Kauã Santos: Luca verkauft für 2,73 Mio. € nach Einkauf für 1,766 Mio. €'],
+    ['20.08.','Cardozo geht für 640.000 € von Matthias zurück zum Computer'],
+    ['20.08.','Karius wechselt für 2,73 Mio. € vom Computer zu Luca'],
+    ['20.08.','Baumgartner wechselt für 8,00 Mio. € vom Computer zu Tomi']
   ],
-  rosterValues: [
-    { rank:1, manager:'Sebastian', value:'65,20 Mio. €', trend:'↑', stars:5 },
-    { rank:2, manager:'Luca', value:'64,28 Mio. €', trend:'→', stars:5 },
-    { rank:3, manager:'Henning', value:'57,43 Mio. €', trend:'→', stars:5 },
-    { rank:4, manager:'Gregor', value:'54,24 Mio. €', trend:'↑', stars:4 },
-    { rank:5, manager:'Jose', value:'54,75 Mio. €', trend:'↑', stars:4 },
-    { rank:6, manager:'Matthias', value:'59,89 Mio. €', trend:'→', stars:4 },
-    { rank:7, manager:'Tomi', value:'58,22 Mio. €', trend:'→', stars:4 },
-    { rank:8, manager:'Wassilios', value:'47,12 Mio. €', trend:'→', stars:3 },
-    { rank:9, manager:'Uwe', value:'36,57 Mio. €', trend:'→', stars:3 },
-    { rank:10, manager:'Jan', value:'34,05 Mio. €', trend:'↓', stars:3 }
+  rosterValues:[
+    {rank:1,manager:'Luca',value:'64,52 Mio. €',trend:'↑',stars:5},
+    {rank:2,manager:'Sebastian',value:'63,80 Mio. €',trend:'↑',stars:5},
+    {rank:3,manager:'Tomi',value:'64,23 Mio. €',trend:'↑',stars:5},
+    {rank:4,manager:'Henning',value:'56,94 Mio. €',trend:'↑',stars:4},
+    {rank:5,manager:'Jose',value:'53,42 Mio. €',trend:'↑',stars:4},
+    {rank:6,manager:'Matthias',value:'63,19 Mio. €',trend:'↑',stars:4},
+    {rank:7,manager:'Wassilios',value:'45,88 Mio. €',trend:'↓',stars:3},
+    {rank:8,manager:'Gregor',value:'51,79 Mio. €',trend:'↑',stars:4},
+    {rank:9,manager:'Jan',value:'35,74 Mio. €',trend:'↓',stars:3},
+    {rank:10,manager:'Uwe',value:'35,58 Mio. €',trend:'→',stars:3}
   ],
-  transfers: [
-    ['Jose','kauft','Kane','26,30 Mio. €'],
-    ['Sebastian','kauft','Nusa','9,2875 Mio. €'],
-    ['Sebastian','kauft','Nebel','3,65 Mio. €'],
-    ['Gregor','kauft','Dompé','0,88 Mio. €'],
-    ['Matthias','kauft','Finkgräfe','0,59 Mio. €']
+  transfers:[
+    ['Luca','verkauft','Kauã Santos','2,73 Mio. €'],
+    ['Luca','kauft','Karius','2,73 Mio. €'],
+    ['Tomi','kauft','Baumgartner','8,00 Mio. €'],
+    ['Matthias','verkauft','Cardozo','0,64 Mio. €'],
+    ['Jose','verkauft','Alfa-Ruprecht','1,169 Mio. €']
   ],
-  awards: {
-    manager:'Jose', managerText:'Der Raumdeuter holt mit Harry Kane den Königstransfer und springt aus dem Hintergrund mitten in die Spitzengruppe.',
-    transfer:'Harry Kane zu Jose für 26,30 Mio. €',
-    surprise:'Jose landet den größten Einzeltransfer der Vorbereitung – obwohl andere Kader auf dem Papier deutlich teurer sind.',
-    watch:'Sebastian bleibt trotz Kane bei Jose auf Rang eins des Redaktionsrankings: Nusa, Stiller, Gnabry und Rômulo geben dem Kader aktuell die beste Gesamtstruktur.'
+  awards:{manager:'Luca',managerText:'Kimmich als Premiumanker, aktives Trading und inzwischen die beste Mischung aus Qualität und Marktaktivität.',transfer:'Harry Kane zu Jose für 26,30 Mio. € bleibt der Königstransfer des Sommers.',surprise:'Tomi steht mit 64,23 Mio. € und einem erstaunlich kompletten Kader plötzlich mitten im Titelkreis.',watch:'Matthias besitzt 63,19 Mio. € Kaderwert und enormes Tradingpotenzial – jetzt muss aus Masse eine klare Startelf werden.'},
+  editorial:{
+    ingo:{title:'Jetzt zählt der Kader',text:'Einen Monat lang durfte spekuliert werden. Eine Woche vor dem Start müssen aus Ideen funktionierende Mannschaften geworden sein.'},
+    werner:{title:'Marktwert bleibt nur ein Signal',text:'Kontostände sind unbekannt. Deshalb zählen Stammplatzsicherheit, Punktepotenzial, Spitze, Breite und möglicher Verkaufsdruck.'},
+    franz:{title:'Kane hintenrum',text:'Während Luca und Sebastian Kräftemessen spielen, steht José im Hintergrund und freut sich immer noch über Harry Kane.'}
   },
-  editorial: {
-    ingo:{title:'Kane verändert die Liga',text:'José besitzt jetzt den besten Einzelspieler der IWF. Für Platz eins reicht das noch nicht automatisch – aber niemand kann diesen Kader mehr ignorieren.'},
-    werner:{title:'Qualität schlägt Marktwert',text:'Das Ranking bleibt bewusst unabhängig vom reinen Kaderwert. Entscheidend sind Stammplatzsicherheit, Punktepotenzial, Spitze und Breite.'},
-    franz:{title:'Welcome Harry',text:'Jan trauert, Tomi dichtet und José braucht für den größten Transfer des Sommers genau zwei Wörter. Mehr IWF geht kaum.'}
-  },
-  rumor:'Nach dem Kane-Hammer prüft die Redaktion, ob Jan in Bangkok bereits ein Rückholschild mit der Aufschrift „Harry, komm nach Hause“ vorbereitet.'
+  rumor:'Wer vor dem ersten Spieltag noch im Minus steht, dürfte in den kommenden Tagen unfreiwillig für Bewegung auf dem Transfermarkt sorgen.'
 }
