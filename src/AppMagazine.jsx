@@ -34,7 +34,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>REDaktionskonferenz: Luca übernimmt Platz 1 · Sebastian und Tomi im Titelkreis · José setzt auf Kane · Matthias muss seinen XXL-Kader verdichten ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>SAISONSTART: Heute müssen alle Konten im Plus sein · Sebastian führt das neue Power Ranking · Jan steigt mit Undav · Tomi sucht 5 Mio. · Greg: „Immer dieser stechende Durst“ ·</span></div></div>
   </>
 }
 
@@ -117,7 +117,7 @@ function HomeMagazine() {
 
       <div className="magDashboard">
         <section className="magPanel rankingPanel"><PanelTitle link="/saisoncheck">🏆 Power Ranking</PanelTitle>{rankings.map(([name, chance, trend, stars], index) => <div className="rankCard" key={name}><b>#{index + 1}</b><div><strong>{name}</strong><span>{'★'.repeat(stars)}{'☆'.repeat(5-stars)}</span></div><em className={trend === '↓' ? 'down' : 'up'}>{trend}</em><small>{chance}</small></div>)}</section>
-        <section className="magPanel barometerPanel"><PanelTitle link="/manager">☺ Manager-Barometer</PanelTitle>{['Jose','Sebastian','Luca','Henning','Greg'].map((name, index) => <div className="barometerLine" key={name}><span>{['😎','🔥','🙂','🤔','🤯'][index]} <b>{name}</b></span><i><b style={{width:`${88-index*14}%`}} /></i></div>)}</section>
+        <section className="magPanel barometerPanel"><PanelTitle link="/manager">☺ Manager-Barometer</PanelTitle>{['Sebastian','Jose','Jan','Gregor','Tomi'].map((name, index) => <div className="barometerLine" key={name}><span>{['😎','🔥','🙂','🤔','🤯'][index]} <b>{name}</b></span><i><b style={{width:`${88-index*14}%`}} /></i></div>)}</section>
         <section className="magPanel quoteLarge"><PanelTitle>Zitat der Woche</PanelTitle><div className="quoteMark">“</div><blockquote>„{quote.quote}“</blockquote><b>— {quote.speaker}</b></section>
       </div>
 

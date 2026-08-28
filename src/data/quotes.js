@@ -1,7 +1,8 @@
 export const weeklyQuotes = [
-  { date:'20.08.', speaker:'Jan', context:'Nach dem Kane-Transfer', quote:'Kane bei Muhle :( Er wollte nach Bangkok wie letztes Jahr', editor:'Franz', verdict:'Der Vorjahres-Kane zieht nicht nach Bangkok, sondern zu José. Liebeskummer am Transfermarkt.' },
-  { date:'20.08.', speaker:'Tomi', context:'Reaktion auf José und Kane', quote:'Kane doch nicht wahr sein', editor:'Ingo', verdict:'Ein Wortspiel, das weh tut – und deshalb selbstverständlich ins Archiv gehört.' },
-  { date:'20.08.', speaker:'Jose', context:'Nach dem 26,3-Millionen-Transfer', quote:'Welcome Harry', editor:'Werner', verdict:'Der Königstransfer braucht keine lange Pressekonferenz.' },
-  { date:'August', speaker:'Tomi', context:'Über das neue Comunio-Design', quote:'Ich komme mit dem neuen Comunji Design gar nicht klar, Pleite und Ahnungslos', editor:'Franz', verdict:'Der Kader steht inzwischen bei 64,23 Mio. €. So ahnungslos sieht das nicht mehr aus.' },
-  { date:'Dauerbrenner', speaker:'Sebastian', context:'Kurz vor dem Kane-Poker', quote:'Macht ihr mal... :)', editor:'Ingo', verdict:'Bei Sebastian ist selbst Passivität psychologische Kriegsführung.' }
+  { date:'28.08.', speaker:'Tomi', context:'Die Finanzierungsrunde des Titelkandidaten', quote:'5 Mio. würden schon helfen', editor:'Werner', verdict:'Die Redaktion weist darauf hin, dass eine Titelprognose keine Kreditlinie eröffnet.' },
+  { date:'28.08.', speaker:'Tomi', context:'Erinnert die Liga an die Prognose vom 20.08.', quote:'Ich bin doch jetzt Titelkandidat, hat die Redaktion gesagt', editor:'Ingo', verdict:'Die Liga reagierte mit bemerkenswerter Geschlossenheit: gar nicht.' },
+  { date:'28.08.', speaker:'Sebastian', context:'Tomis Realtaria-Stichelei', quote:'Was ist denn daran real?', editor:'Franz', verdict:'Häjne verteidigt Realtaria mit der Nüchternheit eines VAR-Checks.' },
+  { date:'28.08.', speaker:'Gregor', context:'Peroni aus dem Dino-Urlaub', quote:'Immer dieser stechende Durst', editor:'Franz', verdict:'Im Urlaub zeigt Greg die Konstanz, die man am Transfermarkt jahrelang vermisst hat.' },
+  { date:'28.08.', speaker:'Sebastian', context:'Nach dem ungewollten Gutiérrez-Verkauf an José', quote:'Ok, wieder was gelernt. Touché. Hätte ich auch kommen sehen müssen. Egal, passiert nicht nochmal...', editor:'Werner', verdict:'Der letzte Satz wurde von der Redaktion vorsorglich archiviert.' },
+  { date:'28.08.', speaker:'Sebastian', context:'Über Tomis Kader', quote:'Hast ein gutes Team', editor:'Ingo', verdict:'Damit besitzt Tomi neben der alten Redaktionsprognose nun sogar eine zweite Quelle.' }
 ]

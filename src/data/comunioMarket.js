@@ -1,24 +1,28 @@
 const ranked = (name, club, value) => ({ name, club, value })
 export const comunioMarket = {
-  updatedAt:'18.08.2026', dataStatus:'Redaktionell geprüft', winners:[], losers:[],
+  updatedAt:'28.08.2026', dataStatus:'Redaktionell geprüft', winners:[], losers:[],
   recentTransfers:[
-    {date:'18.08.', player:'Kane', fee:'26,30 Mio. €', manager:'Jose', direction:'in'},
-    {date:'17.08.', player:'Nusa', fee:'9,2875 Mio. €', manager:'Sebastian', direction:'in'},
-    {date:'17.08.', player:'Nebel', fee:'3,65 Mio. €', manager:'Sebastian', direction:'in'},
-    {date:'17.08.', player:'Dompé', fee:'0,88 Mio. €', manager:'Gregor', direction:'in'},
-    {date:'17.08.', player:'Finkgräfe', fee:'0,59 Mio. €', manager:'Matthias', direction:'in'},
-    {date:'17.08.', player:'Aséko', fee:'4,2248 Mio. €', manager:'Sebastian → Computer', direction:'out'},
-    {date:'16.08.', player:'Stange', fee:'1,4001 Mio. €', manager:'Luca', direction:'in'},
-    {date:'16.08.', player:'Boey', fee:'0,31 Mio. €', manager:'Matthias', direction:'in'},
-    {date:'15.08.', player:'Ginter', fee:'5,78 Mio. €', manager:'Jose', direction:'in'},
-    {date:'15.08.', player:'Höler', fee:'2,55 Mio. €', manager:'Jan', direction:'in'}
+    {date:'28.08.', player:'Batista Meier', fee:'2,09 Mio. €', manager:'Gregor', direction:'in'},
+    {date:'28.08.', player:'Sebulonsen', fee:'0,68 Mio. €', manager:'Matthias', direction:'in'},
+    {date:'28.08.', player:'Nadir', fee:'1,82 Mio. €', manager:'Jose', direction:'in'},
+    {date:'27.08.', player:'Gutiérrez', fee:'8,21 Mio. €', manager:'Jose', direction:'in'},
+    {date:'27.08.', player:'Maina', fee:'1,95 Mio. €', manager:'Jose', direction:'in'},
+    {date:'26.08.', player:'García', fee:'13,41 Mio. €', manager:'Sebastian', direction:'in'},
+    {date:'25.08.', player:'Undav', fee:'13,889 Mio. €', manager:'Jan', direction:'in'},
+    {date:'24.08.', player:'Gyamerah', fee:'0,845 Mio. €', manager:'Sebastian', direction:'in'},
+    {date:'24.08.', player:'Honorát', fee:'4,485 Mio. €', manager:'Luca', direction:'in'},
+    {date:'23.08.', player:'Günther', fee:'1,62 Mio. €', manager:'Luca', direction:'in'},
+    {date:'23.08.', player:'Vagnoman', fee:'1,73 Mio. €', manager:'Sebastian', direction:'in'},
+    {date:'22.08.', player:'Laimer', fee:'6,111 Mio. €', manager:'Jan', direction:'in'},
+    {date:'21.08.', player:'Boving', fee:'0,80 Mio. €', manager:'Jose', direction:'in'},
+    {date:'21.08.', player:'Yamamoto', fee:'2,999 Mio. €', manager:'Henning', direction:'in'}
   ],
   mostExpensive:[
-    ranked('Harry Kane','FC Bayern','22,59 Mio. €'),
-    ranked('Michael Olise','FC Bayern','18,86 Mio. €'),
-    ranked('Joshua Kimmich','FC Bayern','15,66 Mio. €'),
-    ranked('Guirassy','Borussia Dortmund','12,31 Mio. €'),
-    ranked('Schick','Bayer Leverkusen','11,95 Mio. €')
-  ], pointsCollectors:[],
-  editorial:{editor:'Werner',role:'Blitzanalyse',headline:'Kane verändert die Liga – aber nicht allein das Ranking',text:'José landet mit Harry Kane den Königstransfer und springt sofort in die Spitzengruppe. Das Power Ranking bleibt trotzdem ein Qualitätsranking: Sebastian hat aktuell den komplettesten Kader, Luca den Kimmich-Anker und Henning den stärksten Doppelsturm.',managerAngle:'Marktwert ist nicht Qualität. Matthias besitzt beispielsweise mehr Kaderwert als mehrere Manager vor ihm, trägt aber mehr offene Rollen und Spekulationen im Kader. Genau deshalb bewertet die Redaktion Stammplatzsicherheit, Punktepotenzial, Spitze und Breite.'}
+    ranked('Harry Kane','FC Bayern','21,93 Mio. €'),
+    ranked('Michael Olise','FC Bayern','20,41 Mio. €'),
+    ranked('Joshua Kimmich','FC Bayern','14,38 Mio. €'),
+    ranked('Serhou Guirassy','Borussia Dortmund','14,03 Mio. €'),
+    ranked('Patrik Schick','Bayer Leverkusen','13,62 Mio. €')
+  ],
+  notes:{editorial:'Saisonstart: Die Marktwerte zeigen Kapital, nicht automatisch Kaderqualität.',managerAngle:'Das Power Ranking wird unabhängig von der Marktwerttabelle geführt. Startelf, Rollen, Stammplätze, Punktepotenzial und Tiefe entscheiden.'}
 }

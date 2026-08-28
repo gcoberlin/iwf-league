@@ -20,19 +20,19 @@ const navItems = [
 ]
 
 const transferTicker = [
-  ['Kane', '26,30 Mio. €', 'Jose', 'in'],
-  ['Nusa', '9,2875 Mio. €', 'Sebastian', 'in'],
-  ['Nebel', '3,65 Mio. €', 'Sebastian', 'in'],
-  ['Dompé', '0,88 Mio. €', 'Gregor', 'in'],
-  ['Finkgräfe', '0,59 Mio. €', 'Matthias', 'in'],
-  ['Stange', '1,4001 Mio. €', 'Luca', 'in'],
-  ['Ginter', '5,78 Mio. €', 'Jose', 'in'],
-  ['Uzun', '8,10 Mio. €', 'Matthias', 'in']
+  ['Batista Meier', '2,09 Mio. €', 'Gregor', 'in'],
+  ['Sebulonsen', '0,68 Mio. €', 'Matthias', 'in'],
+  ['Nadir', '1,82 Mio. €', 'Jose', 'in'],
+  ['Gutiérrez', '8,21 Mio. €', 'Jose', 'in'],
+  ['García', '13,41 Mio. €', 'Sebastian', 'in'],
+  ['Undav', '13,889 Mio. €', 'Jan', 'in'],
+  ['Honorát', '4,485 Mio. €', 'Luca', 'in'],
+  ['Laimer', '6,111 Mio. €', 'Jan', 'in']
 ]
 
 const marketPlayers = [
-  ['Harry Kane', '22,59 Mio. €'], ['Michael Olise', '18,86 Mio. €'],
-  ['Joshua Kimmich', '15,66 Mio. €'], ['Guirassy', '12,31 Mio. €'], ['Schick', '11,95 Mio. €']
+  ['Harry Kane', '21,93 Mio. €'], ['Michael Olise', '20,41 Mio. €'],
+  ['Joshua Kimmich', '14,38 Mio. €'], ['Serhou Guirassy', '14,03 Mio. €'], ['Patrik Schick', '13,62 Mio. €']
 ]
 
 function Logo() {
@@ -85,14 +85,14 @@ function Layout({ children }) {
       <b><i /> BREAKING</b>
       <div className="breakingViewport">
         <div className="breakingTrack">
-          <span>BREAKING: José holt Harry Kane für 26,3 Mio. €</span>
-          <span>Jan trauert: „Kane bei Muhle :(“</span>
-          <span>Tomi: „Kane doch nicht wahr sein“</span>
-          <span>José trocken: „Welcome Harry“</span>
-          <span aria-hidden="true">BREAKING: José holt Harry Kane für 26,3 Mio. €</span>
-          <span aria-hidden="true">Jan trauert: „Kane bei Muhle :(“</span>
-          <span aria-hidden="true">Tomi: „Kane doch nicht wahr sein“</span>
-          <span aria-hidden="true">José trocken: „Welcome Harry“</span>
+          <span>SAISONSTART: Heute müssen alle Konten im Plus sein</span>
+          <span>Tomi: „5 Mio. würden schon helfen“</span>
+          <span>Gregor: „Immer dieser stechende Durst“</span>
+          <span>Häjne nach Gutiérrez: „Passiert nicht nochmal...“</span>
+          <span aria-hidden="true">SAISONSTART: Heute müssen alle Konten im Plus sein</span>
+          <span aria-hidden="true">Tomi: „5 Mio. würden schon helfen“</span>
+          <span aria-hidden="true">Gregor: „Immer dieser stechende Durst“</span>
+          <span aria-hidden="true">Häjne nach Gutiérrez: „Passiert nicht nochmal...“</span>
         </div>
       </div>
     </div>
@@ -282,6 +282,7 @@ function Manager() {
           <span>MANAGERPROFIL</span>
           <h3>{m.profileTitle}</h3>
           <p>{m.profileText}</p>
+          {m.name === 'Sebastian' && <Link className="limeButton managerDeepDive" to="/artikel/unter-der-lupe-sebastian-2026">Unter der Lupe: Häjne →</Link>}
           <blockquote><b>Running Gag</b>{m.runningGag}</blockquote>
         </section>
 
@@ -338,7 +339,7 @@ function HallOfFame() {
 function Saisonarchiv() {
   return <Layout><section className="page">
     <PageHero eyebrow="Saisonarchiv" title="Jede Saison. Jeder Meister." text="Zehn komplette Abschlusstabellen bilden das statistische Gedächtnis der IWF – vom Podium bis zum letzten Platz." stat={{value:"10",label:"Saisons"}} tone="red" />
-    <article className="archiveCurrent"><span>AKTUELL</span><h2>2026/27</h2><p>Die neue Saison beginnt am 28. August. Bis dahin gilt das Power Ranking der ANSTOSS-Redaktion.</p><Link className="textLink" to="/saisoncheck">Zur Saisonvorschau →</Link></article>
+    <article className="archiveCurrent"><span>AKTUELL</span><h2>2026/27</h2><p>Die Saison 2026/27 läuft. Ab jetzt müssen sich Power Ranking und Prognosen an echten Punkten messen lassen.</p><Link className="textLink" to="/saisoncheck">Zur Saisonvorschau →</Link></article>
     <div className="seasonArchive">{[...seasons].reverse().map(season=><details key={season.season} className="seasonCard"><summary><div><span>{season.season}</span><h2>{season.champion}</h2></div><strong>{season.championPoints.toLocaleString('de-DE')} Punkte</strong></summary><div className="seasonTable">{season.table.map(([name,points],index)=><div key={name}><b>{index+1}</b><span>{name}</span><strong>{points.toLocaleString('de-DE')}</strong></div>)}</div></details>)}</div>
   </section></Layout>
 }

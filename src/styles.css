@@ -381,3 +381,6 @@ img,svg,video{max-width:100%;height:auto}
 .portalHero img[src*="kane-iwf-hero-2026"]{object-position:center 12%;}
 .articleHero[src*="kane-iwf-hero-2026"]{height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center top!important;background:#fff;}
 @media(max-width:900px){.portalHero img[src*="kane-iwf-hero-2026"]{object-position:center 8%;}}
+
+/* 28.08.2026 Saisonstart */
+.managerDeepDive{display:inline-flex;margin:14px 0 4px;text-decoration:none}
