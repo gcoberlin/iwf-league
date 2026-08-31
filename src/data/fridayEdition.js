@@ -1,16 +1,17 @@
 export const fridayEdition = {
-  date:'28.08.2026', issue:'Saisonstart',
-  preSeasonNote:'Unmittelbar vor dem Anpfiff zählt nur noch die Realität: Das Konto muss im Plus sein. Das Power Ranking bewertet Kaderqualität, Startelf, Stammplätze, Punktepotenzial und Tiefe – nicht die Marktwerttabelle.',
-  headline:'Jetzt gilt’s! Zehn Manager greifen nach dem Pokal',
-  subheadline:'Bayern gegen Stuttgart eröffnet die Saison. Die letzte Transferwoche hat fast jeden Kader noch einmal durchgerüttelt.',
-  teaser:'ANSTOSS zieht unmittelbar vor dem Anpfiff die Prognose vom 20. August noch einmal glatt – und die Redaktion muss einräumen: Manches Urteil war vielleicht etwas voreilig.',
+  date:'31.08.2026', issue:'Spieltag 1',
+  preSeasonNote:'Der erste echte Kadercheck ist da: Nach Monaten voller Prognosen zählen erstmals Punkte. Ein Spieltag entscheidet noch keine Saison – zeigt aber, wer sofort aus der Box gekommen ist.',
+  headline:'69 PUNKTE! MUJE STARTET VORN',
+  subheadline:'Suzuki zündet – Kane ist diesmal nur Beifahrer.',
+  teaser:'José gewinnt Spieltag 1 mit 69 Punkten. Luca und Greg starten stark, Matze stolpert – und Uwe stellt gar nicht erst auf.',
   breaking:[
-    ['28.08.','Saisonstart: Bis zum Anpfiff muss jedes Managerkonto im Plus sein'],
-    ['28.08.','Sebastian führt die Marktwerttabelle mit 69,76 Mio. € an'],
-    ['28.08.','Tomi sucht 5 Mio. € und erinnert an seine Titelkandidaten-Prognose'],
-    ['28.08.','Gregor meldet sich aus dem Urlaub: „Immer dieser stechende Durst“'],
-    ['28.08.','Gutiérrez-Deal zu José: Häjne verspricht „passiert nicht nochmal“']
+    ['31.08.','José gewinnt Spieltag 1 mit 69 Punkten'],
+    ['31.08.','Luca startet mit 57 Punkten – Greg folgt mit 45'],
+    ['31.08.','Sebastian kommt auf 41 Punkte'],
+    ['31.08.','Matthias erlebt mit 5 Punkten einen Fehlstart'],
+    ['31.08.','Uwe ohne Aufstellung – 0 Punkte']
   ],
+
   rosterValues:[
     {rank:1,manager:'Sebastian',value:'69,76 Mio. €',trend:'↑',stars:5},
     {rank:2,manager:'Jose',value:'64,19 Mio. €',trend:'↑',stars:5},

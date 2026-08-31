@@ -7,11 +7,10 @@ const article = {
   publishedAt:'2026-08-31',
   readTime:'10 Min.',
   category:'Spieltag 1 · Der große Check',
+  kicker:'SPIELTAG 1 · DER GROSSE CHECK',
   topStory:true,
   hero:'./images/iwf-spieltag1-muje-suzuki-69.png',
   content:`
-# 69 Punkte! Muje schießt aus der Box – und Suzuki fährt Ferrari
-
 > **Monatelang wurde gehandelt, gerechnet, gepöbelt und gerankt. Jetzt ist der erste Spieltag gespielt. Und plötzlich ist alles ganz einfach: Punkte auf den Tisch. Muje liefert 69 davon – und ausgerechnet Suzuki macht aus dem vermeintlichen Kane-Team die erste große Geschichte der Saison.**
 
 Der erste Spieltag ist immer ein seltsames Biest. Im August hält jeder seinen Kader für durchdacht. Jeder günstige Spieler ist ein „Steal“, jeder teure ein „Premiumanker“ und jeder Ersatzmann hat natürlich „riesiges Upside“.

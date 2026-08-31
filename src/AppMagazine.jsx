@@ -34,7 +34,7 @@ function Header() {
         {navItems.map(([to, label]) => <NavLink key={to} to={to} end={to === '/'} className={({ isActive }) => isActive ? 'active' : ''}>{label}</NavLink>)}
       </nav>
     </header>
-    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>SAISONSTART: Heute müssen alle Konten im Plus sein · Sebastian führt das neue Power Ranking · Jan steigt mit Undav · Tomi sucht 5 Mio. · Greg: „Immer dieser stechende Durst“ ·</span></div></div>
+    <div className="magBreaking"><b>🔥 BREAKING</b><div className="tickerViewport"><span>SPIELTAG 1: José 69 · Luca 57 · Greg 45 · Sebastian 41 · Matze 5 · Uwe ohne Aufstellung 0 ·</span></div></div>
   </>
 }
 
