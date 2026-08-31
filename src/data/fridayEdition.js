@@ -1,9 +1,9 @@
 export const fridayEdition = {
   date:'31.08.2026', issue:'Spieltag 1',
-  preSeasonNote:'Der erste echte Kadercheck ist da: Nach Monaten voller Prognosen zählen erstmals Punkte. Ein Spieltag entscheidet noch keine Saison – zeigt aber, wer sofort aus der Box gekommen ist.',
-  headline:'69 PUNKTE! MUJE STARTET VORN',
-  subheadline:'Suzuki zündet – Kane ist diesmal nur Beifahrer.',
-  teaser:'José gewinnt Spieltag 1 mit 69 Punkten. Luca und Greg starten stark, Matze stolpert – und Uwe stellt gar nicht erst auf.',
+  preSeasonNote:'Rom bekommt seine eigene IWF-Geschichte: vier Tage zwischen Kultur, Kulinarik, Bundesliga und der weiterhin ungeklärten Frage, ob alkoholfreies Bier real ist.',
+  headline:'ROM RUFT: DIE IWF ZIEHT LOS',
+  subheadline:'Neun in Rom. Einer auf der Couch.',
+  teaser:'Dino-Coach Vasco hat den Plan im Griff. Tomi bleibt daheim – natürlich.',
   breaking:[
     ['31.08.','José gewinnt Spieltag 1 mit 69 Punkten'],
     ['31.08.','Luca startet mit 57 Punkten – Greg folgt mit 45'],
