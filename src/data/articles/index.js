@@ -13,6 +13,7 @@ import kaneMuhleArticle from './2026-08-18-kane-muhle'
 import redaktionskonferenz2008 from './2026-08-20-redaktionskonferenz'
 import saisonstart2808 from './2026-08-28-saisonstart'
 import unterDerLupeSebastian from './2026-08-28-unter-der-lupe-sebastian'
+import spieltag1Article from './2026-08-31-spieltag1'
 
 const legacyWithDates = legacyArticles.map((article, index) => ({
   ...article,
@@ -27,6 +28,7 @@ const previousArticles = [
 ]
 
 export const articles = [
+  spieltag1Article,
   saisonstart2808,
   unterDerLupeSebastian,
   redaktionskonferenz2008,
@@ -42,7 +44,7 @@ export const articles = [
   brownTransferArticle,
   ...previousArticles
 ]
-  .map(article => article.slug === saisonstart2808.slug
+  .map(article => article.slug === spieltag1Article.slug
     ? article
     : { ...article, topStory: false })
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
