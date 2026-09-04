@@ -1,41 +1,43 @@
 export const fridayEdition = {
-  date:'31.08.2026', issue:'Spieltag 1',
-  preSeasonNote:'Rom bekommt seine eigene IWF-Geschichte: vier Tage zwischen Kultur, Kulinarik, Bundesliga und der weiterhin ungeklärten Frage, ob alkoholfreies Bier real ist.',
-  headline:'ROM RUFT: DIE IWF ZIEHT LOS',
-  subheadline:'Neun in Rom. Einer auf der Couch.',
-  teaser:'Dino-Coach Vasco hat den Plan im Griff. Tomi bleibt daheim – natürlich.',
+  date:'04.09.2026', issue:'Spieltag 2',
+  preSeasonNote:'Die Gruppe war ruhig, der Transfermarkt nicht: Vor Spieltag 2 hat die Redaktion alle zehn Kader und die wichtigsten Deals neu geprüft.',
+  headline:'DIE GRUPPE SCHWEIGT – DER MARKT NICHT',
+  subheadline:'José führt. Luca zockt. Häjne kauft. Greg steht in Pisa.',
+  teaser:'Vor Spieltag 2: alle Kader aktualisiert, die Transferwoche bewertet und ein Blick auf Verletzungen, Startelfchancen und die Reaktion auf den Auftakt.',
   breaking:[
-    ['31.08.','José gewinnt Spieltag 1 mit 69 Punkten'],
-    ['31.08.','Luca startet mit 57 Punkten – Greg folgt mit 45'],
-    ['31.08.','Sebastian kommt auf 41 Punkte'],
-    ['31.08.','Matthias erlebt mit 5 Punkten einen Fehlstart'],
-    ['31.08.','Uwe ohne Aufstellung – 0 Punkte']
+    ['04.09.','José geht mit 69 Punkten als Spitzenreiter in Spieltag 2'],
+    ['04.09.','Sebastian besitzt mit 74,86 Mio. € den höchsten Kaderwert'],
+    ['04.09.','Gregor holt Grüll – und scoutet anschließend in Pisa'],
+    ['03.09.','Matthias reagiert auf 5 Punkte mit Rômulo'],
+    ['02.09.','Henning baut massiv um: Jeltsch und Shkiri kommen'],
+    ['31.08.','Luca investiert 7,777 Mio. € in Ebnoutalib'],
+    ['04.09.','Uwe nach 0 Punkten ohne sichtbaren Einkauf']
   ],
-
   rosterValues:[
-    {rank:1,manager:'Sebastian',value:'69,76 Mio. €',trend:'↑',stars:5},
-    {rank:2,manager:'Jose',value:'64,19 Mio. €',trend:'↑',stars:5},
-    {rank:3,manager:'Luca',value:'62,69 Mio. €',trend:'↓',stars:5},
-    {rank:4,manager:'Henning',value:'58,54 Mio. €',trend:'→',stars:4},
-    {rank:5,manager:'Jan',value:'59,08 Mio. €',trend:'↑',stars:4},
-    {rank:6,manager:'Gregor',value:'57,25 Mio. €',trend:'↑',stars:4},
-    {rank:7,manager:'Tomi',value:'56,09 Mio. €',trend:'↓',stars:4},
-    {rank:8,manager:'Matthias',value:'56,05 Mio. €',trend:'↓',stars:4},
-    {rank:9,manager:'Wassilios',value:'48,56 Mio. €',trend:'→',stars:3},
-    {rank:10,manager:'Uwe',value:'36,73 Mio. €',trend:'→',stars:2}
+    {rank:1,manager:'Sebastian',value:'74,86 Mio. €',trend:'↑',stars:5},
+    {rank:2,manager:'Luca',value:'69,02 Mio. €',trend:'↑',stars:5},
+    {rank:3,manager:'Jose',value:'67,34 Mio. €',trend:'↑',stars:5},
+    {rank:4,manager:'Gregor',value:'61,08 Mio. €',trend:'↑',stars:4},
+    {rank:5,manager:'Henning',value:'58,92 Mio. €',trend:'→',stars:4},
+    {rank:6,manager:'Jan',value:'54,61 Mio. €',trend:'↓',stars:4},
+    {rank:7,manager:'Matthias',value:'52,59 Mio. €',trend:'↓',stars:3},
+    {rank:8,manager:'Tomi',value:'52,50 Mio. €',trend:'↓',stars:4},
+    {rank:9,manager:'Wassilios',value:'48,29 Mio. €',trend:'→',stars:3},
+    {rank:10,manager:'Uwe',value:'38,57 Mio. €',trend:'→',stars:2}
   ],
   transfers:[
-    ['Jose','kauft','Gutiérrez','8,21 Mio. €'],
-    ['Jan','kauft','Undav','13,889 Mio. €'],
-    ['Sebastian','kauft','García','13,41 Mio. €'],
-    ['Luca','kauft','Honorát','4,485 Mio. €'],
-    ['Jose','kauft','Nadir','1,82 Mio. €']
+    ['Luca','kauft','Ebnoutalib','7,777 Mio. €'],
+    ['Matthias','kauft','Rômulo','5,77 Mio. €'],
+    ['Sebastian','kauft','Doué','5,46 Mio. €'],
+    ['Henning','kauft','Jeltsch','3,778 Mio. €'],
+    ['Henning','kauft','Shkiri','3,778 Mio. €'],
+    ['Gregor','kauft','Grüll','3,698 Mio. €']
   ],
-  awards:{manager:'Sebastian',managerText:'69,76 Mio. € und ein Mittelfeld mit García, Veerman und Stiller. Der Laptoptrainer hat bis zuletzt umgebaut.',transfer:'Jan holt Undav für 13,889 Mio. € und macht aus einer Baustelle plötzlich einen ernstzunehmenden Kader.',surprise:'Gregor besitzt trotz Peroni-Forschung mit Schick, Grifo, Kramarić, Pavlović und Schlotterbeck erstaunlich viel echte Punktequalität.',watch:'Tomi wurde am 20.08. zum Titelkandidaten erklärt. Acht Tage später fragt er nach fünf Millionen. Die Redaktion überprüft ihre Prozesse.'},
+  awards:{manager:'Gregor',managerText:'45 Punkte zum Auftakt, Grüll nachgelegt und dann ab nach Pisa. Der Dino hat eine unerwartet entspannte Woche.',transfer:'Luca zahlt 7,777 Mio. € für Ebnoutalib. Teuer, aber mit echter Startelf- und Punktefantasie.',surprise:'Henning tauscht in wenigen Tagen fast eine komplette Achse aus. Das ist kein Feintuning mehr.',watch:'Tiago Tomás ist nach Sebastians 4,68-Mio.-Kauf muskulär verletzt; Rômulo befindet sich erst in der Rückkehr.'},
   editorial:{
-    ingo:{title:'Ab heute zählen Punkte',text:'Die Sitzung vom 20. August war eine Momentaufnahme. Die letzte Woche hat gezeigt, wie schnell ein Comunio-Urteil altern kann.'},
-    werner:{title:'Marktwert bleibt Nebensache',text:'69 Millionen sind schön. Entscheidend sind Stammplätze, Rollen und Punkte. Ab 20:30 Uhr gibt es keine Prognosepunkte mehr.'},
-    franz:{title:'Tomi will fünf Millionen',text:'Wir haben ihn Titelkandidat genannt. Offenbar hielt er das für eine Finanzierungszusage. Die Rechtsabteilung widerspricht.'}
+    ingo:{title:'Jetzt entstehen Muster',text:'Ein Spieltag ist Zufallspotenzial. Ab Spieltag zwei wird interessant, wer aus seinen ersten Erkenntnissen etwas macht.'},
+    werner:{title:'Rollen vor Marktwert',text:'Ebnoutalib und Grüll gefallen mir wegen ihrer Perspektive. Weiser und Rômulo brauchen mehr Geduld. Genau solche Unterschiede entscheiden.'},
+    franz:{title:'Dino in Pisa',text:'Gregor ist Dritter und macht Italienurlaub. Uwe ist Letzter und macht keine Transfers. Ich liebe diese Liga.'}
   },
-  rumor:'Tomi prüft angeblich, ob sich die alte Titelkandidaten-Prognose der Redaktion bei einer Bank als Sicherheit hinterlegen lässt.'
+  rumor:'Aus Pisa wird berichtet, Greg prüfe persönlich, ob Schieflage und Stabilität gleichzeitig möglich sind.'
 }

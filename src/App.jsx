@@ -232,8 +232,8 @@ function ComunioMarkt() {
     </section>
 
     <section className="tmRoadmap">
-      <span>Transfer-Fokus · 14.08.</span><h2>Matthias kauft weiter ein</h2>
-      <p><strong>Uzun für 8,10 Mio. €.</strong> Nach Karl, Onyedika und Ansah folgt der nächste große Einkauf. Sebastian kontert mit Stiller für 9,34 Mio. €, Luca hatte zuvor Moreira für 8,80 Mio. € geholt.</p>
+      <span>Transfer-Fokus · 04.09.</span><h2>Vor Spieltag 2 wird umgebaut</h2>
+      <p><strong>Ebnoutalib 7,777 Mio. €, Rômulo 5,77 Mio. €, Doué 5,46 Mio. €.</strong> Luca, Matthias und Sebastian investieren, Henning baut gleich mehrere Positionen um. LigaInsider-Check: Nicht jeder Neue ist sofort eine sichere Startelfoption.</p>
     </section>
   </section></Layout>
 }
